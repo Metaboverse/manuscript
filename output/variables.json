@@ -1,0 +1,159 @@
+{
+  "pandoc": {
+    "title": "Gazing into the Metaboverse: Automated contextualization of metabolic data",
+    "keywords": [
+      "metabolomics",
+      "metabolism",
+      "network",
+      "omics",
+      "rna-seq",
+      "proteomics",
+      "gene",
+      "protein",
+      "metabolite",
+      "context"
+    ],
+    "lang": "en-US",
+    "date-meta": "2020-02-10",
+    "author-meta": [
+      "Jordan A. Berg",
+      "Youjia Zhou",
+      "T. Cameron Waller",
+      "Ian George",
+      "James Cox",
+      "Bei Wang",
+      "Jared Rutter"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Gazing into the Metaboverse: Automated contextualization of metabolic data\" />\n<meta name=\"citation_title\" content=\"Gazing into the Metaboverse: Automated contextualization of metabolic data\" />\n<meta property=\"og:title\" content=\"Gazing into the Metaboverse: Automated contextualization of metabolic data\" />\n<meta property=\"twitter:title\" content=\"Gazing into the Metaboverse: Automated contextualization of metabolic data\" />\n<meta name=\"dc.date\" content=\"2020-02-10\" />\n<meta name=\"citation_publication_date\" content=\"2020-02-10\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jordan A. Berg\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5096-0558\" />\n<meta name=\"twitter:creator\" content=\"@jordanberg0\" />\n<meta name=\"citation_author\" content=\"Youjia Zhou\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"T. Cameron Waller\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Ian George\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"James Cox\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Bei Wang\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Jared Rutter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
+  },
+  "manubot": {
+    "date": "February 10, 2020",
+    "authors": [
+      {
+        "github": "j-berg",
+        "name": "Jordan A. Berg",
+        "initials": "JAB",
+        "orcid": "0000-0002-5096-0558",
+        "twitter": "jordanberg0",
+        "email": "jordan.berg@biochem.utah.edu",
+        "affiliations": [
+          "Department of Biochemistry, University of Utah"
+        ],
+        "funders": "J.A.B. received support from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Inter-disciplinary Training Grant T32 Program in Computational Approaches to Diabetes and Metabolism Research, 1T32DK11096601 to Wendy W. Chapman and Simon J. Fisher (https://www.niddk.nih.gov/)",
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "zhou325",
+        "name": "Youjia Zhou",
+        "initials": "YZ",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "School of Computing, University of Utah"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "tcameronwaller",
+        "name": "T. Cameron Waller",
+        "initials": "TCW",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "Department of Biochemistry, University of Utah",
+          "Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego"
+        ],
+        "affiliation_numbers": [
+          1,
+          3
+        ]
+      },
+      {
+        "github": "ig-ghub",
+        "name": "Ian George",
+        "initials": "IG",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "Department of Biochemistry, University of Utah"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "name": "James Cox",
+        "initials": "JC",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "Department of Biochemistry, University of Utah"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "beiwphillips",
+        "name": "Bei Wang",
+        "initials": "BW",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "School of Computing, University of Utah"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "name": "Jared Rutter",
+        "initials": "JR",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "Department of Biochemistry, University of Utah",
+          "Howard Hughes Medical Institute, University of Utah"
+        ],
+        "affiliation_numbers": [
+          1,
+          4
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Department of Biochemistry, University of Utah",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "School of Computing, University of Utah",
+        "affiliation_number": 2
+      },
+      {
+        "affiliation": "Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego",
+        "affiliation_number": 3
+      },
+      {
+        "affiliation": "Howard Hughes Medical Institute, University of Utah",
+        "affiliation_number": 4
+      }
+    ],
+    "manubot_version": "0.3.1",
+    "rootstock_commit": null,
+    "manuscript_stats": {
+      "word_count": 382
+    }
+  }
+}

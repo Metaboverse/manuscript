@@ -1,0 +1,73 @@
+---
+title: "Gazing into the Metaboverse: Automated contextualization of metabolic data"
+keywords:
+  - metabolomics
+  - metabolism
+  - network
+  - omics
+  - rna-seq
+  - proteomics
+  - gene
+  - protein
+  - metabolite
+  - context
+lang: en-US
+authors:
+  -
+    github: j-berg
+    name: Jordan A. Berg
+    initials: JAB
+    orcid: 0000-0002-5096-0558
+    twitter: jordanberg0
+    email: jordan.berg@biochem.utah.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+    funders: J.A.B. received support from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Inter-disciplinary Training Grant T32 Program in Computational Approaches to Diabetes and Metabolism Research, 1T32DK11096601 to Wendy W. Chapman and Simon J. Fisher (https://www.niddk.nih.gov/)
+  -
+    github: zhou325
+    name: Youjia Zhou
+    initials: YZ
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - School of Computing, University of Utah
+  -
+    github: tcameronwaller
+    name: T. Cameron Waller
+    initials: TCW
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+      - Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego
+  -
+    github: ig-ghub
+    name: Ian George
+    initials: IG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+  -
+    name: James Cox
+    initials: JC
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+  -
+    github: beiwphillips
+    name: Bei Wang
+    initials: BW
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - School of Computing, University of Utah
+  -
+    name: Jared Rutter
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+      - Howard Hughes Medical Institute, University of Utah
