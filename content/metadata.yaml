@@ -1,5 +1,5 @@
 ---
-title: "Gazing into the Metaboverse: Automated contextualization of metabolic data"
+title: "Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data"
 keywords:
   - metabolomics
   - metabolism
@@ -35,11 +35,26 @@ authors:
     github: tcameronwaller
     name: T. Cameron Waller
     initials: TCW
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0002-0313-6646
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Biochemistry, University of Utah
       - Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego
+  -
+    github: alexbott
+    name: Alex J. Bott
+    initials: AJB
+    orcid: 0000-0003-2273-8922
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+  -
+    name: Yeyun Ouyang
+    initials: YO
+    orcid: 0000-0001-9523-1044
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
   -
     github: ig-ghub
     name: Ian George
@@ -49,12 +64,21 @@ authors:
     affiliations:
       - Department of Biochemistry, University of Utah
   -
-    name: James Cox
-    initials: JC
+    name: Tyler Van Ry
+    initials: TV
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Biochemistry, University of Utah
+      - Metabolomics Core Facility, University of Utah
+  -
+    name: James Cox
+    initials: JC
+    orcid: 0000-0002-5977-2350
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+      - Metabolomics Core Facility, University of Utah
   -
     github: beiwphillips
     name: Bei Wang
@@ -66,7 +90,7 @@ authors:
   -
     name: Jared Rutter
     initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0002-2710-9765
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Biochemistry, University of Utah
