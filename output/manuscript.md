@@ -12,7 +12,7 @@ author-meta:
 - Jared Rutter
 bibliography:
 - content/manual-references.json
-date-meta: '2020-02-12'
+date-meta: '2020-02-14'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -31,9 +31,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data" />
 
-  <meta name="dc.date" content="2020-02-12" />
+  <meta name="dc.date" content="2020-02-14" />
 
-  <meta name="citation_publication_date" content="2020-02-12" />
+  <meta name="citation_publication_date" content="2020-02-14" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -155,7 +155,7 @@ title: 'Gazing into the Metaboverse: Automation, exploration, and contextualizat
 <small><em>
 This manuscript
 was automatically generated
-on February 12, 2020.
+on February 14, 2020.
 </em></small>
 
 ## Authors
