@@ -12,7 +12,7 @@ author-meta:
 - Jared Rutter
 bibliography:
 - content/manual-references.json
-date-meta: '2020-02-14'
+date-meta: '2020-03-03'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,17 +23,17 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data" />
+  <meta name="dc.title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
 
-  <meta name="citation_title" content="Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data" />
+  <meta name="citation_title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
 
-  <meta property="og:title" content="Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data" />
+  <meta property="og:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
 
-  <meta property="twitter:title" content="Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data" />
+  <meta property="twitter:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
 
-  <meta name="dc.date" content="2020-02-14" />
+  <meta name="dc.date" content="2020-03-03" />
 
-  <meta name="citation_publication_date" content="2020-02-14" />
+  <meta name="citation_publication_date" content="2020-03-03" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -144,7 +144,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: 'Gazing into the Metaboverse: Automation, exploration, and contextualization of metabolic data'
+title: 'Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data'
 ...
 
 
@@ -155,7 +155,7 @@ title: 'Gazing into the Metaboverse: Automation, exploration, and contextualizat
 <small><em>
 This manuscript
 was automatically generated
-on February 14, 2020.
+on March 3, 2020.
 </em></small>
 
 ## Authors
@@ -220,16 +220,89 @@ Another feature introduced in <i>Metaboverse</i> allows for the interactive expl
 
 One challenge in metabolomics data analysis in sparsity of data points. While thousands of metabolites exist in human metabolism, the current state of the technology for determining which mass spectra belong to which metabolite can be challenging and often results in a limited number of data points being quantified. These can lead to gaps in the metabolic network which can be challenging to explore and analyze. We therefore introduce a reaction collapse feature that allows for summary of reactions in pathways for which data is missing. This methodology can use RNA-seq data to inform prioritization of particular paths. For example, one metabolite may be converted to a downstream product in two different manners, but by using the gene expression data from a model, one can determine that one path is active while the other in inactive.
 
-<i>Metaboverse</i> is designed to handle standard two-condition experiments, flux metabolomics, and time-course experiments. Time-course inputs can be single-omics, or static RNA-seq and/or proteomics with multiple time-point metabolomics. Users input fold change and statistical measures from their respective -omics, and <i>Metaboverse</i> reconciles the inputs for layering on the metabolic network. <i>Metaboverse</i> can handle data from a variety of model organisms. The foundational curation of <i>Metaboverse</i> is built on the Reactome curations of metabolism, so any of the 90+ species available on that platform are also available within the <i>Metaboverse</i> environment. In order to validate these methodologies available in <i>Metaboverse</i> we analyzed two-condition, flux metabolomics, and time-course datasets and provide vignettes that highlight <i>Metaboverse's</i> reliability in extracting canonical features, as well as novel features and patterns, from well-defined biological models. We outline the technical specs for computational biologists in the methods section, and the biological utilities in the main text for wet bench biologists. We intend that <i>Metaboverse</i> will be foundational in our ability to more deeply and holistically explore metabolism and aid in our ability to provide more context within metabolic models.
+<i>Metaboverse</i> is designed to handle standard two-condition experiments, flux metabolomics, and time-course experiments. Time-course inputs can be single-omics, or static RNA-seq and/or proteomics with multiple time-point metabolomics. Users input fold change and statistical measures from their respective -omics, and <i>Metaboverse</i> reconciles the inputs for layering on the metabolic network. <i>Metaboverse</i> can handle data from a variety of model organisms, including humans, mouse, yeast, zebrafish, and more. The foundational curation of <i>Metaboverse</i> is built on the Reactome curations of metabolism, so any of the 90+ species available on that platform are also available within the <i>Metaboverse</i> environment. In order to validate these methodologies available in <i>Metaboverse</i> we analyzed two-condition, flux metabolomics, and time-course datasets and provide vignettes that highlight <i>Metaboverse's</i> reliability in extracting canonical features, as well as novel features and patterns, from well-defined biological models. We outline the technical specs for computational biologists in the methods section, and the biological utilities in the main text for wet bench biologists. We intend that <i>Metaboverse</i> will be foundational in our ability to more deeply and holistically explore metabolism and aid in our ability to provide more context within metabolic models.
 
 
 ## Results
 
+### Metaboverse is a dynamic, user-friendly tool for the exploration of high-throughput biological data in organism-specific pathways
+
+
+Figure 2. Overview
+
+### Data vignettes
+What does Metaboverse help find or speed up compared to standard analysis?    
+i.e. Volcano plot vs motif search
+
+##### 1. Static (Ian)
+
+Figure 3. Data    
+Supp Table 1. Motif results
+
+##### 2. Time-course (Yeyun)
+
+Figure 4. Data     
+Supp Table 2. Motif results
+
+##### 3. Flux data (Cameron)
+
+Figure 5. Data     
+Supp Table 3. Motif results
+
+### Performance
+
+Table 1. Performance break-down    
+Table 2. Comparison to existing tools
+
 
 ## Discussion
 
+We hope that this tool will bring a new perspective to users' data and help draw the connections needed to aid them in extracting new and exciting hypotheses from their data that would be difficult to do without this tool.
+
 
 ## Methods
+
+### 1. Network Curation
+
+
+### 2. Data overlay and broadcasting for missing entities
+
+
+### 3. Collapsing reactions with missing expression or abundance user data
+
+
+### 4. Regulatory pattern (motif) searches
+
+
+### 5. Nearest neighborhood searches
+
+
+### 6. Network visualization and exploration
+##### 6.1 Visualizing pathways and super-pathways
+
+##### 6.2 Visualizing compartments
+
+##### 6.3 Data scaling and interpretation
+
+##### 6.4 Dynamic network plotting
+
+##### 6.5 Annotation
+
+##### 6.6 Additional features
+
+
+### 7. Packaging
+##### 7.1 Framework
+
+##### 7.2 Documentation and Test Cases
+
+
+### 8. Validation using biological data
+##### 8.1 Curation of existing datasets
+
+##### 8.2 New datasets
+
+##### 8.3 Analysis and data visualization
 
 
 ## Acknowledgements
