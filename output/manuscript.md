@@ -3,7 +3,6 @@ author-meta:
 - Jordan A. Berg
 - Youjia Zhou
 - T. Cameron Waller
-- Alex J. Bott
 - Yeyun Ouyang
 - Ian George
 - Tyler Van Ry
@@ -68,12 +67,6 @@ header-includes: '<!--
   <meta name="citation_author_institution" content="Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego" />
 
   <meta name="citation_author_orcid" content="0000-0002-0313-6646" />
-
-  <meta name="citation_author" content="Alex J. Bott" />
-
-  <meta name="citation_author_institution" content="Department of Biochemistry, University of Utah" />
-
-  <meta name="citation_author_orcid" content="0000-0003-2273-8922" />
 
   <meta name="citation_author" content="Yeyun Ouyang" />
 
@@ -167,8 +160,6 @@ Jordan A. Berg<sup>1</sup>,
 Youjia Zhou<sup>2</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0313-6646)
 T. Cameron Waller<sup>1,3</sup>,
-[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-2273-8922)
-Alex J. Bott<sup>1</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9523-1044)
 Yeyun Ouyang<sup>1</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
@@ -313,16 +304,16 @@ We hope that this tool will bring a new perspective to users' data and help draw
 * Conceptualization: J.A.B., T.C.W., B.W., J.R.
 * Supervision: J.A.B., B.W., J.R.
 * Project Administration: J.A.B.
-* Investigation: J.A.B., T.C.W., A.J.B., Y.O., T.V.
-* Formal Analysis: J.A.B., A.J.B., Y.O., I.G.
+* Investigation: J.A.B., T.C.W., Y.O., T.V.
+* Formal Analysis: J.A.B., Y.O., I.G.
 * Software: J.A.B., Y.Z.
 * Methodology: J.A.B., Y.Z.
-* Validation: J.A.B., T.C.W., A.J.B., Y.O., I.G.
-* Data Curation: J.A.B., Y.Z., T.C.W., A.J.B., Y.O., T.V.
+* Validation: J.A.B., T.C.W., Y.O., I.G.
+* Data Curation: J.A.B., Y.Z., T.C.W., Y.O., T.V.
 * Resources: J.A.B., J.C., B.W., J.R.
 * Funding Acquisition: J.A.B., J.C., B.W., J.R.
 * Writing - Original Draft Preparation: J.A.B.
-* Writing - Review & Editing: J.A.B., Y.Z., T.C.W., A.J.B., Y.O., T.V., J.C., B.W., J.R.
+* Writing - Review & Editing: J.A.B., Y.Z., T.C.W., Y.O., T.V., J.C., B.W., J.R.
 * Visualization: J.A.B., Y.Z., Y.O., I.G.
 
 ![
