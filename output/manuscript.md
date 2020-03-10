@@ -11,7 +11,7 @@ author-meta:
 - Jared Rutter
 bibliography:
 - content/manual-references.json
-date-meta: '2020-03-07'
+date-meta: '2020-03-10'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -30,9 +30,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
 
-  <meta name="dc.date" content="2020-03-07" />
+  <meta name="dc.date" content="2020-03-10" />
 
-  <meta name="citation_publication_date" content="2020-03-07" />
+  <meta name="citation_publication_date" content="2020-03-10" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -148,7 +148,7 @@ title: 'Gazing into the Metaboverse: Automated exploration and contextualization
 <small><em>
 This manuscript
 was automatically generated
-on March 7, 2020.
+on March 10, 2020.
 </em></small>
 
 ## Authors
@@ -216,26 +216,39 @@ One challenge in metabolomics data analysis in sparsity of data points. While th
 
 ## Results
 
-### Metaboverse is a dynamic, user-friendly tool for the exploration of high-throughput biological data in organism-specific pathways
+### Metaboverse is a dynamic, user-friendly tool for the exploration of high-throughput biological data in organism-specific pathways.
 
+#### Overview.
+We designed <i>Metaboverse</i> as a light-weight, self-contained app for the dynamic exploration of high-throughput biological data. The pathway curations are derived from Reactome, and as of writing, is capable of analyzing data for ## species. A user begins by providing a previously curated Metaboverse file, or the desired output location for a new curation, and selecting their organism of interest. Next, the user provides the relevant gene, protein, and/or metabolite datasets they would like layered onto the global reaction network of their organism of interest. These data categories can be extended to any dataset that uses the relevant mapping IDs; for example, one could provide ribosome profiling translation efficiency values mapped to the appropriate gene IDs for layering onto the network and downstream analysis. During this step, the user will also specify a few experimental parameters for consideration during downstream analysis and visualization. Following these user inputs, the organism's network, data processing, and motif analysis (discussed further below) is curated and a curation file is output for future analysis.
 
-Figure 2. Overview
+Figure ##. Overview
+
+#### Filling in the missing space.
+Missing data points, particularly in metabolomics experiments, are frequent and can make analysis of pathways and identification of regulatory patterns in the network challenging. We therefore developed a reaction compression algorithm (detailed more in the Methods section) that collapses up to three reactions with missing data points if they can be bridged with known data on the distal ends of the reaction path. These reactions, or pseudo-reactions are visually distinct during visualization of the network and allow the user to quickly identify interesting patterns in the network, learn what that pseudo-reaction was summarizing, and generate additional hypotheses based on the available information and lack of information.
+
+#### Rapid identification of interesting regulatory patterns in the reaction network.
+Following network curation, the user can visualize available reaction motifs identified across the global reaction network. In <i>Metaboverse</i>, we define a motif as a regulatory pattern identified across a reaction or pseudo-reaction. <i>Metaboverse</i> contains a library of default motifs to search the network for, and users can define custom motifs they would like to identify across the global network. <i>Metaboverse</i> then displays these motifs within a "stamp view", where available motifs are ranked and displayed by magnitude. For a given pattern, the user can then explore each pathway this particular motif is found in. Motif analysis of the global regulatory network will allow users to rapidly identify interesting features in the data, particularly patterns between canonical pathways or in other pathways that may not be an initial focus in their research. In the data vignettes below, we demonstrate this utility further.
+
+#### Dynamic visualization of organism-specific reaction pathways.
+Following curation of the global network as described above, the user can manually search individual canonical pathways or individual entities and their reaction neighborhoods. For a given selection, all relevant reactions that are annotated as a part of that pathway will be graphed, along with their core input (reactant) and output (product) components. In addition to these core elements, known catalysts and inhibitors are included, as well as the component proteins, genes, and metabolites known to form a functional complex as part of a reaction. Labels can be toggled on or off in the display, and the user can switch between viewing the values or statistics associated with each data point with their relevant color mapping. In cases where a gene value is known, but its protein value is unmeasured, the protein value will be inferred using aggregated gene component values. The same is then done for functional complexes using their inferred or known component values. Relevant pathway and analytical metadata is also displayed. Other information, such as identified motifs found in the pathway can also be found and expanded for further exploration in a new window. Aids for visualization are also available, such as the ability to remove nodes from visualization that contain a high number of relationships to other network features such as that these nodes, which act as hubs in the network, do not lead to cluttered representations of the network. Often, these hub nodes are ubiquitous features such as water and proton which may be of limited interest to the user during data visualization. Compartment domains are also graphed to include a relevant reactions and their components that occur in a given cellular compartment.
+
+#### Visualization of downstream effects of network perturbations.
+Users may be interested a particular metabolite or protein and the downstream effects its perturbation has on related pathways. By double-clicking a node of interest, or by selecting the entity name from the drop-down menu, the user can explore all downstream effects across all pathways in the global network. The user can also define how many neighborhoods to display such that one can visualize two or more reaction steps downstream of the selected entity.
 
 ### Data vignettes
-What does Metaboverse help find or speed up compared to standard analysis?    
-i.e. Volcano plot vs motif search
+In order to demonstrate the added utility of <i>Metaboverse</i> to the community that is not currently available in other tools, we used <i>Metaboverse</i> to analyze a series of public and new datasets. From the vignettes provided below, we show that <i>Metaboverse</i> not only is able to identify points of interest previously described or expected, but can rapidly identify for the user unexpected and systematic regulatory patterns in a reaction network context.
 
-##### 1. Static (Ian)
+#### 1. Static (Ian)
 
 Figure 3. Data    
 Supp Table 1. Motif results
 
-##### 2. Time-course (Yeyun)
+#### 2. Time-course (Yeyun)
 
 Figure 4. Data     
 Supp Table 2. Motif results
 
-##### 3. Flux data (Cameron)
+#### 3. Flux data (Cameron)
 
 Figure 5. Data     
 Supp Table 3. Motif results
@@ -270,11 +283,16 @@ After data mapping is complete, <i>Metaboverse</i> will generate a collapsed net
 2. If a reaction has at least one known input, the input is left as is, and each reaction that shares the same input with the assessed reaction inputs are determined whether they have a measured output. If the neighbor reaction does not contain an known output value, the reaction is left as is. If the neighbor reaction does contain a measured output, the original reaction's inputs and the neighbor reactions outputs are collapsed to form a single, pseudo-reaction between the two. If the reaction has at least one known output, the inverse is performed where neighbors with identical components as the reactions inputs are assessed for whether a collapsed reaction can be created.
 3. If a reaction has no measured values, it is determined if the neighboring reactions on both sides (one sharing the reaction's inputs and other sharing the reaction's outputs) have measured values. If both neighbors contain a measured value, a collapsed pseudo-reaction is created summarizing all three reactions.
 
-For pseudo-reactions, appropriate notes are included to describe the collapse. During visualization, these pseudo-reactions are marked by black dashed edges and dashed node borders. A graphical representation of how this reaction collapse is performed can be found in Figure S[figure].
+For pseudo-reactions, appropriate notes are included to describe the collapse. During visualization, these pseudo-reactions are marked by black dashed edges and dashed node borders. A graphical representation of how this reaction collapse is performed can be found in Figure @fig:collapse_schematic.
 
-[figure?]
+![
+  **Reaction node collapse schematic.**
+  (a) For reactions where at least one input and at least one output component contain a measured value from the user data, the reaction will be maintained as is. (b) Where an input of a reaction is known but no output has a known value, <i>Metaboverse</i> will search for all neighboring reactions that contain identical inputs. If the neighboring reaction has a known output value, the two reactions will be merged into one pseudo-reaction. (c) Where an output of a reaction is known but no input has a known value, <i>Metaboverse</i> will search for all neighboring reactions that contain identical outputs. If the neighboring reaction has a known input value, the two reactions will be merged into one pseudo-reaction. (d) For reactions with no known values, neighbor pairs that match the inputs and outputs of the considered reaction will be evaluated for whether their respective outputs and inputs both have known values. If values are known for both neighbors, the three reactions will be merged into one pseudo-reaction. (e) As in (d), but if one neighbor does not contain a value, the one does contain a value, no reaction merging will be performed. (f) As in (d), but if neither neighbors contain known values, no reaction merging will be performed. An asterisk (*) indicates the target reaction being considered for a given reaction collapse. A red node indicates a reaction input or output with a measured value. A white node indicates a reaction input or output with no measured value. A grey node indicates a reaction. A grey node with a dashed border indicates a pseudo-reaction. A solid edge indicates a known relationship. A dashed edge indicates a relationship inferred via reaction merging.
+](./content/figures/collapse_schematic.png "Square image"){#fig:collapse_schematic}
 
 ### 4. Regulatory pattern (motif) searches
+
+
 
 
 ### 5. Nearest neighborhood searches
@@ -283,41 +301,80 @@ In order to visualize all global connections, a user can select an entity (a gen
 Users can also limit which entities are shown by enforcing a degree threshold. By setting this value at 50, for example, the graph would not show nodes that have 50 or more connections. One caveat, however, is that this will occasionally break synchronous pathways into multiple pieces if one of these high-degree nodes was the bridge between two sides of a pathway.
 
 ### 6. Network visualization and exploration
-##### 6.1 Dynamic network plotting
-- D3 framework
-- refreshing
-- legend
-- features such as notes, how to get neighbors, etc.
-- reactome pop-out
+#### 6.1 Dynamic network plotting
+Users interact with <i>Metaboverse</i> through an interactive app interface. The app uses Electron, a cross-platform app framework that uses JavaScript, HTML, and CSS to design the interface. <i>Metaboverse</i> thus comes packaged as a single executable app with all necessary dependencies included for running on Linux, MacOS, and Windows.
 
-##### 6.2 Visualizing pathways and super-pathways
+Interactive graphing is handled using the D3 and JQuery JavaScript libraries. Force-directed graphs are constructed by taking the user selection for a pathway or entity and determining the reactions that are components of that pathway. All inputs, outputs, modifiers, and other components of these reactions, along with edges where both source and target are found in the sub-graph as nodes, are included and plotted. Relevant metadata, such as user-provided data and reaction descriptions, can be accessed by the user in real time. Metadata for categorical displays, such as edge or node type, are extracted from the metadata during graphing of the sub-network.
+
+Some performance optimization features are included by default to prevent computational overload. For example, nearest neighbor sub-graphs with more than 1500 nodes, or nodes with more than 500 edges will not be plotted as plotting of this information in real-time is computationally prohibitive.
+
+#### 6.2 Visualizing pathways and super-pathways
 In order to visualize a pathway, a user selects their pathway of choice and all component reactions and their reactants, products, modifiers, and metadata are parsed from the global network. Super-pathways help categorize these pathways and are defined as any pathway containing more than 200 nodes.
 
-##### 6.3 Visualizing compartments
+#### 6.3 Visualizing compartments
 Compartments are derived from Reactome annotations. Compartment visualizations are generated using D3's hull plotting feature. Compartment boundaries are definde at the reaction levels and made to encompass each reaction's reactants, products, and modifiers for that given compartment.
 
-##### 6.4 Annotations
-Annotations for each reaction are derived from the Reactome database. Pseudo-reactions annotations do not include this information; instead they include notes on which reactions were collapsed to create the selected pseudo-reaction.
+#### 6.4 Annotations
+Annotations for each reaction are derived from the Reactome database. Pseudo-reactions annotations do not include this information; instead they include notes on which reactions were collapsed to create the selected pseudo-reaction. All inferred pseudo-reactions and protein or complex values are displayed with dashed edges to differentiation from measured values.
 
-##### 6.6 Additional features
-- Hiding genes
-- Showing metadata
-- Toggling features/labels
-- etc.
+#### 6.6 Additional features
+While Metaboverse will continue to undergo development and new features will be added, we will briefly highlight some additional features available at time of publication. We encourage users to check the documentation for more current updates and information regarding use of <i>Metaboverse</i> [docs].
+
+##### 6.6a Toggle genes
+As gene components can crowd the graph space, users can toggle gene display on and off using the appropriate button. The graph is then refreshed to either include or ignore gene components based on their node meta-tag.
+
+##### 6.6b Toggling values
+Users can switch between coloring nodes based ono the value or statistic provided by toggling the appropriate button. Colorbar information for the dataset is saved in the graph metadata during curation and used to generate a colorbar. The colorbar for statistics is represented using a -log<sub>10</sub> scale for a statistic value originally ranging between 0 and 1.
+
+##### 6.6c Toggling features/labels
+By default, reaction and feature labels are displayed by hovering the mouse over the node. Reaction or feature nodes can have the labels statically displayed by selecting the appropriate button. An event watch function is used to watch for this user selection and update the display of the node labels.
+
+##### 6.6d Toggling collapsed reactions
+By selecting the appropriate button, users can toggle between displaying a full or collapsed pathway representation of the sub-network. By selecting this button, the graph is refreshed using the appropriate reaction dictionary, where for graphing of the collapsed representation, a reaction with available pseudo-reactions substituted for the original reactions are included for graph propagation.
+
+##### 6.6e View curated pathway image
+While <i>Metaboverse</i> graphs networks dynamically, users may be more familiar or comfortable with classical, curated pathway layouts when exploring their data. For a given pathway graph, the user can select the appropriate button and <i>Metaboverse</i> will open a new window with the Reactome curated pathway layout.
+
+##### 6.6f Saving graphs
+Users can generate a PNG output file for any network created in <i>Metaboverse</i> by selecting the appropriate button.
+
+##### 6.6g Nearest neighbor and hub thresholding
+The number of nearest neighbors to graph, or the limit to number of edges a graphed node can have, can be modulated by the user using the appropriate input spaces. When graphing a nearest neighbors network, <i>Metaboverse</i> will recursively fetch related reactions and their neighbors until a node display threshold is reached. This allows the user to visualize downstream effects of a change that may propagate across several reactions. The hub threshold option prevents plotting of nodes with more than the specified number of edges. This is handling during graphing by excluding any entity nodes that meet this criteria as the neighborhood is propagated. This is particularly useful in removing hub nodes, such as water or protons, which may be less relevant to the user experience and can quickly clutter the graph. This feature can also help plot more extensive neighborhoods, as often neighborhoods quickly link to high-degree nodes, such as water, and limit graphing ability.
+
+##### 6.6h Metadata display
+To help inform the user of selection information and relevant metadata, a space in the legend bar during visualization is reserved for spaces where this information can be displayed, which is updated based on the user's input as it is provided.
 
 ### 7. Packaging
 The <i>Metaboverse</i> app is packaged using Electron. Back-end network curation and data processing is performed using Python and the NetworkX library. Front-end visualizatin is performed using Javascript and relies on the D3 and JQuery packages. Saving network representations to a PNG file is performed using the d3-save-svg and string-pixel-width packages. Documentation for Metaboverse is found at metaboverse.readthedocs.io. Continuous integration services are performed by Travis CI to routinely run test cases for each change made to the <i>Metaboverse</i> architecture. The <i>Metaboverse</i> source code can be accessed at https://github.come/Metaboverse/metaboverse. The code used to draft and revise this manuscript, as well as all associated scripts used to generate and visualize the data presented in this manuscript can be accessed at https://github.come/Metaboverse/manuscript.
 
 [dependencies table]
 
+| Name               | Reference   |
+|--------------------|-------------|
+| HTML               |             |
+| CSS                |             |
+| Javascript         |             |
+| Electron           |             |
+| JQuery             |             |
+| D3                 |             |
+| string-pixel-width |             |
+| d3-save-svg        |             |
+| Python             |             |
+| pandas             |             |
+| numpy              |             |
+| scipy              |             |
+| matplotlib         |             |
+| NetworkX           |             |
+
+
 ### 8. Validation using biological data
-##### 8.1 Curation of existing datasets
+#### 8.1 Curation of existing datasets
 
-##### 8.2 Generation of flux metabolomics dataset
+#### 8.2 Generation of flux metabolomics dataset
 
-##### 8.3 Generation of time-course multi-omics dataset
+#### 8.3 Generation of time-course multi-omics dataset
 
-##### 8.4 Analysis and data visualization
+#### 8.4 Analysis and data visualization
 
 
 ## Acknowledgements
