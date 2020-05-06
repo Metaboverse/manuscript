@@ -13,7 +13,7 @@
   <meta name="author" content="James Cox" />
   <meta name="author" content="Bei Wang" />
   <meta name="author" content="Jared Rutter" />
-  <meta name="dcterms.date" content="2020-03-10" />
+  <meta name="dcterms.date" content="2020-05-05" />
   <meta name="keywords" content="metabolomics, metabolism, network, omics, rna-seq, proteomics, gene, protein, metabolite, context" />
   <title>Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data</title>
   <style>
@@ -36,8 +36,8 @@
   <meta name="citation_title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
   <meta property="og:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
   <meta property="twitter:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
-  <meta name="dc.date" content="2020-03-10" />
-  <meta name="citation_publication_date" content="2020-03-10" />
+  <meta name="dc.date" content="2020-05-05" />
+  <meta name="citation_publication_date" content="2020-05-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,7 +52,6 @@
   <meta name="citation_author_institution" content="School of Computing, University of Utah" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="T. Cameron Waller" />
-  <meta name="citation_author_institution" content="Department of Biochemistry, University of Utah" />
   <meta name="citation_author_institution" content="Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego" />
   <meta name="citation_author_orcid" content="0000-0002-0313-6646" />
   <meta name="citation_author" content="Yeyun Ouyang" />
@@ -90,7 +89,7 @@
 <p><small><em>
 This manuscript
 was automatically generated
-on March 10, 2020.
+on May 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <p><a href="https://orcid.org/0000-0002-5096-0558"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
@@ -98,7 +97,7 @@ Jordan A. Berg<sup>1</sup>,
 <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Youjia Zhou<sup>2</sup>,
 <a href="https://orcid.org/0000-0002-0313-6646"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-T. Cameron Waller<sup>1,3</sup>,
+T. Cameron Waller<sup>3</sup>,
 <a href="https://orcid.org/0000-0001-9523-1044"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Yeyun Ouyang<sup>1</sup>,
 <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
@@ -123,18 +122,18 @@ Jared Rutter<sup>1,5</sup>
 <p><sup>†</sup> To whom correspondence should be addressed:</p>
 <p><sup>*</sup> This is a draft of the eventual final manuscript, and should therefore be treated as such. Conclusions, along with author order and contributions, may change as the manuscript is finalized.</p>
 <h2 class="page_break_before" id="abstract" class="page_break_before">Abstract</h2>
-<p>Science has utilized a largely reductionist approach to understanding metabolic systems in the past. While such an approach was previously necessary due to technological limitations, current computer age technological advances paired with -omics experiments allow for the survey, modeling, and exploration the biological systems in detail. Yet, our ability to contextualize and extract the full extent of these enormous datasets continues to lag and often results in focusing on limited entities from a dataset. To address these challenges, we developed Metaboverse, a multi-omic computational analysis framework and application for the interactive exploration and automated extraction of potential regulatory events, patterns, and trends from user data within the context of the metabolic network. This framework will be foundational in increasing our ability to holistically understand static and temporal metabolic events and shifts and gene-metabolite intra-cooperativity, as well as ensure we obtain the maximum amount of information from our data. Metaboverse if freely available under a GPL-3.0 license at <a href="https://github.com/Metaboverse/">https://github.com/Metaboverse/</a>.</p>
+<p>Metabolism and other biological interactions and reactions are complex, each with their specific inputs, outputs, and modifiers. The harmony between these factors consequently determines the health and stability of a cell or organism. Perturbations often have rippling downstream effects. These effects can be difficult to trace across the global reaction network, particularly when the effects cross canonical illustrations of pathways. Researchers have largely utilized reductionist approaches to understanding these systems; however, these methods are limited in their scope, and even systems-centric -omics approaches are often used to identify the differentially expressed or abundant factors and the downstream analysis of the model is then limited to these handful or “loud” signals in the data. To address these challenges, we developed <i>Metaboverse</i>, a multi-omic computational platform for the interactive exploration and automated extraction of potential regulatory events, patterns, and trends from user data within the context of the metabolic network. This framework will be foundational in increasing our ability to holistically understand static and temporal metabolic events and shifts and gene-metabolite intra-cooperativity, as well as ensure we obtain the maximum extraction of information from our data. Metaboverse if freely available under a GPL-3.0 license at <a href="https://github.com/Metaboverse/">https://github.com/Metaboverse/</a>.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Metabolism is a complex network of reactions and interactions between genes, enzymes, complexes, and metabolites. To understand these complex components, scientists normally adopts a reductionist approach to teasing apart the characteristics and mechanics of these processes and how they fit into the larger picture of biology and disease. While a vital component in the scientific process, by doing so, many interesting properties of metabolism can be missed. For example, in differential gene expression analysis, researchers rely on thresholds of magnitude and statistical significance to prioritize genes for follow-up study. However, doing so can inadvertently limit the scope of study of metabolism when in fact metabolism is a highly interconnected system where distal components and their modulation can have rippling effects across the network. The current approach is analogous to telling the story of Little Red Riding Hood, but only by reading the 20 most frequent words used in the study. Certainly doing so efficiently highlights key words like “wolf” and “little red riding hood,” but also prevents a coherent story from being told and would make it difficult for someone who had never read the story of Little Red Riding Hood from comprehending the story.</p>
-<p>Over the past decade, several computational tools have emerged and become popular for their focus on trying to solve these issues in data contextualization. We will highlight four, and while others exist, we focus on tools representative and most popular for their respective properties. First is MetaboAnalyst, which relies largely on set enrichment methods, or looking at the belongingness of sets of significantly changed analytes (i.e. metabolite, protein, or gene measurements), for extracting interesting information. While network visualization is available, its ability to extract regulatory information is limited, particularly in an automated fashion. Second is Cytoscape, which focuses on network representations of metabolism and other systems. While a variety of plug-ins are available for customizing analyses, again, pattern recognition and other features are lacking. MetExplore focuses on the curation of networks, and is particularly useful for collaborative annotation of emerging organisms. It additionally can layer experimental data on the network for visualization. Reactome, which Metaboverse uses for the curation of biological networks, also offers analytical tools for user data, but again relies on set enrichment or manual methods for identifying patterns. While all have their respective utility, there is still a need for tools that automate pattern and trend detection, especially when data is sparse, across metabolic networks in order to extract regulatory and other features from data.</p>
-<p>In order to address these limitations in current conventions of metabolic data analysis, contextualization, and interpretation, we created the software application, <i>Metaboverse</i>, to aid users in filling in the details of their model’s metabolic story. <i>Metaboverse</i> is an interactive tool for exploratory data analysis that searches user data in the context of the metabolic network to identify interesting patterns and trends in the data. <i>Metaboverse</i> will aid scientists in formulating new hypotheses from their data and aid them in designing follow-up experiments for a deeper understanding of their model. <i>Metaboverse</i> operates across the entire metabolic network to quickly and automatically detect patterns and trends from a pre-designed pattern library, or can accept interactive input from the user where they can define certain patterns or trends they would like to identify across the global metabolic network. Figure <a href="#fig:overview">1</a> provides a graphical abstract to illustrate <i>Metaboverse’s</i> role in the exploratory data analysis of biological data in the context of metabolism.</p>
+<p>Metabolism is a complex network of reactions and interactions between genes, enzymes, complexes, and metabolites <span class="citation" data-cites="1AxIC7Cvy">[<a href="#ref-1AxIC7Cvy" role="doc-biblioref">1</a>]</span>. To understand these complex components, researchers normally adopt a reductionist approach to teasing apart the characteristics and mechanics of these processes and how they fit into the larger picture of biology and disease. While a vital component in the scientific process, by doing so, many interesting properties of metabolism can be missed. For example, in differential gene expression analysis, researchers rely on thresholds of magnitude and statistical significance to prioritize genes for follow-up study. However, doing so can inadvertently limit the scope of study of metabolism when in fact metabolism is a highly interconnected system where distal components and their modulation can have rippling effects across the network. The current approach is analogous to telling the story of Little Red Riding Hood, but only by reading the 20 most frequent words used in the study. Certainly doing so efficiently highlights key words like “wolf” and “little red riding hood,” but also prevents a coherent story from being told and would make it difficult for someone who had never read the story of Little Red Riding Hood from comprehending the story.</p>
+<p>Over the past decade, several computational tools have emerged and become popular for their focus on trying to solve these issues in data contextualization. We will highlight four, and while others exist, we focus on tools representative and most popular for their respective properties. First is MetaboAnalyst, which relies largely on set enrichment methods, or looking at the belongingness of sets of significantly changed analytes (i.e. metabolite, protein, or gene measurements), for extracting interesting information. While network visualization is available, its ability to extract regulatory information is limited, particularly in an automated fashion <span class="citation" data-cites="C62ou67p PcBvPAjh">[<a href="#ref-C62ou67p" role="doc-biblioref">2</a>,<a href="#ref-PcBvPAjh" role="doc-biblioref">3</a>]</span>. Second is Cytoscape, which focuses on network representations of metabolism and other systems. While a variety of plug-ins are available for customizing analyses, again, comprehensive regulatory identification methods are unavailable <span class="citation" data-cites="1BJixYIRV">[<a href="#ref-1BJixYIRV" role="doc-biblioref">4</a>]</span>. MetExplore focuses on the curation of networks, and is particularly useful for collaborative annotation of emerging organisms. It additionally can layer experimental data on the network for visualization <span class="citation" data-cites="Fe0QzlwH DdChGH39">[<a href="#ref-Fe0QzlwH" role="doc-biblioref">5</a>,<a href="#ref-DdChGH39" role="doc-biblioref">6</a>]</span>. Reactome, which Metaboverse uses for the curation of biological networks, also offers analytical tools for user data, but again relies on set enrichment or manual methods for identifying patterns. While all have their respective utility, there is still a need for tools that automate pattern and trend detection, especially when data is sparse, across metabolic networks in order to extract regulatory and other features from data <span class="citation" data-cites="l3pIjmaQ GZkNnAkC MFnInm09">[<a href="#ref-l3pIjmaQ" role="doc-biblioref">7</a>,<a href="#ref-GZkNnAkC" role="doc-biblioref">8</a>,<a href="#ref-MFnInm09" role="doc-biblioref">9</a>]</span>.</p>
+<p>In order to address these limitations in current conventions of metabolic data analysis, contextualization, and interpretation, we created the software application, <i>Metaboverse</i>, to aid users in filling in and expanding upon the details of their model’s metabolic story. <i>Metaboverse</i> is an interactive tool for exploratory data analysis that searches user data in the context of the metabolic network to identify interesting patterns and trends within the data. <i>Metaboverse</i> will aid scientists in formulating new hypotheses from their data and aid them in designing follow-up experiments for a deeper understanding of their model. <i>Metaboverse</i> operates across the entire metabolic network to quickly and automatically detect patterns and trends from a pre-designed pattern library, or can accept interactive input from the user where they can define certain patterns or trends they would like to identify across the global metabolic network. Figure <a href="#fig:overview">1</a> provides a graphical abstract to illustrate <i>Metaboverse’s</i> role in the exploratory data analysis of biological data in the context of metabolism.</p>
 <div id="fig:overview" class="fignos">
 <figure>
 <img src="./content/figures/overview.png" alt="" /><figcaption><span>Figure 1:</span> <strong>Metaboverse conceptual overview.</strong>
 Illustration comparing traditional metabolic data analysis methods and the holistic approaches that Metaboverse offers. Traditionally, when a scientist performs an -omics experiment, they tend to focus on a couple of features that are differentially regulated. Metaboverse inversely contextualizes the data across the metabolic network and identifies interesting regulatory patterns in the data.</figcaption>
 </figure>
 </div>
-<p>In order to provide a platform for the exploration of single or multi-omic metabolic data, we developed several new computational features to aid in the aims discussed above. First, we developed a pattern search engine for the rapid and automated identification of patterns and trends in -omic data on the metabolic network. Conceptually, this search engine borrows principles of topological motif searching from graph theory. In the computational science context, a motif is simply a re-occuring pattern in network structure, or the organization of network entities and their relationships to one another. However, with -omic data, we are more interested in identifying patterns in expression or abundance of genes, proteins, and metabolites. We therefore adapted this methodology to search the global metabolic patterns for interesting patterns in the network. For example, at a reaction the input may be high and the output low, indicating some sort of regulatory event occuring in the model. <i>Metaboverse</i> will search the global network from a pre-defined library of regulatory patterns and return an ordered graphical table of conserved patterns. Users will also be able to design their own patterns through an interactive pattern drawing tool, and even design specific scenarios that are cognizant of feature type. For example, one might be interested in a pattern where a protein displays higher expression, but the resulting metabolite is decreased. The user can also define multi-step patterns that may occur over two or more reactions.</p>
+<p>In order to provide a platform for the exploration of single or multi-omic metabolic data, we developed several computational features to aid in the aims discussed above. First, we developed a pattern search engine for the rapid and automated identification of patterns and trends in -omic data on the metabolic network. Conceptually, this search engine borrows principles of topological motif searching from graph theory <span class="citation" data-cites="K14GGVYv 1CFRUQ2Md">[<a href="#ref-K14GGVYv" role="doc-biblioref">10</a>,<a href="#ref-1CFRUQ2Md" role="doc-biblioref">11</a>]</span>. In the computational science context, a motif is simply a reoccurring pattern in network structure, or the organization of network entities and their relationships to one another. However, with -omic data, we are more interested in identifying patterns in expression or abundance of genes, proteins, and metabolites. Previous work by Checkik, et. al. introduced the concept of “activity motifs”, where instead of identifying motifs based on network structure, they were identified using the expression characteristics of nodes in transcription factor binding signaling networks <span class="citation" data-cites="18AaRFS75">[<a href="#ref-18AaRFS75" role="doc-biblioref">12</a>]</span>. We adapted this methodology to search and interactively display interesting regulatory patterns within the global metabolic network. For example, at a reaction the input may be high and the output low, indicating some sort of regulatory event occurring in the model. <i>Metaboverse</i> will search the global network from a pre-defined library of regulatory patterns (or motifs) and return a graphical table of conserved patterns. Input data for each -omics type requires associated statistical values associated with each measurement for a measured entity, which are used to weight motifs and prioritize returned results. Users will also be able to design their own patterns through an interactive pattern drawing tool, and even design specific scenarios that are cognizant of feature type (in progress). For example, one might be interested in a pattern where a protein displays higher expression, but the resulting metabolite is decreased.</p>
 <p>Another feature introduced in <i>Metaboverse</i> allows for the interactive exploration of specific reactions or reaction entities with on-the-fly pattern search analysis. Users can explore specific pathways of interest and look for other interesting patterns and trends in pathways of interest. Users can also select a specific metabolite, protein, complex, or gene and explore patterns across pathways in a feature neighborhood search. For example, a user might identify a change in one metabolite in a particular pathway and want to explore what distal effects this change has in other pathways that use this metabolite. This functionality moves the analysis away from our traditional, strictly defined pathway approach to analysis, and helps contextualize the far-reaching effects changes in metabolism can have across the classical pathways in metabolism.</p>
 <p>One challenge in metabolomics data analysis in sparsity of data points. While thousands of metabolites exist in human metabolism, the current state of the technology for determining which mass spectra belong to which metabolite can be challenging and often results in a limited number of data points being quantified. These can lead to gaps in the metabolic network which can be challenging to explore and analyze. We therefore introduce a reaction collapse feature that allows for summarization of reactions for which data is missing. This methodology can use RNA-seq data to inform prioritization of particular paths. For example, one metabolite may be converted to a downstream product in two different manners, but by using the gene expression data from a model, one can determine that one path is active while the other in inactive.</p>
 <p><i>Metaboverse</i> is designed to handle standard two-condition experiments, flux metabolomics, and time-course experiments. Time-course inputs can be single-omics, or static RNA-seq and/or proteomics with multiple metabolomic time-points. Users input fold change and statistical measures from their respective -omics, and <i>Metaboverse</i> reconciles the inputs for layering on the metabolic network. <i>Metaboverse</i> can handle data from a variety of model organisms, including humans, mouse, yeast, zebrafish, and more. The foundational curation of <i>Metaboverse</i> is built on the Reactome curations of metabolism, so any of the 90+ species available on that platform are also available within the <i>Metaboverse</i> environment. In order to validate these methodologies available in <i>Metaboverse</i> we analyzed two-condition, flux metabolomics, and time-course datasets and provide vignettes that highlight <i>Metaboverse’s</i> reliability in extracting canonical features, as well as novel features and patterns, from well-defined biological models. We outline the technical specs for computational biologists in the methods section, and the biological utilities in the main text for wet bench biologists. We intend that <i>Metaboverse</i> will be foundational in our ability to more deeply and holistically explore metabolism and aid in our ability to provide more context within metabolic models.</p>
@@ -322,8 +321,79 @@ Table visualizing respective contributions of each author.</figcaption>
 <h2 class="page_break_before" id="supplementary-material" class="page_break_before">Supplementary Material</h2>
 <h2 class="page_break_before" id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
-
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-1AxIC7Cvy">
+<p>1. <strong>Systems Biology and Multi-Omics Integration: Viewpoints from the Metabolomics Research Community</strong><br />
+Farhana R. Pinu, David J. Beale, Amy M. Paten, Konstantinos Kouremenos, Sanjay Swarup, Horst J. Schirra, David Wishart<br />
+<em>Metabolites</em> (2019-04-18) <a href="https://doi.org/ggt2fd">https://doi.org/ggt2fd</a><br />
+DOI: <a href="https://doi.org/10.3390/metabo9040076">10.3390/metabo9040076</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31003499">31003499</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6523452">PMC6523452</a></p>
+</div>
+<div id="ref-C62ou67p">
+<p>2. <strong>MetaboAnalyst: a web server for metabolomic data analysis and interpretation</strong><br />
+J. Xia, N. Psychogios, N. Young, D. S. Wishart<br />
+<em>Nucleic Acids Research</em> (2009-05-08) <a href="https://doi.org/c4hzc2">https://doi.org/c4hzc2</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gkp356">10.1093/nar/gkp356</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19429898">19429898</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2703878">PMC2703878</a></p>
+</div>
+<div id="ref-PcBvPAjh">
+<p>3. <strong>MetaboAnalyst 4.0: towards more transparent and integrative metabolomics analysis</strong><br />
+Jasmine Chong, Othman Soufan, Carin Li, Iurie Caraus, Shuzhao Li, Guillaume Bourque, David S Wishart, Jianguo Xia<br />
+<em>Nucleic Acids Research</em> (2018-05-14) <a href="https://doi.org/gdwvwd">https://doi.org/gdwvwd</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gky310">10.1093/nar/gky310</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29762782">29762782</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6030889">PMC6030889</a></p>
+</div>
+<div id="ref-1BJixYIRV">
+<p>4. <strong>Cytoscape: A Software Environment for Integrated Models of Biomolecular Interaction Networks</strong><br />
+P. Shannon<br />
+<em>Genome Research</em> (2003-11-01) <a href="https://doi.org/b7kgpg">https://doi.org/b7kgpg</a><br />
+DOI: <a href="https://doi.org/10.1101/gr.1239303">10.1101/gr.1239303</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14597658">14597658</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC403769">PMC403769</a></p>
+</div>
+<div id="ref-Fe0QzlwH">
+<p>5. <strong>MetExplore: collaborative edition and exploration of metabolic networks</strong><br />
+Ludovic Cottret, Clément Frainay, Maxime Chazalviel, Floréal Cabanettes, Yoann Gloaguen, Etienne Camenen, Benjamin Merlet, Stéphanie Heux, Jean-Charles Portais, Nathalie Poupin, … Fabien Jourdan<br />
+<em>Nucleic Acids Research</em> (2018-04-30) <a href="https://doi.org/gdwx39">https://doi.org/gdwx39</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gky301">10.1093/nar/gky301</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29718355">29718355</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6030842">PMC6030842</a></p>
+</div>
+<div id="ref-DdChGH39">
+<p>6. <strong>MetExplore: a web server to link metabolomic experiments and genome-scale metabolic networks</strong><br />
+L. Cottret, D. Wildridge, F. Vinson, M. P. Barrett, H. Charles, M.-F. Sagot, F. Jourdan<br />
+<em>Nucleic Acids Research</em> (2010-05-05) <a href="https://doi.org/dkx7z7">https://doi.org/dkx7z7</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gkq312">10.1093/nar/gkq312</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20444866">20444866</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2896158">PMC2896158</a></p>
+</div>
+<div id="ref-l3pIjmaQ">
+<p>7. <strong>Reactome: a knowledgebase of biological pathways</strong><br />
+G. Joshi-Tope<br />
+<em>Nucleic Acids Research</em> (2004-12-17) <a href="https://doi.org/cjhf62">https://doi.org/cjhf62</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gki072">10.1093/nar/gki072</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15608231">15608231</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC540026">PMC540026</a></p>
+</div>
+<div id="ref-GZkNnAkC">
+<p>8. <strong>The reactome pathway knowledgebase.</strong><br />
+Bijay Jassal, Lisa Matthews, Guilherme Viteri, Chuqiao Gong, Pascual Lorente, Antonio Fabregat, Konstantinos Sidiropoulos, Justin Cook, Marc Gillespie, Robin Haw, … Peter D’Eustachio<br />
+<em>Nucleic acids research</em> (2020-01-08) <a href="https://www.ncbi.nlm.nih.gov/pubmed/31691815">https://www.ncbi.nlm.nih.gov/pubmed/31691815</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gkz1031">10.1093/nar/gkz1031</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31691815">31691815</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7145712">PMC7145712</a></p>
+</div>
+<div id="ref-MFnInm09">
+<p>9. <strong>The Reactome Pathway Knowledgebase.</strong><br />
+Antonio Fabregat, Steven Jupe, Lisa Matthews, Konstantinos Sidiropoulos, Marc Gillespie, Phani Garapati, Robin Haw, Bijay Jassal, Florian Korninger, Bruce May, … Peter D’Eustachio<br />
+<em>Nucleic acids research</em> (2018-01-04) <a href="https://www.ncbi.nlm.nih.gov/pubmed/29145629">https://www.ncbi.nlm.nih.gov/pubmed/29145629</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gkx1132">10.1093/nar/gkx1132</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29145629">29145629</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753187">PMC5753187</a></p>
+</div>
+<div id="ref-K14GGVYv">
+<p>10. <strong>Superfamilies of Evolved and Designed Networks</strong><br />
+R. Milo<br />
+<em>Science</em> (2004-03-05) <a href="https://doi.org/dm5h6p">https://doi.org/dm5h6p</a><br />
+DOI: <a href="https://doi.org/10.1126/science.1089167">10.1126/science.1089167</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15001784">15001784</a></p>
+</div>
+<div id="ref-1CFRUQ2Md">
+<p>11. <strong>Network motifs in the transcriptional regulation network of Escherichia coli</strong><br />
+Shai S. Shen-Orr, Ron Milo, Shmoolik Mangan, Uri Alon<br />
+<em>Nature Genetics</em> (2002-04-22) <a href="https://doi.org/dr6vnt">https://doi.org/dr6vnt</a><br />
+DOI: <a href="https://doi.org/10.1038/ng881">10.1038/ng881</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/11967538">11967538</a></p>
+</div>
+<div id="ref-18AaRFS75">
+<p>12. <strong>Activity motifs reveal principles of timing in transcriptional control of the yeast metabolic network</strong><br />
+Gal Chechik, Eugene Oh, Oliver Rando, Jonathan Weissman, Aviv Regev, Daphne Koller<br />
+<em>Nature Biotechnology</em> (2008-10-26) <a href="https://doi.org/ftng9m">https://doi.org/ftng9m</a><br />
+DOI: <a href="https://doi.org/10.1038/nbt.1499">10.1038/nbt.1499</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18953355">18953355</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2651818">PMC2651818</a></p>
+</div>
 </div>
 <!-- default theme -->
 
