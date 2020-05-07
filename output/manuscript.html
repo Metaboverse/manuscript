@@ -13,7 +13,7 @@
   <meta name="author" content="James Cox" />
   <meta name="author" content="Bei Wang" />
   <meta name="author" content="Jared Rutter" />
-  <meta name="dcterms.date" content="2020-05-05" />
+  <meta name="dcterms.date" content="2020-05-07" />
   <meta name="keywords" content="metabolomics, metabolism, network, omics, rna-seq, proteomics, gene, protein, metabolite, context" />
   <title>Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data</title>
   <style>
@@ -36,8 +36,8 @@
   <meta name="citation_title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
   <meta property="og:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
   <meta property="twitter:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
-  <meta name="dc.date" content="2020-05-05" />
-  <meta name="citation_publication_date" content="2020-05-05" />
+  <meta name="dc.date" content="2020-05-07" />
+  <meta name="citation_publication_date" content="2020-05-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -89,7 +89,7 @@
 <p><small><em>
 This manuscript
 was automatically generated
-on May 5, 2020.
+on May 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <p><a href="https://orcid.org/0000-0002-5096-0558"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
@@ -133,34 +133,36 @@ Jared Rutter<sup>1,5</sup>
 Illustration comparing traditional metabolic data analysis methods and the holistic approaches that Metaboverse offers. Traditionally, when a scientist performs an -omics experiment, they tend to focus on a couple of features that are differentially regulated. Metaboverse inversely contextualizes the data across the metabolic network and identifies interesting regulatory patterns in the data.</figcaption>
 </figure>
 </div>
-<p>In order to provide a platform for the exploration of single or multi-omic metabolic data, we developed several computational features to aid in the aims discussed above. First, we developed a pattern search engine for the rapid and automated identification of patterns and trends in -omic data on the metabolic network. Conceptually, this search engine borrows principles of topological motif searching from graph theory <span class="citation" data-cites="K14GGVYv 1CFRUQ2Md">[<a href="#ref-K14GGVYv" role="doc-biblioref">10</a>,<a href="#ref-1CFRUQ2Md" role="doc-biblioref">11</a>]</span>. In the computational science context, a motif is simply a reoccurring pattern in network structure, or the organization of network entities and their relationships to one another. However, with -omic data, we are more interested in identifying patterns in expression or abundance of genes, proteins, and metabolites. Previous work by Checkik, et. al. introduced the concept of “activity motifs”, where instead of identifying motifs based on network structure, they were identified using the expression characteristics of nodes in transcription factor binding signaling networks <span class="citation" data-cites="18AaRFS75">[<a href="#ref-18AaRFS75" role="doc-biblioref">12</a>]</span>. We adapted this methodology to search and interactively display interesting regulatory patterns within the global metabolic network. For example, at a reaction the input may be high and the output low, indicating some sort of regulatory event occurring in the model. <i>Metaboverse</i> will search the global network from a pre-defined library of regulatory patterns (or motifs) and return a graphical table of conserved patterns. Input data for each -omics type requires associated statistical values associated with each measurement for a measured entity, which are used to weight motifs and prioritize returned results. Users will also be able to design their own patterns through an interactive pattern drawing tool, and even design specific scenarios that are cognizant of feature type (in progress). For example, one might be interested in a pattern where a protein displays higher expression, but the resulting metabolite is decreased.</p>
-<p>Another feature introduced in <i>Metaboverse</i> allows for the interactive exploration of specific reactions or reaction entities with on-the-fly pattern search analysis. Users can explore specific pathways of interest and look for other interesting patterns and trends in pathways of interest. Users can also select a specific metabolite, protein, complex, or gene and explore patterns across pathways in a feature neighborhood search. For example, a user might identify a change in one metabolite in a particular pathway and want to explore what distal effects this change has in other pathways that use this metabolite. This functionality moves the analysis away from our traditional, strictly defined pathway approach to analysis, and helps contextualize the far-reaching effects changes in metabolism can have across the classical pathways in metabolism.</p>
-<p>One challenge in metabolomics data analysis in sparsity of data points. While thousands of metabolites exist in human metabolism, the current state of the technology for determining which mass spectra belong to which metabolite can be challenging and often results in a limited number of data points being quantified. These can lead to gaps in the metabolic network which can be challenging to explore and analyze. We therefore introduce a reaction collapse feature that allows for summarization of reactions for which data is missing. This methodology can use RNA-seq data to inform prioritization of particular paths. For example, one metabolite may be converted to a downstream product in two different manners, but by using the gene expression data from a model, one can determine that one path is active while the other in inactive.</p>
-<p><i>Metaboverse</i> is designed to handle standard two-condition experiments, flux metabolomics, and time-course experiments. Time-course inputs can be single-omics, or static RNA-seq and/or proteomics with multiple metabolomic time-points. Users input fold change and statistical measures from their respective -omics, and <i>Metaboverse</i> reconciles the inputs for layering on the metabolic network. <i>Metaboverse</i> can handle data from a variety of model organisms, including humans, mouse, yeast, zebrafish, and more. The foundational curation of <i>Metaboverse</i> is built on the Reactome curations of metabolism, so any of the 90+ species available on that platform are also available within the <i>Metaboverse</i> environment. In order to validate these methodologies available in <i>Metaboverse</i> we analyzed two-condition, flux metabolomics, and time-course datasets and provide vignettes that highlight <i>Metaboverse’s</i> reliability in extracting canonical features, as well as novel features and patterns, from well-defined biological models. We outline the technical specs for computational biologists in the methods section, and the biological utilities in the main text for wet bench biologists. We intend that <i>Metaboverse</i> will be foundational in our ability to more deeply and holistically explore metabolism and aid in our ability to provide more context within metabolic models.</p>
+<p>In order to provide a platform for the exploration of single or multi-omic metabolic data, we developed several computational features to aid in the aims discussed above. First, we developed a pattern search engine for the rapid and automated identification of patterns and trends in -omic data on the metabolic network. Conceptually, this search engine borrows principles of topological motif searching from graph theory <span class="citation" data-cites="K14GGVYv 1CFRUQ2Md">[<a href="#ref-K14GGVYv" role="doc-biblioref">10</a>,<a href="#ref-1CFRUQ2Md" role="doc-biblioref">11</a>]</span> and builds upon the concept of “activity motifs” <span class="citation" data-cites="18AaRFS75">[<a href="#ref-18AaRFS75" role="doc-biblioref">12</a>]</span>. Another feature introduced in <i>Metaboverse</i> allows for the interactive exploration of specific reactions or reaction entities with on-the-fly pattern search analysis. Users can explore specific pathways of interest and look for other interesting patterns and trends in pathways of interest. Perturbations in the abundance or behavior of a particular metabolic network component can lead to downstream genotypic and phenotypic modulations in a biological system. We include an interactive perturbation connectivity module to allow users to explore the effects of perturbations on their system. Finally, we tackle the challenge of sparsity, particularly in metabolomics datasets, by introducing a reaction collapsing or bridging feature that allows for searching for motifs across multiple reactions, where intermediate steps of the reaction trajectory may not have measured values for their respective input or output components.</p>
+<p><i>Metaboverse</i> is designed to handle standard two-condition experiments, flux metabolomics (in progress), and time-course experiments (in progress). Time-course inputs can be single-omics, or static RNA-seq and/or proteomics with multiple metabolomic time-points. Users input fold change and statistical measures from their respective -omics, and <i>Metaboverse</i> reconciles the inputs for layering on the metabolic network. <i>Metaboverse</i> can handle data from a variety of model organisms, including humans, mouse, yeast, zebrafish, and more. The foundational curation of <i>Metaboverse</i> is built on the Reactome curations of metabolism, so any of the 90+ species available on that platform are also available within the <i>Metaboverse</i> environment. In order to validate these methodologies available in <i>Metaboverse</i> we analyzed two-condition, flux metabolomics, and time-course datasets and provide vignettes that highlight <i>Metaboverse’s</i> reliability in extracting canonical features, as well as novel features and patterns, from well-defined biological models. We outline the technical specs for computational biologists in the methods section, and the biological utilities in the main text for wet bench biologists. We intend that <i>Metaboverse</i> will be foundational in our ability to more deeply and holistically explore metabolism and aid in our ability to provide more context within metabolic models.</p>
 <h2 id="results">Results</h2>
 <h3 id="metaboverse-is-a-dynamic-user-friendly-tool-for-the-exploration-of-high-throughput-biological-data-in-organism-specific-pathways.">Metaboverse is a dynamic, user-friendly tool for the exploration of high-throughput biological data in organism-specific pathways.</h3>
 <h4 id="overview.">Overview.</h4>
-<p>We designed <i>Metaboverse</i> as a light-weight, self-contained app for the dynamic exploration of high-throughput biological data. The pathway curations are derived from Reactome, and as of writing, is capable of analyzing data for ## species. A user begins by providing a previously curated Metaboverse file, or the desired output location for a new curation, and selecting their organism of interest. Next, the user provides the relevant gene, protein, and/or metabolite datasets they would like layered onto the global reaction network of their organism of interest. These data categories can be extended to any dataset that uses the relevant mapping IDs; for example, one could provide ribosome profiling translation efficiency values mapped to the appropriate gene IDs for layering onto the network and downstream analysis. During this step, the user will also specify a few experimental parameters for consideration during downstream analysis and visualization. Following these user inputs, the organism’s network, data processing, and motif analysis (discussed further below) is curated and a curation file is output for future analysis.</p>
-<p>Figure ##. Overview</p>
-<h4 id="filling-in-the-missing-space.">Filling in the missing space.</h4>
-<p>Missing data points, particularly in metabolomics experiments, are frequent and can make analysis of pathways and identification of regulatory patterns in the network challenging. We therefore developed a reaction compression algorithm (detailed more in the Methods section) that collapses up to three reactions with missing data points if they can be bridged with known data on the distal ends of the reaction path. These reactions, or pseudo-reactions are visually distinct during visualization of the network and allow the user to quickly identify interesting patterns in the network, learn what that pseudo-reaction was summarizing, and generate additional hypotheses based on the available information and lack of information.</p>
+<p>We designed <i>Metaboverse</i> as a light-weight, self-contained app for the dynamic exploration of high-throughput biological data. The pathway curations are derived from Reactome, and as of writing, is capable of analyzing data for ## species. A user begins by providing a previously curated Metaboverse file, or the desired output location for a new curation, and selecting their organism of interest. Next, the user provides the relevant gene, protein, and/or metabolite datasets they would like layered onto the global reaction network of their organism of interest. These data categories can be extended to any dataset that uses the relevant mapping IDs; for example, one could provide ribosome profiling translation efficiency values mapped to the appropriate gene IDs for layering onto the network and downstream analysis. During this step, the user will also specify a few experimental parameters for consideration during downstream analysis and visualization. Following these user inputs, the organism’s network, data processing, and motif analysis (discussed further below) is curated and a curation file is output for future analysis (see Figure <a href="#fig:package_overview">2</a>).</p>
+<div id="fig:package_overview" class="fignos">
+<figure>
+<img src="./content/figures/package_overview.png" alt="" /><figcaption><span>Figure 2:</span> <strong>Metaboverse package overview.</strong>
+Illustration comparing the data input, processing, and exploration steps of the Metaboverse package.</figcaption>
+</figure>
+</div>
+<h4 id="handling-data-sparsity-within-the-biological-global-network.">Handling data sparsity within the biological global network.</h4>
+<p>Missing data points, particularly in metabolomics experiments, are frequent and can make analysis of pathways and identification of regulatory patterns in the network challenging. While thousands of metabolites are known to participate in human metabolism, the current state of the technology for determining which mass spectra belong to which metabolite can be challenging and often results in a limited number of data points being quantified. These can lead to gaps in the metabolic network which can be challenging to explore and analyze. We therefore developed a reaction compression algorithm (detailed more in the Methods section) that collapses up to three reactions with missing data points if they can be bridged with known data on the distal ends of the reaction path. These reactions, or pseudo-reactions are visually distinct during visualization of the network and allow the user to quickly identify interesting patterns in the network, learn what that pseudo-reaction was summarizing, and generate additional hypotheses based on the available information and lack of information. We found that inclusion of these pseudo-reactions in the reaction motif analysis (detailed below), aiding in identifying additional regulatory motifs that would have been missed based on the data sparsity of the measured metabolites from a dataset (see Vignette #1 below).</p>
 <h4 id="rapid-identification-of-interesting-regulatory-patterns-in-the-reaction-network.">Rapid identification of interesting regulatory patterns in the reaction network.</h4>
-<p>Following network curation, the user can visualize available reaction motifs identified across the global reaction network. In <i>Metaboverse</i>, we define a motif as a regulatory pattern identified across a reaction or pseudo-reaction. <i>Metaboverse</i> contains a library of default motifs to search the network for, and users can define custom motifs they would like to identify across the global network. <i>Metaboverse</i> then displays these motifs within a “stamp view”, where available motifs are ranked and displayed by magnitude. For a given pattern, the user can then explore each pathway this particular motif is found in. Motif analysis of the global regulatory network will allow users to rapidly identify interesting features in the data, particularly patterns between canonical pathways or in other pathways that may not be an initial focus in their research. In the data vignettes below, we demonstrate this utility further.</p>
+<p>Following network curation, the user can visualize available reaction motifs identified across the global reaction network. In a computational science context, a motif is simply a reoccurring pattern in network structure, or the organization of network entities and their relationships to one another. However, with -omic data, we are more interested in identifying patterns in expression or abundance of genes, proteins, and metabolites. Previous work by Checkik, et. al. introduced the concept of “activity motifs”, where instead of identifying motifs based on network structure, they were identified using the expression characteristics of nodes in transcription factor binding signaling networks <span class="citation" data-cites="18AaRFS75">[<a href="#ref-18AaRFS75" role="doc-biblioref">12</a>]</span>. We adapted this methodology to search and interactively display interesting regulatory patterns within the global metabolic network. For example, at a reaction the input may be high and the output low, indicating a regulatory event occurring at that reaction.</p>
+<p>In <i>Metaboverse</i>, we define a motif as a regulatory pattern identified across a reaction or pseudo-reaction. <i>Metaboverse</i> contains a library of default motifs to search the network for, and users can define custom motifs they would like to identify across the global network. <i>Metaboverse</i> will search the global network from a pre-defined library of regulatory patterns (or motifs) and return a graphical stamp view of conserved patterns. These motifs can be ordered by strength of the motif from a magnitude of change perspective, or can be ordered based on the associated statistical values from measured components of the reaction. Input data for each -omics type requires associated statistical values associated with each measurement for a measured entity, which are used to weight motifs and prioritize returned results. We use a three-tiered sorting strategy when sorting by the associated statistical values. The highest prioritized motifs are those where the relevant components on either side of the reaction (inputs vs. outputs) that determined the reaction motif are statistically significant. Of these motifs from the first tier, motifs are sorted by lowest to highest cumulative p-value or other relevant statistical value. In the second sorting tier, reactions where at least one side of the reaction had a statistically significant motif component are sorted by statistical strength. Finally, all other motifs are sorted by the cumulative statistical value for the motif components.</p>
+<p>For a given pattern, the user can then explore each pathway this particular motif is found in. Motif analysis of the global regulatory network will allow users to rapidly identify interesting features in the data, particularly patterns between canonical pathways or in other pathways that may not be an initial focus in their research. In the data vignettes below, we demonstrate this utility further. Users will also be able to design their own patterns through an interactive pattern drawing tool, and even design specific scenarios that are cognizant of feature type (in progress). For example, one might be interested in a pattern where a protein displays higher expression, but the resulting metabolite is decreased. This could then be coded interactively into the <i>Metaboverse</i> framework by the user.</p>
 <h4 id="dynamic-visualization-of-organism-specific-reaction-pathways.">Dynamic visualization of organism-specific reaction pathways.</h4>
 <p>Following curation of the global network as described above, the user can manually search individual canonical pathways or individual entities and their reaction neighborhoods. For a given selection, all relevant reactions that are annotated as a part of that pathway will be graphed, along with their core input (reactant) and output (product) components. In addition to these core elements, known catalysts and inhibitors are included, as well as the component proteins, genes, and metabolites known to form a functional complex as part of a reaction. Labels can be toggled on or off in the display, and the user can switch between viewing the values or statistics associated with each data point with their relevant color mapping. In cases where a gene value is known, but its protein value is unmeasured, the protein value will be inferred using aggregated gene component values. The same is then done for functional complexes using their inferred or known component values. Relevant pathway and analytical metadata is also displayed. Other information, such as identified motifs found in the pathway can also be found and expanded for further exploration in a new window. Aids for visualization are also available, such as the ability to remove nodes from visualization that contain a high number of relationships to other network features such as that these nodes, which act as hubs in the network, do not lead to cluttered representations of the network. Often, these hub nodes are ubiquitous features such as water and proton which may be of limited interest to the user during data visualization. Compartment domains are also graphed to include a relevant reactions and their components that occur in a given cellular compartment.</p>
 <h4 id="visualization-of-downstream-effects-of-network-perturbations.">Visualization of downstream effects of network perturbations.</h4>
-<p>Users may be interested a particular metabolite or protein and the downstream effects its perturbation has on related pathways. By double-clicking a node of interest, or by selecting the entity name from the drop-down menu, the user can explore all downstream effects across all pathways in the global network. The user can also define how many neighborhoods to display such that one can visualize two or more reaction steps downstream of the selected entity.</p>
+<p>Users may be interested a particular metabolite or protein and the downstream effects its perturbation has on related pathways. By double-clicking a node of interest, or by selecting the entity name from the drop-down menu, the user can explore all downstream effects across all pathways in the global network. The user can also define how many neighborhoods to display such that one can visualize two or more reaction steps downstream of the selected entity. This functionality moves the analysis away from our traditional, strictly defined pathway approach to analysis, and helps contextualize the far-reaching effects changes in metabolism or other biological systems can have across classical pathways.</p>
+<h4 id="exploring-perturbation-connectivity-within-the-global-network">Exploring perturbation connectivity within the global network</h4>
+<p>Abundance or behavioral changes of a metabolic network component can lead to downstream genotypic and phenotypic modulations in a biological system. One important measure of robustness of a network is “connectivity”. In a biological context, an example of connectivity, or the loss of network connectivity, is easily grasped when considering a transport reaction from the cytosol into the mitochondria of a critical metabolite <span class="citation" data-cites="RC8uLTIv jGMmHjyp 8tmqg1gt vD5y37ks">[<a href="#ref-RC8uLTIv" role="doc-biblioref">13</a>,<a href="#ref-jGMmHjyp" role="doc-biblioref">14</a>,<a href="#ref-8tmqg1gt" role="doc-biblioref">15</a>,<a href="#ref-vD5y37ks" role="doc-biblioref">16</a>]</span>. When the transport hub is abolished and network connectivity is lost, the critical metabolite cannot participate in the required downstream reactions. For example, an example from our laboratory established the consequences of the ablation of the mitochondrial pyruvate carrier on downstream citric acid cycle processes and the corresponding increase in lactate production <span class="citation" data-cites="nGh5rU3O">[<a href="#ref-nGh5rU3O" role="doc-biblioref">17</a>]</span> and leads to serious cellular complications and dysfunction <span class="citation" data-cites="4n6UHdJZ Lllg0qt7">[<a href="#ref-4n6UHdJZ" role="doc-biblioref">18</a>,<a href="#ref-Lllg0qt7" role="doc-biblioref">19</a>]</span>.</p>
+<p>The importance of connectivity could also be considered in a treatment context. For example, a druggable and critical metabolite may be perturbed in a particular disease context. However, if a metabolite participating in a neighboring, downstream reaction is also perturbed in a way not related to the perturbation of the first metabolite, the efficacy of the drug treatment could be severely impaired <span class="citation" data-cites="qjmYmIPe Ot5bUkmI 9IFMjnOQ">[<a href="#ref-qjmYmIPe" role="doc-biblioref">20</a>,<a href="#ref-Ot5bUkmI" role="doc-biblioref">21</a>,<a href="#ref-9IFMjnOQ" role="doc-biblioref">22</a>]</span>. To aid in exploration of the connectivity of the biological network, we also developed a connectivity module where users can display all reactions that have at least one involved component perturbed based on either an abundance or statistical level. By doing so, when the graph is constructed, proximal reactions that were perturbed independently will be “sewn” together to reconstruct a perturbation connectivity map in the user’s model.</p>
 <h3 id="data-vignettes">Data vignettes</h3>
 <p>In order to demonstrate the added utility of <i>Metaboverse</i> to the community that is not currently available in other tools, we used <i>Metaboverse</i> to analyze a series of public and new datasets. From the vignettes provided below, we show that <i>Metaboverse</i> not only is able to identify points of interest previously described or expected, but can rapidly identify for the user unexpected and systematic regulatory patterns in a reaction network context.</p>
-<h4 id="static-ian">1. Static (Ian)</h4>
-<p>Figure 3. Data<br />
-Supp Table 1. Motif results</p>
-<h4 id="time-course-yeyun">2. Time-course (Yeyun)</h4>
-<p>Figure 4. Data<br />
-Supp Table 2. Motif results</p>
-<h4 id="flux-data-cameron">3. Flux data (Cameron)</h4>
-<p>Figure 5. Data<br />
-Supp Table 3. Motif results</p>
+<h4 id="perturbation-of-mitochondrial-fatty-acid-synthesis-reveals-expected-and-unexpected-reaction-motifs.">1. Perturbation of mitochondrial fatty acid synthesis reveals expected and unexpected reaction motifs.</h4>
+<h4 id="time-course-in-progress">2. Time-course (in progress)</h4>
+<h4 id="flux-data-in-progress">3. Flux data (in progress)</h4>
 <h3 id="performance">Performance</h3>
 <p>Table 1. Performance break-down<br />
 Table 2. Comparison to existing tools</p>
@@ -175,14 +177,16 @@ Table 2. Comparison to existing tools</p>
 <h3 id="data-overlay-and-broadcasting-for-missing-entities">2. Data overlay and broadcasting for missing entities</h3>
 <p>In order to overlay user data on the global network, first, user-provided gene expression, protein abundance, and/or metabolite abundances’ names are mapped to <i>Metaboverse</i> compatible identifiers. For components that <i>Metaboverse</i> is unable to map, a list will be returned to the user so they can provide alternative names to aid in mapping. Second, provided data values are mapped to the appropriate nodes in the network. In cases where gene expression data is available, but protein abundance data is missing, <i>Metaboverse</i> will take the average (or user-defined??) of the available gene expression values to broadcast to the protein node. For complexes, all available component values (metabolites, proteins, etc.) are averaged (or user-defined??). Nodes for which values were inferred will be marked by a dashed border during visualization to clearly show which values are known and which were inferred.</p>
 <h3 id="collapsing-reactions-with-missing-expression-or-abundance-user-data">3. Collapsing reactions with missing expression or abundance user data</h3>
-<p>After data mapping is complete, <i>Metaboverse</i> will generate a collapsed network representation for optional viewing during later visualization. We did, however, choose to enforce a limit of up to three reactions that can be collapsed as data down a pathway should only be inferred so far. We also enforced certain parameters for reaction collapse as follows:
-1. If a reaction has at least one known or inferred value for inputs (reactants) and one known or inferred value for outputs (products), the reaction will be left as is. During the entire reaction collapse step, known catalysts are included when assessing whether a reaction has measured output values (more of a catalyst should lead to more output in most cases) and inhibitors are included when assessing whether the reaction has measured input values (more inhibitor should lead to accumulation of input in most cases). Catalysts and inhibitors are not included when determining reaction neighbors as described below.
-2. If a reaction has at least one known input, the input is left as is, and each reaction that shares the same input with the assessed reaction inputs are determined whether they have a measured output. If the neighbor reaction does not contain an known output value, the reaction is left as is. If the neighbor reaction does contain a measured output, the original reaction’s inputs and the neighbor reactions outputs are collapsed to form a single, pseudo-reaction between the two. If the reaction has at least one known output, the inverse is performed where neighbors with identical components as the reactions inputs are assessed for whether a collapsed reaction can be created.
-3. If a reaction has no measured values, it is determined if the neighboring reactions on both sides (one sharing the reaction’s inputs and other sharing the reaction’s outputs) have measured values. If both neighbors contain a measured value, a collapsed pseudo-reaction is created summarizing all three reactions.</p>
-<p>For pseudo-reactions, appropriate notes are included to describe the collapse. During visualization, these pseudo-reactions are marked by black dashed edges and dashed node borders. A graphical representation of how this reaction collapse is performed can be found in Figure <a href="#fig:collapse_schematic">2</a>.</p>
+<p>After data mapping is complete, <i>Metaboverse</i> will generate a collapsed network representation for optional viewing during later visualization. We did, however, choose to enforce a limit of up to three reactions that can be collapsed as data down a pathway should only be inferred so far. We also enforced certain parameters for reaction collapse as follows:</p>
+<ol type="1">
+<li><p>If a reaction has at least one known or inferred value for inputs (reactants) and one known or inferred value for outputs (products), the reaction will be left as is. During the entire reaction collapse step, known catalysts are included when assessing whether a reaction has measured output values (more of a catalyst should lead to more output in most cases) and inhibitors are included when assessing whether the reaction has measured input values (more inhibitor should lead to accumulation of input in most cases). Catalysts and inhibitors are not included when determining reaction neighbors as described below.</p></li>
+<li><p>If a reaction has at least one known input, the input is left as is, and each reaction that shares the same input with the assessed reaction inputs are determined whether they have a measured output. If the neighbor reaction does not contain an known output value, the reaction is left as is. If the neighbor reaction does contain a measured output, the original reaction’s inputs and the neighbor reactions outputs are collapsed to form a single, pseudo-reaction between the two. If the reaction has at least one known output, the inverse is performed where neighbors with identical components as the reactions inputs are assessed for whether a collapsed reaction can be created.</p></li>
+<li><p>If a reaction has no measured values, it is determined if the neighboring reactions on both sides (one sharing the reaction’s inputs and other sharing the reaction’s outputs) have measured values. If both neighbors contain a measured value, a collapsed pseudo-reaction is created summarizing all three reactions.</p></li>
+</ol>
+<p>For pseudo-reactions, appropriate notes are included to describe the collapse. During visualization, these pseudo-reactions are marked by black dashed edges and dashed node borders. A graphical representation of how this reaction collapse is performed can be found in Figure <a href="#fig:collapse_schematic">3</a>.</p>
 <div id="fig:collapse_schematic" class="fignos">
 <figure>
-<img src="./content/figures/collapse_schematic.png" alt="" /><figcaption><span>Figure 2:</span> <strong>Reaction node collapse schematic.</strong>
+<img src="./content/figures/collapse_schematic.png" alt="" /><figcaption><span>Figure 3:</span> <strong>Reaction node collapse schematic.</strong>
 (a) For reactions where at least one input and at least one output component contain a measured value from the user data, the reaction will be maintained as is. (b) Where an input of a reaction is known but no output has a known value, <i>Metaboverse</i> will search for all neighboring reactions that contain identical inputs. If the neighboring reaction has a known output value, the two reactions will be merged into one pseudo-reaction. (c) Where an output of a reaction is known but no input has a known value, <i>Metaboverse</i> will search for all neighboring reactions that contain identical outputs. If the neighboring reaction has a known input value, the two reactions will be merged into one pseudo-reaction. (d) For reactions with no known values, neighbor pairs that match the inputs and outputs of the considered reaction will be evaluated for whether their respective outputs and inputs both have known values. If values are known for both neighbors, the three reactions will be merged into one pseudo-reaction. (e) As in (d), but if one neighbor does not contain a value, the one does contain a value, no reaction merging will be performed. (f) As in (d), but if neither neighbors contain known values, no reaction merging will be performed. An asterisk (*) indicates the target reaction being considered for a given reaction collapse. A red node indicates a reaction input or output with a measured value. A white node indicates a reaction input or output with no measured value. A grey node indicates a reaction. A grey node with a dashed border indicates a pseudo-reaction. A solid edge indicates a known relationship. A dashed edge indicates a relationship inferred via reaction merging.</figcaption>
 </figure>
 </div>
@@ -190,39 +194,47 @@ Table 2. Comparison to existing tools</p>
 <h3 id="nearest-neighborhood-searches">5. Nearest neighborhood searches</h3>
 <p>In order to visualize all global connections, a user can select an entity (a gene, protein, or metabolite) and visualize all reactions that the component is involved in. By doing so, the user can visualize other downstream effects a change of one entity might have across the global network, which consequently aids in bridging and identifying any motifs that may occur between canonically annotated pathways. These neighborhoods can be expanded to view multiple downstream reaction steps and their accompanying genes, proteins, and metabolites by modulating the appropriate user option in the app.</p>
 <p>Users can also limit which entities are shown by enforcing a degree threshold. By setting this value at 50, for example, the graph would not show nodes that have 50 or more connections. One caveat, however, is that this will occasionally break synchronous pathways into multiple pieces if one of these high-degree nodes was the bridge between two sides of a pathway.</p>
-<h3 id="network-visualization-and-exploration">6. Network visualization and exploration</h3>
-<h4 id="dynamic-network-plotting">6.1 Dynamic network plotting</h4>
+<h3 id="perturbation-connectivity">6. Perturbation connectivity</h3>
+<p>Perturbation connectivity networks are generated by searching each reaction in the global network for any reaction where at least one component is significantly perturbed. Users can modify the necessary criteria to base the search on the expression or abundance value or the statistical value, and can choose the thresholding value to be used. For the expression thresholding, the provided value is assumed to be the absolute value, so a thresholding value of 3 would include any reactions where at least one component, showed a greater than 3 measured change or less than -3 measured change, the value of which is dependent on the data provided by the user, thus could represent log<sub>2</sub> fold changes, z-scores, or any other unit appropriate the biological context.</p>
+<p>Once a list of perturbed reactions is collected, the network is constructed included each of these reactions and their components. Perturbed neighboring reactions that share components are thus connected within the graph and perturbed reactions that are not next to other perturbed reactions are shown as disconnected sub-graphs.</p>
+<h3 id="network-visualization-and-exploration">7. Network visualization and exploration</h3>
+<h4 id="dynamic-network-plotting">7.1 Dynamic network plotting</h4>
 <p>Users interact with <i>Metaboverse</i> through an interactive app interface. The app uses Electron, a cross-platform app framework that uses JavaScript, HTML, and CSS to design the interface. <i>Metaboverse</i> thus comes packaged as a single executable app with all necessary dependencies included for running on Linux, MacOS, and Windows.</p>
 <p>Interactive graphing is handled using the D3 and JQuery JavaScript libraries. Force-directed graphs are constructed by taking the user selection for a pathway or entity and determining the reactions that are components of that pathway. All inputs, outputs, modifiers, and other components of these reactions, along with edges where both source and target are found in the sub-graph as nodes, are included and plotted. Relevant metadata, such as user-provided data and reaction descriptions, can be accessed by the user in real time. Metadata for categorical displays, such as edge or node type, are extracted from the metadata during graphing of the sub-network.</p>
 <p>Some performance optimization features are included by default to prevent computational overload. For example, nearest neighbor sub-graphs with more than 1500 nodes, or nodes with more than 500 edges will not be plotted as plotting of this information in real-time is computationally prohibitive.</p>
-<h4 id="visualizing-pathways-and-super-pathways">6.2 Visualizing pathways and super-pathways</h4>
+<h4 id="visualizing-pathways-and-super-pathways">7.2 Visualizing pathways and super-pathways</h4>
 <p>In order to visualize a pathway, a user selects their pathway of choice and all component reactions and their reactants, products, modifiers, and metadata are parsed from the global network. Super-pathways help categorize these pathways and are defined as any pathway containing more than 200 nodes.</p>
-<h4 id="visualizing-compartments">6.3 Visualizing compartments</h4>
+<h4 id="visualizing-compartments">7.3 Visualizing compartments</h4>
 <p>Compartments are derived from Reactome annotations. Compartment visualizations are generated using D3’s hull plotting feature. Compartment boundaries are definde at the reaction levels and made to encompass each reaction’s reactants, products, and modifiers for that given compartment.</p>
-<h4 id="annotations">6.4 Annotations</h4>
+<h4 id="annotations">7.4 Annotations</h4>
 <p>Annotations for each reaction are derived from the Reactome database. Pseudo-reactions annotations do not include this information; instead they include notes on which reactions were collapsed to create the selected pseudo-reaction. All inferred pseudo-reactions and protein or complex values are displayed with dashed edges to differentiation from measured values.</p>
-<h4 id="additional-features">6.6 Additional features</h4>
+<h4 id="additional-features">7.6 Additional features</h4>
 <p>While Metaboverse will continue to undergo development and new features will be added, we will briefly highlight some additional features available at time of publication. We encourage users to check the documentation for more current updates and information regarding use of <i>Metaboverse</i> [docs].</p>
-<h5 id="a-toggle-genes">6.6a Toggle genes</h5>
+<h5 id="a-toggle-genes">7.6a Toggle genes</h5>
 <p>As gene components can crowd the graph space, users can toggle gene display on and off using the appropriate button. The graph is then refreshed to either include or ignore gene components based on their node meta-tag.</p>
-<h5 id="b-toggling-values">6.6b Toggling values</h5>
+<h5 id="b-toggling-values">7.6b Toggling values</h5>
 <p>Users can switch between coloring nodes based ono the value or statistic provided by toggling the appropriate button. Colorbar information for the dataset is saved in the graph metadata during curation and used to generate a colorbar. The colorbar for statistics is represented using a -log<sub>10</sub> scale for a statistic value originally ranging between 0 and 1.</p>
-<h5 id="c-toggling-featureslabels">6.6c Toggling features/labels</h5>
+<h5 id="c-toggling-featureslabels">7.6c Toggling features/labels</h5>
 <p>By default, reaction and feature labels are displayed by hovering the mouse over the node. Reaction or feature nodes can have the labels statically displayed by selecting the appropriate button. An event watch function is used to watch for this user selection and update the display of the node labels.</p>
-<h5 id="d-toggling-collapsed-reactions">6.6d Toggling collapsed reactions</h5>
+<h5 id="d-toggling-collapsed-reactions">7.6d Toggling collapsed reactions</h5>
 <p>By selecting the appropriate button, users can toggle between displaying a full or collapsed pathway representation of the sub-network. By selecting this button, the graph is refreshed using the appropriate reaction dictionary, where for graphing of the collapsed representation, a reaction with available pseudo-reactions substituted for the original reactions are included for graph propagation.</p>
-<h5 id="e-view-curated-pathway-image">6.6e View curated pathway image</h5>
+<h5 id="e-view-curated-pathway-image">7.6e View curated pathway image</h5>
 <p>While <i>Metaboverse</i> graphs networks dynamically, users may be more familiar or comfortable with classical, curated pathway layouts when exploring their data. For a given pathway graph, the user can select the appropriate button and <i>Metaboverse</i> will open a new window with the Reactome curated pathway layout.</p>
-<h5 id="f-saving-graphs">6.6f Saving graphs</h5>
+<h5 id="f-saving-graphs">7.6f Saving graphs</h5>
 <p>Users can generate a PNG output file for any network created in <i>Metaboverse</i> by selecting the appropriate button.</p>
-<h5 id="g-nearest-neighbor-and-hub-thresholding">6.6g Nearest neighbor and hub thresholding</h5>
+<h5 id="g-nearest-neighbor-and-hub-thresholding">7.6g Nearest neighbor and hub thresholding</h5>
 <p>The number of nearest neighbors to graph, or the limit to number of edges a graphed node can have, can be modulated by the user using the appropriate input spaces. When graphing a nearest neighbors network, <i>Metaboverse</i> will recursively fetch related reactions and their neighbors until a node display threshold is reached. This allows the user to visualize downstream effects of a change that may propagate across several reactions. The hub threshold option prevents plotting of nodes with more than the specified number of edges. This is handling during graphing by excluding any entity nodes that meet this criteria as the neighborhood is propagated. This is particularly useful in removing hub nodes, such as water or protons, which may be less relevant to the user experience and can quickly clutter the graph. This feature can also help plot more extensive neighborhoods, as often neighborhoods quickly link to high-degree nodes, such as water, and limit graphing ability.</p>
-<h5 id="h-metadata-display">6.6h Metadata display</h5>
+<h5 id="h-metadata-display">7.6h Metadata display</h5>
 <p>To help inform the user of selection information and relevant metadata, a space in the legend bar during visualization is reserved for spaces where this information can be displayed, which is updated based on the user’s input as it is provided.</p>
-<h3 id="packaging">7. Packaging</h3>
-<p>The <i>Metaboverse</i> app is packaged using Electron. Back-end network curation and data processing is performed using Python and the NetworkX library. Front-end visualizatin is performed using Javascript and relies on the D3 and JQuery packages. Saving network representations to a PNG file is performed using the d3-save-svg and string-pixel-width packages. Documentation for Metaboverse is found at metaboverse.readthedocs.io. Continuous integration services are performed by Travis CI to routinely run test cases for each change made to the <i>Metaboverse</i> architecture. The <i>Metaboverse</i> source code can be accessed at https://github.come/Metaboverse/metaboverse. The code used to draft and revise this manuscript, as well as all associated scripts used to generate and visualize the data presented in this manuscript can be accessed at https://github.come/Metaboverse/manuscript.</p>
-<p>[dependencies table]</p>
+<h3 id="packaging">8. Packaging</h3>
+<p>The <i>Metaboverse</i> app is packaged using Electron. Back-end network curation and data processing is performed using Python and the NetworkX library. Front-end visualization is performed using Javascript and relies on the D3 and JQuery packages. Saving network representations to a PNG file is performed using the d3-save-svg and string-pixel-width packages (Table <a href="#tbl:dependencies">1</a>). Documentation for Metaboverse is found at metaboverse.readthedocs.io. Continuous integration services are performed by Travis CI to routinely run test cases for each change made to the <i>Metaboverse</i> architecture. The <i>Metaboverse</i> source code can be accessed at https://github.com/Metaboverse/metaboverse. The code used to draft and revise this manuscript, as well as all associated scripts used to generate and visualize the data presented in this manuscript can be accessed at https://github.come/Metaboverse/manuscript.</p>
+<div id="tbl:dependencies" class="tablenos">
 <table>
+<caption><span>Table 1:</span> Dependencies table. </caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
@@ -232,67 +244,65 @@ Table 2. Comparison to existing tools</p>
 <tbody>
 <tr class="odd">
 <td>HTML</td>
-<td></td>
+<td>N/A</td>
 </tr>
 <tr class="even">
 <td>CSS</td>
-<td></td>
+<td>N/A</td>
 </tr>
 <tr class="odd">
 <td>Javascript</td>
-<td></td>
+<td>N/A</td>
 </tr>
 <tr class="even">
 <td>Electron</td>
-<td></td>
+<td><span class="citation" data-cites="Vm4WQy8V">[<a href="#ref-Vm4WQy8V" role="doc-biblioref">23</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>JQuery</td>
-<td></td>
+<td><span class="citation" data-cites="H1mR13bo">[<a href="#ref-H1mR13bo" role="doc-biblioref">24</a>]</span></td>
 </tr>
 <tr class="even">
 <td>D3</td>
-<td></td>
+<td><span class="citation" data-cites="dVWOf7kz">[<a href="#ref-dVWOf7kz" role="doc-biblioref">25</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>string-pixel-width</td>
-<td></td>
+<td><span class="citation" data-cites="GZmT9x2e">[<a href="#ref-GZmT9x2e" role="doc-biblioref">26</a>]</span></td>
 </tr>
 <tr class="even">
 <td>d3-save-svg</td>
-<td></td>
+<td><span class="citation" data-cites="NW4mv3Ac">[<a href="#ref-NW4mv3Ac" role="doc-biblioref">27</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Python</td>
-<td></td>
+<td><span class="citation" data-cites="avT1fiCL">[<a href="#ref-avT1fiCL" role="doc-biblioref">28</a>]</span></td>
 </tr>
 <tr class="even">
 <td>pandas</td>
-<td></td>
+<td><span class="citation" data-cites="2z2qDwzz U5AcoDOX">[<a href="#ref-2z2qDwzz" role="doc-biblioref">29</a>,<a href="#ref-U5AcoDOX" role="doc-biblioref">30</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>numpy</td>
-<td></td>
+<td><span class="citation" data-cites="DvNC6thO">[<a href="#ref-DvNC6thO" role="doc-biblioref">31</a>]</span></td>
 </tr>
 <tr class="even">
 <td>scipy</td>
-<td></td>
+<td><span class="citation" data-cites="8Miti2Gz">[<a href="#ref-8Miti2Gz" role="doc-biblioref">32</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>matplotlib</td>
-<td></td>
+<td><span class="citation" data-cites="1026Gxdsi">[<a href="#ref-1026Gxdsi" role="doc-biblioref">33</a>]</span></td>
 </tr>
 <tr class="even">
 <td>NetworkX</td>
-<td></td>
+<td><span class="citation" data-cites="ZrddLbmB">[<a href="#ref-ZrddLbmB" role="doc-biblioref">34</a>]</span></td>
 </tr>
 </tbody>
 </table>
-<h3 id="validation-using-biological-data">8. Validation using biological data</h3>
-<h4 id="curation-of-existing-datasets">8.1 Curation of existing datasets</h4>
-<h4 id="generation-of-flux-metabolomics-dataset">8.2 Generation of flux metabolomics dataset</h4>
-<h4 id="generation-of-time-course-multi-omics-dataset">8.3 Generation of time-course multi-omics dataset</h4>
-<h4 id="analysis-and-data-visualization">8.4 Analysis and data visualization</h4>
+</div>
+<h3 id="validation-using-biological-data">9. Validation using biological data</h3>
+<h4 id="mct1-perturbation-in-saccharomyces-cerevisiae">9.1 <i>Mct1</i> perturbation in <i>Saccharomyces cerevisiae</i></h4>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <p>We thank Alex J. Bott, Ahmad A. Cluntun, Kevin Hicks, and other members of the Rutter lab for their thoughtful insights and suggestions.</p>
 <h2 id="contributions">Contributions</h2>
@@ -314,7 +324,7 @@ Table 2. Comparison to existing tools</p>
 </ul>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="./content/figures/contributions.png" style="height:2.5in" alt="" /><figcaption><span>Figure 3:</span> <strong>Author contributions.</strong>
+<img src="./content/figures/contributions.png" style="height:2.5in" alt="" /><figcaption><span>Figure 4:</span> <strong>Author contributions.</strong>
 Table visualizing respective contributions of each author.</figcaption>
 </figure>
 </div>
@@ -393,6 +403,124 @@ DOI: <a href="https://doi.org/10.1038/ng881">10.1038/ng881</a> · PMID: <a href=
 Gal Chechik, Eugene Oh, Oliver Rando, Jonathan Weissman, Aviv Regev, Daphne Koller<br />
 <em>Nature Biotechnology</em> (2008-10-26) <a href="https://doi.org/ftng9m">https://doi.org/ftng9m</a><br />
 DOI: <a href="https://doi.org/10.1038/nbt.1499">10.1038/nbt.1499</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18953355">18953355</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2651818">PMC2651818</a></p>
+</div>
+<div id="ref-RC8uLTIv">
+<p>13. <strong>Using graph theory to analyze biological networks</strong><br />
+Georgios A Pavlopoulos, Maria Secrier, Charalampos N Moschopoulos, Theodoros G Soldatos, Sophia Kossida, Jan Aerts, Reinhard Schneider, Pantelis G Bagos<br />
+<em>BioData Mining</em> (2011-04-28) <a href="https://doi.org/bggzw9">https://doi.org/bggzw9</a><br />
+DOI: <a href="https://doi.org/10.1186/1756-0381-4-10">10.1186/1756-0381-4-10</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21527005">21527005</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3101653">PMC3101653</a></p>
+</div>
+<div id="ref-jGMmHjyp">
+<p>14. <strong>Compartment and hub definitions tune metabolic networks for metabolomic interpretations</strong><br />
+T Cameron Waller, Jordan A Berg, Alexander Lex, Brian E Chapman, Jared Rutter<br />
+<em>GigaScience</em> (2020-01-01) <a href="https://doi.org/ggt7sk">https://doi.org/ggt7sk</a><br />
+DOI: <a href="https://doi.org/10.1093/gigascience/giz137">10.1093/gigascience/giz137</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31972021">31972021</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6977586">PMC6977586</a></p>
+</div>
+<div id="ref-8tmqg1gt">
+<p>15. <strong>Functional and transcriptional connectivity of communities in breast cancer co-expression networks</strong><br />
+Guillermo de Anda-Jáuregui, Sergio Antonio Alcalá-Corona, Jesús Espinal-Enríquez, Enrique Hernández-Lemus<br />
+<em>Applied Network Science</em> (2019-05-20) <a href="https://doi.org/ggt7sj">https://doi.org/ggt7sj</a><br />
+DOI: <a href="https://doi.org/10.1007/s41109-019-0129-0">10.1007/s41109-019-0129-0</a></p>
+</div>
+<div id="ref-vD5y37ks">
+<p>16. <strong>Loss of Connectivity in Cancer Co-Expression Networks</strong><br />
+Roberto Anglani, Teresa M. Creanza, Vania C. Liuzzi, Ada Piepoli, Anna Panza, Angelo Andriulli, Nicola Ancona<br />
+<em>PLoS ONE</em> (2014-01-28) <a href="https://doi.org/f5vhd4">https://doi.org/f5vhd4</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pone.0087075">10.1371/journal.pone.0087075</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24489837">24489837</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3904972">PMC3904972</a></p>
+</div>
+<div id="ref-nGh5rU3O">
+<p>17. <strong>A Mitochondrial Pyruvate Carrier Required for Pyruvate Uptake in Yeast, Drosophila, and Humans</strong><br />
+Daniel K. Bricker, Eric B. Taylor, John C. Schell, Thomas Orsak, Audrey Boutron, Yu-Chan Chen, James E. Cox, Caleb M. Cardon, Jonathan G. Van Vranken, Noah Dephoure, … Jared Rutter<br />
+<em>Science</em> (2012-05-24) <a href="https://doi.org/f33x88">https://doi.org/f33x88</a><br />
+DOI: <a href="https://doi.org/10.1126/science.1218099">10.1126/science.1218099</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22628558">22628558</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3690818">PMC3690818</a></p>
+</div>
+<div id="ref-4n6UHdJZ">
+<p>18. <strong>Control of intestinal stem cell function and proliferation by mitochondrial pyruvate metabolism</strong><br />
+John C. Schell, Dona R. Wisidagama, Claire Bensard, Helong Zhao, Peng Wei, Jason Tanner, Aimee Flores, Jeffrey Mohlman, Lise K. Sorensen, Christian S. Earl, … Jared Rutter<br />
+<em>Nature Cell Biology</em> (2017-08-14) <a href="https://doi.org/gbrf73">https://doi.org/gbrf73</a><br />
+DOI: <a href="https://doi.org/10.1038/ncb3593">10.1038/ncb3593</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28812582">28812582</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6137334">PMC6137334</a></p>
+</div>
+<div id="ref-Lllg0qt7">
+<p>19. <strong>Regulation of Tumor Initiation by the Mitochondrial Pyruvate Carrier</strong><br />
+Claire L. Bensard, Dona R. Wisidagama, Kristofor A. Olson, Jordan A. Berg, Nathan M. Krah, John C. Schell, Sara M. Nowinski, Sarah Fogarty, Alex J. Bott, Peng Wei, … Jared Rutter<br />
+<em>Cell Metabolism</em> (2020-02) <a href="https://doi.org/ggt7w8">https://doi.org/ggt7w8</a><br />
+DOI: <a href="https://doi.org/10.1016/j.cmet.2019.11.002">10.1016/j.cmet.2019.11.002</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31813825">31813825</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7004878">PMC7004878</a></p>
+</div>
+<div id="ref-qjmYmIPe">
+<p>20. <strong>Redundancy: A Critical Obstacle to Improving Cancer Therapy</strong><br />
+O. Lavi<br />
+<em>Cancer Research</em> (2015-01-09) <a href="https://doi.org/ggt7xd">https://doi.org/ggt7xd</a><br />
+DOI: <a href="https://doi.org/10.1158/0008-5472.can-14-3256">10.1158/0008-5472.can-14-3256</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25576083">25576083</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250436">PMC6250436</a></p>
+</div>
+<div id="ref-Ot5bUkmI">
+<p>21. <strong>The Connectivity Map: Using Gene-Expression Signatures to Connect Small Molecules, Genes, and Disease</strong><br />
+J. Lamb<br />
+<em>Science</em> (2006-09-29) <a href="https://doi.org/c92ptt">https://doi.org/c92ptt</a><br />
+DOI: <a href="https://doi.org/10.1126/science.1132939">10.1126/science.1132939</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17008526">17008526</a></p>
+</div>
+<div id="ref-9IFMjnOQ">
+<p>22. <strong>Pathway crosstalk perturbation network modeling for identification of connectivity changes induced by diabetic neuropathy and pioglitazone</strong><br />
+Guillermo de Anda-Jáuregui, Kai Guo, Brett A. McGregor, Eva L. Feldman, Junguk Hur<br />
+<em>BMC Systems Biology</em> (2019-01-07) <a href="https://doi.org/ggt7zx">https://doi.org/ggt7zx</a><br />
+DOI: <a href="https://doi.org/10.1186/s12918-018-0674-7">10.1186/s12918-018-0674-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30616626">30616626</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6322225">PMC6322225</a></p>
+</div>
+<div id="ref-Vm4WQy8V">
+<p>23. <strong>Electron | Build cross-platform desktop apps with JavaScript, HTML, and CSS.</strong><a href="https://www.electronjs.org/">https://www.electronjs.org/</a></p>
+</div>
+<div id="ref-H1mR13bo">
+<p>24. <strong>jQuery</strong><br />
+JS Foundation- js.foundation<br />
+<a href="https://jquery.com/">https://jquery.com/</a></p>
+</div>
+<div id="ref-dVWOf7kz">
+<p>25. <strong>D3.js - Data-Driven Documents</strong><br />
+Mike Bostock<br />
+<a href="https://d3js.org/">https://d3js.org/</a></p>
+</div>
+<div id="ref-GZmT9x2e">
+<p>26. <strong>adambisek/string-pixel-width</strong><br />
+GitHub<br />
+<a href="https://github.com/adambisek/string-pixel-width">https://github.com/adambisek/string-pixel-width</a></p>
+</div>
+<div id="ref-NW4mv3Ac">
+<p>27. <strong>edeno/d3-save-svg</strong><br />
+GitHub<br />
+<a href="https://github.com/edeno/d3-save-svg">https://github.com/edeno/d3-save-svg</a></p>
+</div>
+<div id="ref-avT1fiCL">
+<p>28. <strong>Welcome to Python.org</strong><br />
+Python.org<br />
+<a href="https://www.python.org/">https://www.python.org/</a></p>
+</div>
+<div id="ref-2z2qDwzz">
+<p>29. <strong>pandas-dev/pandas: Pandas 1.0.3</strong><br />
+Jeff Reback, Wes McKinney, Jbrockmendel, Joris Van Den Bossche, Tom Augspurger, Phillip Cloud, Gfyoung, Sinhrks, Adam Klein, Matthew Roeschke, … Mortada Mehyar<br />
+<em>Zenodo</em> (2020-03-18) <a href="https://doi.org/ggt8bh">https://doi.org/ggt8bh</a><br />
+DOI: <a href="https://doi.org/10.5281/zenodo.3509134">10.5281/zenodo.3509134</a></p>
+</div>
+<div id="ref-U5AcoDOX">
+<p>30. <strong>Data Structures for Statistical Computing in Python</strong><br />
+Wes McKinney<br />
+<em>Proceedings of the 9th Python in Science Conference</em> (2010) <a href="https://doi.org/ggr6q3">https://doi.org/ggr6q3</a><br />
+DOI: <a href="https://doi.org/10.25080/majora-92bf1922-00a">10.25080/majora-92bf1922-00a</a></p>
+</div>
+<div id="ref-DvNC6thO">
+<p>31. (2007-01-16) <a href="https://web.mit.edu/dvp/Public/numpybook.pdf">https://web.mit.edu/dvp/Public/numpybook.pdf</a></p>
+</div>
+<div id="ref-8Miti2Gz">
+<p>32. <strong>SciPy 1.0: fundamental algorithms for scientific computing in Python</strong><br />
+Pauli VirtanenRalf Gommers, Travis E. Oliphant, Matt Haberland, Tyler Reddy, David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, … Paul van Mulbregt<br />
+<em>Nature Methods</em> (2020-02-03) <a href="https://doi.org/ggj45f">https://doi.org/ggj45f</a><br />
+DOI: <a href="https://doi.org/10.1038/s41592-019-0686-2">10.1038/s41592-019-0686-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32015543">32015543</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7056644">PMC7056644</a></p>
+</div>
+<div id="ref-1026Gxdsi">
+<p>33. <strong>Matplotlib: A 2D Graphics Environment</strong><br />
+John D. Hunter<br />
+<em>Computing in Science &amp; Engineering</em> (2007) <a href="https://doi.org/drbjhg">https://doi.org/drbjhg</a><br />
+DOI: <a href="https://doi.org/10.1109/mcse.2007.55">10.1109/mcse.2007.55</a></p>
+</div>
+<div id="ref-ZrddLbmB">
+<p>34. (2014-01-28) <a href="http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf">http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf</a></p>
 </div>
 </div>
 <!-- default theme -->
