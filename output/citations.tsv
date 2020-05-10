@@ -1,6 +1,7 @@
 manuscript_citekey	detagged_citekey	standard_citekey	short_citekey
 doi:10.1007/s41109-019-0129-0	doi:10.1007/s41109-019-0129-0	doi:10.1007/s41109-019-0129-0	8tmqg1gt
 doi:10.1016/j.cmet.2019.11.002	doi:10.1016/j.cmet.2019.11.002	doi:10.1016/j.cmet.2019.11.002	Lllg0qt7
+doi:10.1016/j.molcel.2018.06.039	doi:10.1016/j.molcel.2018.06.039	doi:10.1016/j.molcel.2018.06.039	w09c7vaT
 doi:10.1038/nbt.1499	doi:10.1038/nbt.1499	doi:10.1038/nbt.1499	18AaRFS75
 doi:10.1038/ncb3593	doi:10.1038/ncb3593	doi:10.1038/ncb3593	4n6UHdJZ
 doi:10.1038/ng881	doi:10.1038/ng881	doi:10.1038/ng881	1CFRUQ2Md
@@ -19,6 +20,8 @@ doi:10.1126/science.1218099	doi:10.1126/science.1218099	doi:10.1126/science.1218
 doi:10.1158/0008-5472.CAN-14-3256	doi:10.1158/0008-5472.CAN-14-3256	doi:10.1158/0008-5472.can-14-3256	qjmYmIPe
 doi:10.1186/1756-0381-4-10	doi:10.1186/1756-0381-4-10	doi:10.1186/1756-0381-4-10	RC8uLTIv
 doi:10.1186/s12918-018-0674-7	doi:10.1186/s12918-018-0674-7	doi:10.1186/s12918-018-0674-7	9IFMjnOQ
+doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	doi:10.1186/s13059-014-0550-8	w9AOzBMw
+doi:10.1371/journal.pcbi.1007625	doi:10.1371/journal.pcbi.1007625	doi:10.1371/journal.pcbi.1007625	e007dQqS
 doi:10.1371/journal.pone.0087075	doi:10.1371/journal.pone.0087075	doi:10.1371/journal.pone.0087075	vD5y37ks
 doi:10.25080/Majora-92bf1922-00a	doi:10.25080/Majora-92bf1922-00a	doi:10.25080/majora-92bf1922-00a	U5AcoDOX
 doi:10.3390/metabo9040076	doi:10.3390/metabo9040076	doi:10.3390/metabo9040076	1AxIC7Cvy
@@ -28,6 +31,9 @@ pmid:31691815	pmid:31691815	pmid:31691815	GZkNnAkC
 url:http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf	url:http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf	url:http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf	ZrddLbmB
 url:https://d3js.org	url:https://d3js.org	url:https://d3js.org	dVWOf7kz
 url:https://electronjs.org	url:https://electronjs.org	url:https://electronjs.org	Vm4WQy8V
+url:https://github.com/Metaboverse/Metaboverse	url:https://github.com/Metaboverse/Metaboverse	url:https://github.com/Metaboverse/Metaboverse	vMGMbT9f
+url:https://github.com/Metaboverse/manuscript	url:https://github.com/Metaboverse/manuscript	url:https://github.com/Metaboverse/manuscript	kOjxC0II
+url:https://github.com/Metaboverse/manuscript/tree/master/data/sce_mct1	url:https://github.com/Metaboverse/manuscript/tree/master/data/sce_mct1	url:https://github.com/Metaboverse/manuscript/tree/master/data/sce_mct1	EcK8eBqS
 url:https://github.com/adambisek/string-pixel-width	url:https://github.com/adambisek/string-pixel-width	url:https://github.com/adambisek/string-pixel-width	GZmT9x2e
 url:https://github.com/edeno/d3-save-svg	url:https://github.com/edeno/d3-save-svg	url:https://github.com/edeno/d3-save-svg	NW4mv3Ac
 url:https://jquery.com	url:https://jquery.com	url:https://jquery.com	H1mR13bo

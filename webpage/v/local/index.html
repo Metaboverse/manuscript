@@ -8,12 +8,12 @@
   <meta name="author" content="Youjia Zhou" />
   <meta name="author" content="T. Cameron Waller" />
   <meta name="author" content="Yeyun Ouyang" />
-  <meta name="author" content="Ian George" />
+  <meta name="author" content="Sara M. Nowinski" />
   <meta name="author" content="Tyler Van Ry" />
   <meta name="author" content="James Cox" />
   <meta name="author" content="Bei Wang" />
   <meta name="author" content="Jared Rutter" />
-  <meta name="dcterms.date" content="2020-05-07" />
+  <meta name="dcterms.date" content="2020-05-10" />
   <meta name="keywords" content="metabolomics, metabolism, network, omics, rna-seq, proteomics, gene, protein, metabolite, context" />
   <title>Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data</title>
   <style>
@@ -36,8 +36,8 @@
   <meta name="citation_title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
   <meta property="og:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
   <meta property="twitter:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
-  <meta name="dc.date" content="2020-05-07" />
-  <meta name="citation_publication_date" content="2020-05-07" />
+  <meta name="dc.date" content="2020-05-10" />
+  <meta name="citation_publication_date" content="2020-05-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -57,9 +57,9 @@
   <meta name="citation_author" content="Yeyun Ouyang" />
   <meta name="citation_author_institution" content="Department of Biochemistry, University of Utah" />
   <meta name="citation_author_orcid" content="0000-0001-9523-1044" />
-  <meta name="citation_author" content="Ian George" />
+  <meta name="citation_author" content="Sara M. Nowinski" />
   <meta name="citation_author_institution" content="Department of Biochemistry, University of Utah" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="None" />
   <meta name="citation_author" content="Tyler Van Ry" />
   <meta name="citation_author_institution" content="Department of Biochemistry, University of Utah" />
   <meta name="citation_author_institution" content="Metabolomics Core Facility, University of Utah" />
@@ -89,7 +89,7 @@
 <p><small><em>
 This manuscript
 was automatically generated
-on May 7, 2020.
+on May 10, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <p><a href="https://orcid.org/0000-0002-5096-0558"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
@@ -100,8 +100,8 @@ Youjia Zhou<sup>2</sup>,
 T. Cameron Waller<sup>3</sup>,
 <a href="https://orcid.org/0000-0001-9523-1044"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Yeyun Ouyang<sup>1</sup>,
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Ian George<sup>1</sup>,
+<a href="https://orcid.org/None"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
+Sara M. Nowinski<sup>1</sup>,
 <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Tyler Van Ry<sup>1,4</sup>,
 <a href="https://orcid.org/0000-0002-5977-2350"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
@@ -160,14 +160,15 @@ Illustration comparing the data input, processing, and exploration steps of the 
 <p>The importance of connectivity could also be considered in a treatment context. For example, a druggable and critical metabolite may be perturbed in a particular disease context. However, if a metabolite participating in a neighboring, downstream reaction is also perturbed in a way not related to the perturbation of the first metabolite, the efficacy of the drug treatment could be severely impaired <span class="citation" data-cites="qjmYmIPe Ot5bUkmI 9IFMjnOQ">[<a href="#ref-qjmYmIPe" role="doc-biblioref">20</a>,<a href="#ref-Ot5bUkmI" role="doc-biblioref">21</a>,<a href="#ref-9IFMjnOQ" role="doc-biblioref">22</a>]</span>. To aid in exploration of the connectivity of the biological network, we also developed a connectivity module where users can display all reactions that have at least one involved component perturbed based on either an abundance or statistical level. By doing so, when the graph is constructed, proximal reactions that were perturbed independently will be “sewn” together to reconstruct a perturbation connectivity map in the user’s model.</p>
 <h3 id="data-vignettes">Data vignettes</h3>
 <p>In order to demonstrate the added utility of <i>Metaboverse</i> to the community that is not currently available in other tools, we used <i>Metaboverse</i> to analyze a series of public and new datasets. From the vignettes provided below, we show that <i>Metaboverse</i> not only is able to identify points of interest previously described or expected, but can rapidly identify for the user unexpected and systematic regulatory patterns in a reaction network context.</p>
-<h4 id="perturbation-of-mitochondrial-fatty-acid-synthesis-reveals-expected-and-unexpected-reaction-motifs.">1. Perturbation of mitochondrial fatty acid synthesis reveals expected and unexpected reaction motifs.</h4>
-<h4 id="time-course-in-progress">2. Time-course (in progress)</h4>
-<h4 id="flux-data-in-progress">3. Flux data (in progress)</h4>
-<h3 id="performance">Performance</h3>
-<p>Table 1. Performance break-down<br />
-Table 2. Comparison to existing tools</p>
+<h4 id="perturbation-of-mitochondrial-fatty-acid-synthesis-across-time-reveals-expected-and-unexpected-reaction-motifs.">1. Perturbation of mitochondrial fatty acid synthesis across time reveals expected and unexpected reaction motifs.</h4>
+<h4 id="flux-data-in-progress">2. Flux data (in progress)</h4>
+<h4 id="previously-published-data-in-progress">3. Previously published data (in progress)</h4>
 <h2 id="discussion">Discussion</h2>
-<p>We hope that this tool will bring a new perspective to users’ data and help draw the connections needed to aid them in extracting new and exciting hypotheses from their data that would be difficult to do without this tool.</p>
+<p>In this manuscript, we introduce a new software tool for analysis and exploration of user data layered on the metabolic and global reaction networks. To improve on previous tools with similar capabilities, we introduced several new analytical tools and methods to aid users in the automated identification and discovery of regulatory patterns within their data in a reaction network context. These include the automated ability to identify reaction motifs across the global reaction network, such as a reaction where an input is low abundance and an output is high. <i>Metaboverse</i> also provides dynamic and interactive visualization capabilities to search for patterns and features within the user data on a reaction network within classical pathways. If a user is interested in how a reaction motif is propagating across the global reaction network and not just a single pathway, a user can explore a reaction component’s nearest reaction neighborhood. The user can also explore the connectedness of perturbations across the global network and begin to explore hypotheses of the role of redundancy within a biological phenomenon.</p>
+<p>In order to handle the challenge of sparsity, particularly in regard to metabolomics data and the metabolic reaction network, we introduce a reaction collapsing feature which summarizing a series of connected reaction where values may be missing for a number of reactions, but where the terminal ends of the reaction path have measured values. Importantly, this augments the capabilities available within <i>Metaboverse</i>, especially in the identification of additional reaction motifs that may be of interest to the user.</p>
+<p>We demonstrated the utility of <i>Metaboverse</i> in exploring single- and multi-omic datasets. We analyzed previously published studies from a variety of organisms (in progress), as well as generated a novel dataset that highlights the time-course capabilities of this framework.</p>
+<p>While <i>Metaboverse</i> aims to enhance the computational toolkit for data analysis and hypothesis generation in metabolic and other experiments, a number of challenges still remain, which we intend to address as we continue to maintain and build upon this software. For example, while the reaction collapsing features of <i>Metaboverse</i> aid in identifying patterns across several reactions where data may be missing, there are a variety of biological and technical edge cases that need to be considered in future implementations of this feature. This is particularly challenging in datasets where few metabolites were measured. Hopefully, as technical limitations in metabolomics are also overcome, more complete snapshots of metabolism will be visible within this framework. Additionally, while we take a more straightforward and somewhat rudimentary approach to statistical significance integration in the reaction motif searches, more holistic platforms for cross-omics integration are needed and remain a consequential challenge in multi-omics research.</p>
+<p>In summary, we hope that <i>Metaboverse</i> will bring a new perspective to users’ data. We envision <i>Metaboverse</i> to be a staple tool in the metabolic research toolkit that will help researchers critically and holistically consider their data in the context of biological network interactions and help draw the connections needed to aid them in extracting new and exciting hypotheses from their data that would be difficult to do without this tool.</p>
 <h2 id="methods">Methods</h2>
 <p>A tutorial for how to use <i>Metaboverse</i> can be found at metaboverse.readthedocs.io/getting-started.</p>
 <h3 id="network-curation">1. Network Curation</h3>
@@ -302,32 +303,37 @@ Table 2. Comparison to existing tools</p>
 </table>
 </div>
 <h3 id="validation-using-biological-data">9. Validation using biological data</h3>
-<h4 id="mct1-perturbation-in-saccharomyces-cerevisiae">9.1 <i>Mct1</i> perturbation in <i>Saccharomyces cerevisiae</i></h4>
+<h4 id="mct1-perturbation-in-saccharomyces-cerevisiae">9.1 <i>mct1</i> perturbation in <i>Saccharomyces cerevisiae</i></h4>
+<p>Steady state quantitative proteomics data were generated as described in <span class="citation" data-cites="w09c7vaT">[<a href="#ref-w09c7vaT" role="doc-biblioref">35</a>]</span>. Briefly, cells were grown in glucose and switched to raffinose-supplemented growth medium overnight, and harvested at mid-log phase. For this analysis, we compared the <i>mct1Δ</i> (n=3) with the wild-type (n=3) cell populations. log<sub>2</sub>(fold change) values and p-values were generated by comparing <i>mct1Δ</i> with the wild-type cells. p-values were generated using a 2-tailed Student’s T-test.</p>
+<p>RNA sequencing data were generated by growing <i>Saccharomyces cerevisiae</i> biological replicates for strains <i>mct1Δ</i> (n=4) and wild-type (n=4). Briefly, cells were grown in glucose and switched to raffinose-supplemented growth medium for 0, 3, and 12 hours such that at time of harvest, cultures were at OD<sub>600</sub>=1. Cultures were flash frozen and later total RNA was isolated using the Direct-zol kit (Zymo Research) with on-column DNase digestion and water elution. Sequencing libraries were prepared by purifying intact poly(A) RNA from total RNA samples (100-500 ng) with oligo(dT) magnetic beads and stranded mRNA sequencing libraries were prepared as described using the Illumina TruSeq Stranded mRNA Library Preparation Kit (RS-122-2101, RS-122-2102). Purified libraries were qualified on an Agilent Technologies 2200 TapeStation using a D1000 ScreenTape assay (cat# 5067-5582 and 5067-5583). The molarity of adapter-modified molecules was defined by quantitative PCR using the Kapa Biosystems Kapa Library Quant Kit (cat#KK4824). Individual libraries were normalized to 5 nM and equal volumes were pooled in preparation for Illumina sequence analysis. Sequencing libraries (25 pM) were chemically denatured and applied to an Illumina HiSeq v4 single read flow cell using an Illumina cBot. Hybridized molecules were clonally amplified and annealed to sequencing primers with reagents from an Illumina HiSeq SR Cluster Kit v4-cBot (GD-401-4001). Following transfer of the flowcell to an Illumina HiSeq 2500 instrument (HCSv2.2.38 and RTA v1.18.61), a 50 cycle single-read sequence run was performed using HiSeq SBS Kit v4 sequencing reagents (FC-401-4002).</p>
+<p>Sequence FASTQ files were processed using XPRESSpipe <span class="citation" data-cites="e007dQqS">[<a href="#ref-e007dQqS" role="doc-biblioref">36</a>]</span>. Batch and log files are available at <span class="citation" data-cites="EcK8eBqS">[<a href="#ref-EcK8eBqS" role="doc-biblioref">37</a>]</span>. Notably, reads were trimmed of adapters (Read1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA, Read2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT). Differential expression analysis was performed using DESeq2 <span class="citation" data-cites="w9AOzBMw">[<a href="#ref-w9AOzBMw" role="doc-biblioref">38</a>]</span> by comparing <i>mct1Δ</i> samples with wild-type samples at the 12-hour time-point to match the steady state proteomics data. log<sub>2</sub>(fold change) and false disovery rate (“p-adj”) values were extracted from the DESeq2 output.</p>
+<p>Metabolomics data were generated by… ___.</p>
+<p>Raw data produced for this study are in the process of being uploaded to the appropriate repositories. In the meantime, the raw data can be accessed at <span class="citation" data-cites="EcK8eBqS">[<a href="#ref-EcK8eBqS" role="doc-biblioref">37</a>]</span>.</p>
+<p>The curated networks for these data are available at <span class="citation" data-cites="EcK8eBqS">[<a href="#ref-EcK8eBqS" role="doc-biblioref">37</a>]</span>. Networks were generated by taking the 12-hour transcriptomics and proteomics datasets with their appropriate log<sub>2</sub>(fold change) and statistical values, along with the 0, 15, 30, 60, and 180 minute metabolomics datasets with their respective log<sub>2</sub>(fold change) and statistical values and layering these data on the <i>Saccharomyces cereviseae</i> global reaction network as curated by <i>Metaboverse</i> from the Reactome database. Reaction motifs and global connectivity analyses were performed within the <i>Metaboverse</i> platform.</p>
+<h3 id="data-availability.">10. Data availability.</h3>
+<p>The <i>Metaboverse</i> source code is available at <span class="citation" data-cites="vMGMbT9f">[<a href="#ref-vMGMbT9f" role="doc-biblioref">39</a>]</span> and archived versions can be accessed at Zenodo [].</p>
+<p>The source code and data for this manuscript and subsequent analyses is available at <span class="citation" data-cites="kOjxC0II">[<a href="#ref-kOjxC0II" role="doc-biblioref">40</a>]</span> and archived versions can be accessed at Zenodo [].</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
-<p>We thank Alex J. Bott, Ahmad A. Cluntun, Kevin Hicks, and other members of the Rutter lab for their thoughtful insights and suggestions.</p>
+<p>We thank Alex J. Bott, Ahmad A. Cluntun, Kevin Hicks, and other members of the Rutter lab for their thoughtful insights and suggestions. We thank the Brian Dalley and the University of Utah High-Throughput Genomics Core for help with RNA-sequencing library preparation. The support and resources from the Center for High-Performance Computing at the University of Utah are gratefully acknowledged.</p>
+<h2 id="funding">Funding</h2>
+<p>J.A.B. received support from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Inter-disciplinary Training Grant T32 Program in Computational Approaches to Diabetes and Metabolism Research, 1T32DK11096601 to Wendy W. Chapman and Simon J. Fisher (https://www.niddk.nih.gov/). This work was supported by NIDDK fellowship 1T32DK11096601 (to J.A.B.) (https://www.niddk.nih.gov/) and NIH grant R35GM13185 (to J.R.) (https://www.nih.gov/). The computational resources used were partially funded by the NIH Shared Instrumentation Grant 1S10OD021644-01A1 (https://www.nih.gov/). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
 <h2 id="contributions">Contributions</h2>
 <ul>
 <li>Conceptualization: J.A.B., T.C.W., B.W., J.R.</li>
 <li>Supervision: J.A.B., B.W., J.R.</li>
 <li>Project Administration: J.A.B.</li>
-<li>Investigation: J.A.B., T.C.W., Y.O., T.V.</li>
-<li>Formal Analysis: J.A.B., Y.O., I.G.</li>
+<li>Investigation: J.A.B., T.C.W., Y.O., S.M.N., T.V.</li>
+<li>Formal Analysis: J.A.B.</li>
 <li>Software: J.A.B., Y.Z.</li>
 <li>Methodology: J.A.B., Y.Z.</li>
-<li>Validation: J.A.B., T.C.W., Y.O., I.G.</li>
-<li>Data Curation: J.A.B., Y.Z., T.C.W., Y.O., T.V.</li>
+<li>Validation: J.A.B.</li>
+<li>Data Curation: J.A.B., T.C.W.</li>
 <li>Resources: J.A.B., J.C., B.W., J.R.</li>
 <li>Funding Acquisition: J.A.B., J.C., B.W., J.R.</li>
 <li>Writing - Original Draft Preparation: J.A.B.</li>
-<li>Writing - Review &amp; Editing: J.A.B., Y.Z., T.C.W., Y.O., T.V., J.C., B.W., J.R.</li>
-<li>Visualization: J.A.B., Y.Z., Y.O., I.G.</li>
+<li>Writing - Review &amp; Editing: J.A.B., Y.Z., T.C.W., Y.O., S.N.M., T.V., J.C., B.W., J.R.</li>
+<li>Visualization: J.A.B.</li>
 </ul>
-<div id="fig:square-image" class="fignos">
-<figure>
-<img src="./content/figures/contributions.png" style="height:2.5in" alt="" /><figcaption><span>Figure 4:</span> <strong>Author contributions.</strong>
-Table visualizing respective contributions of each author.</figcaption>
-</figure>
-</div>
 <h2 class="page_break_before" id="supplementary-material" class="page_break_before">Supplementary Material</h2>
 <h2 class="page_break_before" id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
@@ -521,6 +527,37 @@ DOI: <a href="https://doi.org/10.1109/mcse.2007.55">10.1109/mcse.2007.55</a></p>
 </div>
 <div id="ref-ZrddLbmB">
 <p>34. (2014-01-28) <a href="http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf">http://conference.scipy.org/proceedings/SciPy2008/paper_2/full_text.pdf</a></p>
+</div>
+<div id="ref-w09c7vaT">
+<p>35. <strong>ACP Acylation Is an Acetyl-CoA-Dependent Modification Required for Electron Transport Chain Assembly</strong><br />
+Jonathan G. Van Vranken, Sara M. Nowinski, Katie J. Clowers, Mi-Young Jeong, Yeyun Ouyang, Jordan A. Berg, Jeremy P. Gygi, Steven P. Gygi, Dennis R. Winge, Jared Rutter<br />
+<em>Molecular Cell</em> (2018-08) <a href="https://doi.org/gd5dhm">https://doi.org/gd5dhm</a><br />
+DOI: <a href="https://doi.org/10.1016/j.molcel.2018.06.039">10.1016/j.molcel.2018.06.039</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30118679">30118679</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6104058">PMC6104058</a></p>
+</div>
+<div id="ref-e007dQqS">
+<p>36. <strong>XPRESSyourself: Enhancing, standardizing, and automating ribosome profiling computational analyses yields improved insight into data</strong><br />
+Jordan A. Berg, Jonathan R. Belyeu, Jeffrey T. Morgan, Yeyun Ouyang, Alex J. Bott, Aaron R. Quinlan, Jason Gertz, Jared Rutter<br />
+<em>PLOS Computational Biology</em> (2020-01-31) <a href="https://doi.org/ggvg4j">https://doi.org/ggvg4j</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007625">10.1371/journal.pcbi.1007625</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32004313">32004313</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7015430">PMC7015430</a></p>
+</div>
+<div id="ref-EcK8eBqS">
+<p>37. <a href="https://github.com/Metaboverse/manuscript/tree/master/data/sce_mct1">https://github.com/Metaboverse/manuscript/tree/master/data/sce_mct1</a></p>
+</div>
+<div id="ref-w9AOzBMw">
+<p>38. <strong>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</strong><br />
+Michael I Love, Wolfgang Huber, Simon Anders<br />
+<em>Genome Biology</em> (2014-12) <a href="https://doi.org/gd3zvn">https://doi.org/gd3zvn</a><br />
+DOI: <a href="https://doi.org/10.1186/s13059-014-0550-8">10.1186/s13059-014-0550-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25516281">25516281</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4302049">PMC4302049</a></p>
+</div>
+<div id="ref-vMGMbT9f">
+<p>39. <strong>Metaboverse/Metaboverse</strong><br />
+GitHub<br />
+<a href="https://github.com/Metaboverse/Metaboverse">https://github.com/Metaboverse/Metaboverse</a></p>
+</div>
+<div id="ref-kOjxC0II">
+<p>40. <strong>Metaboverse/manuscript</strong><br />
+GitHub<br />
+<a href="https://github.com/Metaboverse/manuscript">https://github.com/Metaboverse/manuscript</a></p>
 </div>
 </div>
 <!-- default theme -->
