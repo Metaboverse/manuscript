@@ -245,6 +245,21 @@ The importance of connectivity could also be considered in a treatment context. 
 In order to demonstrate the added utility of <i>Metaboverse</i> to the community that is not currently available in other tools, we used <i>Metaboverse</i> to analyze a series of public and new datasets. From the vignettes provided below, we show that <i>Metaboverse</i> not only is able to identify points of interest previously described or expected, but can rapidly identify for the user unexpected and systematic regulatory patterns in a reaction network context.
 
 #### 1. Perturbation of mitochondrial fatty acid synthesis across time reveals expected and unexpected reaction motifs.
+Mitochondrial fatty acid synthesis (mtFAS) acts as an important metabolic pathway long known to function to produce lipoic acid, a critical cofactor for several metabolic enzymes. Recent work has begun to uncover additional, important roles for this pathway. For example, we now know that mtFAS can perform metabolic nutrient sensing roles to coordinate lipoic acid synthesis with tricarboxylic acid (TCA) cycle activity, assembly of oxidative phosphorylation complexes, and more [@doi:10.1016/j.cub.2018.08.022]. Additionally, this pathway has received increased physiological focus with the discovery of patients with mutations in key mtFAS enzymes.
+
+<i>MCAT</i>, or <i>mct1</i>in <i>Saccharomyces cerevisiae</i>, is an acyltransferase responsible for the transfer of a malonyl group from malonyl-CoA to <i>NDUFAB1</i>, the mitochondrial acyl carrier protein and a subunit of the NADH dehydrogenase complex [?]. By knocking out this gene, one can simulate the effects of a disruption in mtFAS.
+
+In order to probe the relationship between mtFAS and metabolic from a systematic perspective, we used a <i>mct1&Delta;</i> model in <i>Saccharomyces cerevisiae</i> to measure steady state proteomics and transcriptomics at 12 hours after a shift to a respiratory carbon source, as well as steady state metabolomics at 0, 15, 30, 60, and 180 minutes after this shift in carbon source. From our previous work in our model and analyses of the data, we expected to observe effects such as ...____.
+
+By layering these data onto the metabolic network using <i>Metaboverse</i>, we observed ...___.
+
+Interestingly, we also were able to observe ...___.
+
+Based on these novel findings in this model, it is plausible that ...___.
+
+In order to validate this finding, we ...___ (in progress). We found that ...___.
+
+
 
 
 #### 2. Flux data (in progress)
