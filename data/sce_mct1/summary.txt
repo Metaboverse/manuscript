@@ -1,0 +1,174 @@
+Notes
+========================
+- Each is mct1 vs wt at time point after switch to raffinose
+- Maybe other time points should be zeroed?
+- Same motifs show up, but with different behavior
+- Future directions: ability to track more quantitatively motifs that are changing
+- Collapse instances where one metabolite makes a lot of different motifs? Maybe coming from inclusion of proteins?
+- Penalize high-hub nodes during motif search? Reactions probably less sensitive to high hub concentrations?
+- Outline selected motif stamp in first pane once clicked
+- Add interactive time course line graphs to see patterns
+
+===============================================================================
+Observations
+========================
+- Conversion of Glycerol to Glycerol-3-phosphate
+  - Goes from moderate down-regulation to severe
+
+- palmitate and linoleic acid reactions often perturbed
+  - Mostly situations where PALM is down and AMP or PPi are also measured
+  - Even though lower PALM, more ACSL3,4 which can ligate coenzyme A (CoA-SH) to palmitate yielding palmitoyl-coenzyme
+
+- citrate <=> isocitrate
+  - Initially CIT is down and ISO is down just a little
+  - Later CIT is really down and ISO is really up
+  - CIT1 is down
+  - May suggest ETC starts running in reverse in adaption to respiration-mandatory carbon source
+    - How to test this? Prevent ETC from running in reverse in mct1 KO cells and see if it shows a phenotype compared to only mct1 KO
+
+- CHAC1,2 cleaves GSH to OPRO and CysGly
+  - GSH is very high and OPRO is tapered down
+
+- Impaired cytochrome C
+  - May lead to reduced electron transfer to complex III
+
+- SDH down and FUMA up
+  - Succinate catalyzes oxidation of succinate into fumarate
+  - FUMA being created from Malate? (not measured)
+
+===============================================================================
+
+0 min
+=======
+avg (1)
+
+##### Up to down
+- depalmitoylation of eNOS
+- HLCS biotinylates PC:Mn2+
+
+##### Down to less down/normal
+- Adenine + PRPP => AMP + PPi
+- ACSL1,3,5,6 ligate CoA to PALM to form PALM-CoA
+- Conversion of Glycerol to Glycerol-3-phosphate
+- ACSL3,4 ligates coenzyme A (CoA-SH) to palmitate yielding palmitoyl-coenzyme A in the pancreatic beta cell
+
+##### Less down/normal to down
+
+##### Down to up
+
+
+
+15 min
+=======
+avg (1)
+
+##### Up to down
+- depalmitoylation of eNOS (less)
+- ETA is phosphorylated to PETA by CHK/ETNK
+- (deoxy)inosine + orthophosphate <=> hypoxanthine + (deoxy)ribose 1-phosphate (NP)
+- Conversion of Glycerol to Glycerol-3-phosphate
+- HLCS biotinylates PC:Mn2+
+
+##### Down to less down/normal
+- PETA and CTP are condensed to CDP-ETA by PCY2
+- citrate <=> isocitrate
+- ACSL3,4 ligate CoA to AA to form AA-CoA
+- ACSL1,3,5,6 ligate CoA to PALM to form PALM-CoA
+- ACSL3,4 ligates coenzyme A (CoA-SH) to palmitate yielding palmitoyl-coenzyme A in the pancreatic beta cell
+
+##### Less down/normal to down
+
+##### Down to up
+- hypoxanthine + (deoxy)ribose 1-phosphate <=> (deoxy)inosine + orthophosphate (NP)
+
+
+
+30 min
+=======
+avg (1)
+
+##### Up to down
+- ACSL3,4 ligate CoA to AA to form AA-CoA
+- HLCS biotinylates PC:Mn2+
+
+##### Down to less down/normal
+- hypoxanthine + (deoxy)ribose 1-phosphate <=> (deoxy)inosine + orthophosphate (NP)
+- citrate <=> isocitrate
+
+##### Less down/normal to down
+- (deoxy)inosine + orthophosphate <=> hypoxanthine + (deoxy)ribose 1-phosphate (NP)
+- Activation of linoleic acid to linoleoyl-CoA
+- Conversion of Glycerol to Glycerol-3-phosphate
+
+##### Down to up
+
+
+
+60 min
+=======
+avg (1)
+
+##### Up to down
+- Conjugation of SUMO1 to UBA2:SAE1
+- Activation of linoleic acid to linoleoyl-CoA
+- Activation of linoleic acid to linoleoyl-CoA (why did it show up twice? location?)
+- Activation of linoleic acid to linoleoyl-CoA
+- HLCS biotinylates PC:Mn2+
+
+##### Down to less down/normal
+- CHAC1,2 cleaves GSH to OPRO and CysGly (but really down)
+- citrate <=> isocitrate
+
+##### Less down/normal to down (I think most of these are because of AMP and PPi)
+- POLK incorporates dNMP opposite to damaged DNA base
+- Elongation by POLH
+- POLZ extends translesion synthesis
+- Insertion of correct bases opposite the lesion by POLH
+- POLI incorporates dNMP opposite to damaged DNA base
+- Transfer of Ub from E2 to substrate and release of E2
+- Unwinding of DNA for the Nascent Transcript: Second Transition
+- Addition of the fourth nucleotide on the Nascent Transcript: Second Transition
+- Newly Formed Phosphodiester Bond Stabilized and PPi Released
+- Addition of the third nucleotide on the nascent transcript
+- Unwinding DNA for the nascent transcript
+- Addition of nucleotides 10 and 11 on the growing transcript: Third Transition
+- DPH6 ligates ammonium to diphthine-EEF2
+- PETA and CTP are condensed to CDP-ETA by PCY2
+- Dephosphorylation of phospho-Cdh1
+- Repair DNA synthesis of ~27-30 bases long patch by POLD, POLE or POLK in GG-NER
+- Repair DNA synthesis of ~27-30 bases long patch by POLD, POLE or POLK in TC-NER
+- ACSL3,4 ligate CoA to AA to form AA-CoA
+- Dephosphorylation of phospho-Cdh1
+- ACSL3,4 ligate CoA to AA to form AA-CoA
+- Dephosphorylation of phospho-Cdh1
+- ACSL3,4 ligate CoA to AA to form AA-CoA
+- ACSL1,3,5,6 ligate CoA to PALM to form PALM-CoA
+- Conversion of Glycerol to Glycerol-3-phosphate
+- Active RNA Pol II complex transcribes lesion-containing DNA template
+- NEDD8 covalently binds catalytic cysteine of UBA3:NAE1
+- NEDD8-UBA3:NAE1 binds a second NEDD8
+
+##### Down to up
+- HAGH hydrolyses (R)-S-LGSH to GSH and LACT // GLO1 dimer:2xZn2+ transforms MGXL and GSH to (R)-S-LGSH
+
+
+
+180 min
+=======
+avg (1)
+
+##### Up to down
+- CHAC1,2 cleaves GSH to OPRO and CysGly
+
+##### Down to less down/normal
+- hypoxanthine + (deoxy)ribose 1-phosphate <=> (deoxy)inosine + orthophosphate (NP)
+
+##### Less down/normal to down
+- (deoxy)inosine + orthophosphate <=> hypoxanthine + (deoxy)ribose 1-phosphate (NP)
+
+##### Down to up
+- PETA and CTP are condensed to CDP-ETA by PCY2
+- Adenine + PRPP => AMP + PPi
+- citrate <=> isocitrate
+- Activation of linoleic acid to linoleoyl-CoA
+- Conversion of Glycerol to Glycerol-3-phosphate
