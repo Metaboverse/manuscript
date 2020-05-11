@@ -8,6 +8,13 @@ Notes
 - Penalize high-hub nodes during motif search? Reactions probably less sensitive to high hub concentrations?
 - Outline selected motif stamp in first pane once clicked
 - Add interactive time course line graphs to see patterns
+- Make it clear that this isn't the final version (in progress)
+  - Add authors note on bioRxiv comments sectin for each manuscript version
+- Motif where catalyst is down and output metabolite is down (CIT1 and isocitrate)
+- Observations with proteomics and metabolomics are more interesting
+- Talk with James Cox, Scott Summers, Ralph?, Matt Vander Heiden, Joshua Coon, Chris Newgard (Duke group, diabetes angle)
+
+
 
 ===============================================================================
 Observations
@@ -25,6 +32,8 @@ Observations
   - CIT1 is down
   - May suggest ETC starts running in reverse in adaption to respiration-mandatory carbon source
     - How to test this? Prevent ETC from running in reverse in mct1 KO cells and see if it shows a phenotype compared to only mct1 KO
+  - *** Look at glyoxylate shunt ***
+    - See if Reactome has glyoxylate shunt listed (perturbation of TCA cycle)
 
 - CHAC1,2 cleaves GSH to OPRO and CysGly
   - GSH is very high and OPRO is tapered down
