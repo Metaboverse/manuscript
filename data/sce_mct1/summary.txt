@@ -14,7 +14,8 @@ Notes
 - Observations with proteomics and metabolomics are more interesting
 - Talk with James Cox, Scott Summers, Ralph?, Matt Vander Heiden, Joshua Coon, Chris Newgard (Duke group, diabetes angle)
 
-
+***** Redo proteomics and metabolomics stats
+  - see cores methods for stats on metabolomics 
 
 ===============================================================================
 Observations
