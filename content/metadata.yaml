@@ -31,6 +31,7 @@ authors:
     email: jane.roe@whatever.edu
     affiliations:
       - School of Computing, University of Utah
+      - Scientific Computing & Imaging Institute, University of Utah
   -
     github: tcameronwaller
     name: T. Cameron Waller
@@ -49,7 +50,7 @@ authors:
   -
     name: Sara M. Nowinski
     initials: SMN
-    orcid:
+    orcid: 0000-0002-4744-6101
     email: sara.nowinski@biochem.utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
@@ -68,6 +69,7 @@ authors:
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Biochemistry, University of Utah
+      - Diabetes & Metabolism Research Center, University of Utah
       - Metabolomics Core Facility, University of Utah
   -
     github: beiwphillips
@@ -77,6 +79,7 @@ authors:
     email: jane.roe@whatever.edu
     affiliations:
       - School of Computing, University of Utah
+      - Scientific Computing & Imaging Institute, University of Utah
   -
     name: Jared Rutter
     initials: JR
@@ -84,4 +87,5 @@ authors:
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Biochemistry, University of Utah
+      - Diabetes & Metabolism Research Center, University of Utah
       - Howard Hughes Medical Institute, University of Utah

@@ -43,6 +43,335 @@
   },
   {
     "publisher": "Elsevier BV",
+    "issue": "6",
+    "DOI": "10.1016/j.ajhg.2016.09.021",
+    "type": "article-journal",
+    "page": "1229-1244",
+    "source": "Crossref",
+    "title": "MECR Mutations Cause Childhood-Onset Dystonia and Optic Atrophy, a Mitochondrial Fatty Acid Synthesis Disorder",
+    "volume": "99",
+    "author": [
+      {
+        "given": "Gali",
+        "family": "Heimer"
+      },
+      {
+        "given": "Juha M.",
+        "family": "Kerätär"
+      },
+      {
+        "given": "Lisa G.",
+        "family": "Riley"
+      },
+      {
+        "given": "Shanti",
+        "family": "Balasubramaniam"
+      },
+      {
+        "given": "Eran",
+        "family": "Eyal"
+      },
+      {
+        "given": "Laura P.",
+        "family": "Pietikäinen"
+      },
+      {
+        "given": "J. Kalervo",
+        "family": "Hiltunen"
+      },
+      {
+        "given": "Dina",
+        "family": "Marek-Yagel"
+      },
+      {
+        "given": "Jeffrey",
+        "family": "Hamada"
+      },
+      {
+        "given": "Allison",
+        "family": "Gregory"
+      },
+      {
+        "given": "Caleb",
+        "family": "Rogers"
+      },
+      {
+        "given": "Penelope",
+        "family": "Hogarth"
+      },
+      {
+        "given": "Martha A.",
+        "family": "Nance"
+      },
+      {
+        "given": "Nechama",
+        "family": "Shalva"
+      },
+      {
+        "given": "Alvit",
+        "family": "Veber"
+      },
+      {
+        "given": "Michal",
+        "family": "Tzadok"
+      },
+      {
+        "given": "Andreea",
+        "family": "Nissenkorn"
+      },
+      {
+        "given": "Davide",
+        "family": "Tonduti"
+      },
+      {
+        "given": "Florence",
+        "family": "Renaldo"
+      },
+      {
+        "given": "Ichraf",
+        "family": "Kraoua"
+      },
+      {
+        "given": "Celeste",
+        "family": "Panteghini"
+      },
+      {
+        "given": "Lorella",
+        "family": "Valletta"
+      },
+      {
+        "given": "Barbara",
+        "family": "Garavaglia"
+      },
+      {
+        "given": "Mark J.",
+        "family": "Cowley"
+      },
+      {
+        "given": "Velimir",
+        "family": "Gayevskiy"
+      },
+      {
+        "given": "Tony",
+        "family": "Roscioli"
+      },
+      {
+        "given": "Jonathon M.",
+        "family": "Silberstein"
+      },
+      {
+        "given": "Chen",
+        "family": "Hoffmann"
+      },
+      {
+        "given": "Annick",
+        "family": "Raas-Rothschild"
+      },
+      {
+        "given": "Valeria",
+        "family": "Tiranti"
+      },
+      {
+        "given": "Yair",
+        "family": "Anikster"
+      },
+      {
+        "given": "John",
+        "family": "Christodoulou"
+      },
+      {
+        "given": "Alexander J.",
+        "family": "Kastaniotis"
+      },
+      {
+        "given": "Bruria",
+        "family": "Ben-Zeev"
+      },
+      {
+        "given": "Susan J.",
+        "family": "Hayflick"
+      },
+      {
+        "given": "Michael J.",
+        "family": "Bamshad"
+      },
+      {
+        "given": "Suzanne M.",
+        "family": "Leal"
+      },
+      {
+        "given": "Deborah A.",
+        "family": "Nickerson"
+      },
+      {
+        "given": "Peter",
+        "family": "Anderson"
+      },
+      {
+        "given": "Marcus",
+        "family": "Annable"
+      },
+      {
+        "given": "Elizabeth Marchani",
+        "family": "Blue"
+      },
+      {
+        "given": "Kati J.",
+        "family": "Buckingham"
+      },
+      {
+        "given": "Jennifer",
+        "family": "Chin"
+      },
+      {
+        "given": "Jessica X.",
+        "family": "Chong"
+      },
+      {
+        "suffix": "Jr.",
+        "given": "Rodolfo",
+        "family": "Cornejo"
+      },
+      {
+        "given": "Colleen P.",
+        "family": "Davis"
+      },
+      {
+        "given": "Christopher",
+        "family": "Frazar"
+      },
+      {
+        "given": "Zongxiao",
+        "family": "He"
+      },
+      {
+        "given": "Gail P.",
+        "family": "Jarvik"
+      },
+      {
+        "given": "Guillaume",
+        "family": "Jimenez"
+      },
+      {
+        "given": "Eric",
+        "family": "Johanson"
+      },
+      {
+        "given": "Tom",
+        "family": "Kolar"
+      },
+      {
+        "given": "Stephanie A.",
+        "family": "Krauter"
+      },
+      {
+        "given": "Daniel",
+        "family": "Luksic"
+      },
+      {
+        "given": "Colby T.",
+        "family": "Marvin"
+      },
+      {
+        "given": "Sean",
+        "family": "McGee"
+      },
+      {
+        "given": "Daniel J.",
+        "family": "McGoldrick"
+      },
+      {
+        "given": "Karynne",
+        "family": "Patterson"
+      },
+      {
+        "given": "Marcos",
+        "family": "Perez"
+      },
+      {
+        "given": "Sam W.",
+        "family": "Phillips"
+      },
+      {
+        "given": "Jessica",
+        "family": "Pijoan"
+      },
+      {
+        "given": "Peggy D.",
+        "family": "Robertson"
+      },
+      {
+        "given": "Regie",
+        "family": "Santos-Cortez"
+      },
+      {
+        "given": "Aditi",
+        "family": "Shankar"
+      },
+      {
+        "given": "Krystal",
+        "family": "Slattery"
+      },
+      {
+        "given": "Kathryn M.",
+        "family": "Shively"
+      },
+      {
+        "given": "Deborah L.",
+        "family": "Siegel"
+      },
+      {
+        "given": "Joshua D.",
+        "family": "Smith"
+      },
+      {
+        "given": "Monica",
+        "family": "Tackett"
+      },
+      {
+        "given": "Gao",
+        "family": "Wang"
+      },
+      {
+        "given": "Marc",
+        "family": "Wegener"
+      },
+      {
+        "given": "Jeffrey M.",
+        "family": "Weiss"
+      },
+      {
+        "given": "Riana I.",
+        "family": "Wernick"
+      },
+      {
+        "given": "Marsha M.",
+        "family": "Wheeler"
+      },
+      {
+        "given": "Qian",
+        "family": "Yi"
+      }
+    ],
+    "container-title": "The American Journal of Human Genetics",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "URL": "https://doi.org/f9gbs7",
+    "container-title-short": "The American Journal of Human Genetics",
+    "PMCID": "PMC5142118",
+    "PMID": "27817865",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1016/j.ajhg.2016.09.021",
+    "id": "jMtpAwjn"
+  },
+  {
+    "publisher": "Elsevier BV",
     "issue": "2",
     "DOI": "10.1016/j.cmet.2019.11.002",
     "type": "article-journal",
@@ -1829,6 +2158,61 @@
     "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.5281/zenodo.3509134"
   },
   {
+    "publisher": "eLife Sciences Publications, Ltd",
+    "abstract": "<jats:p>Mitochondrial fatty acid synthesis (FASII) and iron sulfur cluster (FeS) biogenesis are both vital biosynthetic processes within mitochondria. In this study, we demonstrate that the mitochondrial acyl carrier protein (ACP), which has a well-known role in FASII, plays an unexpected and evolutionarily conserved role in FeS biogenesis. ACP is a stable and essential subunit of the eukaryotic FeS biogenesis complex. In the absence of ACP, the complex is destabilized resulting in a profound depletion of FeS throughout the cell. This role of ACP depends upon its covalently bound 4’-phosphopantetheine (4-PP)-conjugated acyl chain to support maximal cysteine desulfurase activity. Thus, it is likely that ACP is not simply an obligate subunit but also exploits the 4-PP-conjugated acyl chain to coordinate mitochondrial fatty acid and FeS biogenesis.</jats:p>",
+    "DOI": "10.7554/elife.17828",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "The mitochondrial acyl carrier protein (ACP) coordinates mitochondrial fatty acid synthesis with iron sulfur cluster biogenesis",
+    "volume": "5",
+    "author": [
+      {
+        "given": "Jonathan G",
+        "family": "Van Vranken"
+      },
+      {
+        "given": "Mi-Young",
+        "family": "Jeong"
+      },
+      {
+        "given": "Peng",
+        "family": "Wei"
+      },
+      {
+        "given": "Yu-Chan",
+        "family": "Chen"
+      },
+      {
+        "given": "Steven P",
+        "family": "Gygi"
+      },
+      {
+        "given": "Dennis R",
+        "family": "Winge"
+      },
+      {
+        "given": "Jared",
+        "family": "Rutter"
+      }
+    ],
+    "container-title": "eLife",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          19
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggvrxg",
+    "PMCID": "PMC4991935",
+    "PMID": "27540631",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.7554/elife.17828",
+    "id": "a2ZcMh2p"
+  },
+  {
     "title": "The Reactome Pathway Knowledgebase.",
     "volume": "46",
     "issue": "D1",
@@ -2100,7 +2484,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2118,7 +2502,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2137,7 +2521,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2156,7 +2540,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2175,7 +2559,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2194,7 +2578,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2213,7 +2597,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2237,7 +2621,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
@@ -2271,7 +2655,7 @@
         [
           "2020",
           5,
-          12
+          13
         ]
       ]
     },
