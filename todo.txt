@@ -1,34 +1,30 @@
 # To Do
 
+
+
 ### Software
+[ ] Motifs improvement
+		[ ] Statistical sorting
+				[ ] Motifs 1-5
+				[ ] Only return global motifs that pass a statistical thresholding
 [ ]	Add preliminary Mct1 data
-		[ ] Re-run proteomics and metabolomics stats
-[ ] Time-course integration
-		[ ] Slider bar for viz, connectivity, and motifs
-		[ ] Interactive line plotting
+[ ] Author draft manuscript
 [ ] Fix hub thresholding
 [ ] Improve human metabolite name mapping
 		[ ] There are still instances where data mapping or reaction completion is
 				still inconsistent
+		[ ] Issues mapping gene values to proteins --> yeast is requiring names,
+				can't use IDs
 [ ] Check collapsing is working correctly. Some seem to leave some plotting of
 		components out
 		[ ] Show reactions that were collapsed
 		[ ] For repeated forward and reverse reactions, only show once
-[ ] Motifs improvement
-		[ ] Highlight if modifier changed where inputs and outputs are same (minus
-				compartment) --> regulation of transport reaction
-		[ ] Highlight any modifier regulated reactions?
-		[ ] Motif where catalyst is down and output metabolite is down (CIT1 and
-				isocitrate) -- other instances that are expected or unexpected
-		[ ] Statistical sorting
-		[ ]	Add options to not allow sustained motif if same on both sides
-		[ ] Option to not consider high-hub nodes
-		[ ] Order PathMax by percentage of pathway coverage
+
+
 [ ] Show unmapped entities in window
 [ ] Show some basic data QC
 [ ]	Improve error reporting -- make more informative
 [ ]	Add connected reactions options
-		[ ]	Still needs to show motifs
 		[ ]	Remove elements that didn't change to reduce clutter, or collapse
 				to one super-node that when clicked can open up the other elements
 [ ]	Cell activity summary from ordered and p-valued pathway activity ratio
@@ -43,9 +39,29 @@
 [ ] Packaging
 		[ ] Windows/Linux/Mac
 		[ ]	Package with python and dependencies, make stable across platforms
-			
+
+
+
 ### Manuscript
 [ ]	Outline caveats in discussion and future directions while in beta test,
 		tell working on more 	validation and improvement in weak areas
 		- Make it clear that this isn't the final version (in progress)
 		- Add authors note on bioRxiv comments section for each manuscript version
+[ ] Explain reasoning for network representation as is
+[ ] Improve background of existing tools
+[ ] Swap in graphical abstract
+
+
+
+### Notes
+- 400-500 for LC-MS
+ 	- Ask James for a LC dataset, whats the technical space and how to collapse
+		in the network
+	- Schedule James
+	- MIDAS library is a good reference for LC
+
+
+
+### Future
+[ ] Interactive line plotting for time-course and other
+[ ] Remove p-value highlighting?
