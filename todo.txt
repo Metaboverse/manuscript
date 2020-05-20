@@ -1,15 +1,16 @@
 # To Do
 
 
-
 ### Software
+[ ]	Add preliminary Mct1 data
+[ ] Include metadata page for a build -- options selected, dataset names,
+		stats, etc.
+[ ] Author draft manuscript
+
 [ ] Motifs improvement
 		[ ] Statistical sorting
 				[ ] Motifs 1-5
 				[ ] Only return global motifs that pass a statistical thresholding
-[ ]	Add preliminary Mct1 data
-[ ] Author draft manuscript
-[ ] Fix hub thresholding
 [ ] Improve human metabolite name mapping
 		[ ] There are still instances where data mapping or reaction completion is
 				still inconsistent
@@ -17,8 +18,8 @@
 				can't use IDs
 [ ] Check collapsing is working correctly. Some seem to leave some plotting of
 		components out
+		[ ] Test collapse with/without modifiers in collapsing accurate
 		[ ] Show reactions that were collapsed
-		[ ] For repeated forward and reverse reactions, only show once
 
 
 [ ] Show unmapped entities in window
@@ -41,7 +42,6 @@
 		[ ]	Package with python and dependencies, make stable across platforms
 
 
-
 ### Manuscript
 [ ]	Outline caveats in discussion and future directions while in beta test,
 		tell working on more 	validation and improvement in weak areas
@@ -52,7 +52,6 @@
 [ ] Swap in graphical abstract
 
 
-
 ### Notes
 - 400-500 for LC-MS
  	- Ask James for a LC dataset, whats the technical space and how to collapse
@@ -61,7 +60,5 @@
 	- MIDAS library is a good reference for LC
 
 
-
 ### Future
 [ ] Interactive line plotting for time-course and other
-[ ] Remove p-value highlighting?

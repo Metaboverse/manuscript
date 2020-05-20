@@ -63,6 +63,13 @@ authors:
       - Department of Biochemistry, University of Utah
       - Metabolomics Core Facility, University of Utah
   -
+    name: Ian George
+    initials: IG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: ian.george@utah.edu
+    affiliations:
+      - Department of Biochemistry, University of Utah
+  -
     name: James Cox
     initials: JC
     orcid: 0000-0002-5977-2350
