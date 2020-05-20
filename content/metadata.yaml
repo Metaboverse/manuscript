@@ -27,8 +27,8 @@ authors:
     github: zhou325
     name: Youjia Zhou
     initials: YZ
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    orcid:
+    email: zhou325@sci.utah.edu
     affiliations:
       - School of Computing, University of Utah
       - Scientific Computing & Imaging Institute, University of Utah
@@ -37,7 +37,7 @@ authors:
     name: T. Cameron Waller
     initials: TCW
     orcid: 0000-0002-0313-6646
-    email: jane.roe@whatever.edu
+    email: tcameronwaller@gmail.com
     affiliations:
       - Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego
   -
@@ -57,15 +57,15 @@ authors:
   -
     name: Tyler Van Ry
     initials: TV
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    orcid:
+    email: tylerv@cores.utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
       - Metabolomics Core Facility, University of Utah
   -
     name: Ian George
     initials: IG
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-1361-694X
     email: ian.george@utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
@@ -73,7 +73,7 @@ authors:
     name: James Cox
     initials: JC
     orcid: 0000-0002-5977-2350
-    email: jane.roe@whatever.edu
+    email: jcox@cores.utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
       - Diabetes & Metabolism Research Center, University of Utah
@@ -82,8 +82,8 @@ authors:
     github: beiwphillips
     name: Bei Wang
     initials: BW
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    orcid:
+    email: beiwang@sci.utah.edu
     affiliations:
       - School of Computing, University of Utah
       - Scientific Computing & Imaging Institute, University of Utah
@@ -91,7 +91,7 @@ authors:
     name: Jared Rutter
     initials: JR
     orcid: 0000-0002-2710-9765
-    email: jane.roe@whatever.edu
+    email: rutter@biochem.utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
       - Diabetes & Metabolism Research Center, University of Utah
