@@ -2,6 +2,10 @@
 
 
 ### Software
+[ ] Motifs improvement
+		[ ] Statistical sorting
+				[ ] Motifs 1-5
+				[ ] Only return global motifs that pass a statistical thresholding
 [ ]	Add preliminary Mct1 data
 [ ] Include metadata page for a build -- options selected, dataset names,
 		stats, etc.
