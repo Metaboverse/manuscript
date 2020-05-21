@@ -2,19 +2,15 @@
 
 
 ### Software
+
+#### For bioRxiv
 [ ] Motifs improvement
 		[ ] Statistical sorting
 				[ ] Motifs 1-5
 				[ ] Only return global motifs that pass a statistical thresholding
 [ ]	Add preliminary Mct1 data
-[ ] Include metadata page for a build -- options selected, dataset names,
-		stats, etc.
 [ ] Author draft manuscript
 
-[ ] Motifs improvement
-		[ ] Statistical sorting
-				[ ] Motifs 1-5
-				[ ] Only return global motifs that pass a statistical thresholding
 [ ] Improve human metabolite name mapping
 		[ ] There are still instances where data mapping or reaction completion is
 				still inconsistent
@@ -24,11 +20,19 @@
 		components out
 		[ ] Test collapse with/without modifiers in collapsing accurate
 		[ ] Show reactions that were collapsed
-
-
+[ ] Time course multi-condition
+		[ ] Comparison chart of similar/disimilar motifs each sample vs each other
+				sample
+		[ ] Interactive line plot
 [ ] Show unmapped entities in window
 [ ] Show some basic data QC
 [ ]	Improve error reporting -- make more informative
+[ ] Packaging
+		[ ] Windows/Linux/Mac
+		[ ]	Package with python and dependencies, make stable across platforms
+
+
+#### For journal submission
 [ ]	Add connected reactions options
 		[ ]	Remove elements that didn't change to reduce clutter, or collapse
 				to one super-node that when clicked can open up the other elements
@@ -41,9 +45,7 @@
 [ ] Flux integration
 		[ ] PCA on flux
 [ ] Interactive motif builder
-[ ] Packaging
-		[ ] Windows/Linux/Mac
-		[ ]	Package with python and dependencies, make stable across platforms
+
 
 
 ### Manuscript
@@ -62,7 +64,3 @@
 		in the network
 	- Schedule James
 	- MIDAS library is a good reference for LC
-
-
-### Future
-[ ] Interactive line plotting for time-course and other
