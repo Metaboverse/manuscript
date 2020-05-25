@@ -10,18 +10,8 @@
 				[ ] Only return global motifs that pass a statistical thresholding
 [ ]	Add preliminary Mct1 data
 [ ] Author draft manuscript
-
-[ ] Improve human metabolite name mapping
-		[ ] There are still instances where data mapping or reaction completion is
-				still inconsistent
-		[ ] Issues mapping gene values to proteins --> yeast is requiring names,
-				can't use IDs
-[ ] Check collapsing is working correctly. Some seem to leave some plotting of
-		components out
-		[ ] Test collapse with/without modifiers in collapsing accurate
-		[ ] Show reactions that were collapsed
 [ ] Time course multi-condition
-		[ ] Comparison chart of similar/disimilar motifs each sample vs each other
+		[ ] UpSet plot of similar/disimilar motifs each sample vs each other
 				sample
 		[ ] Interactive line plot
 [ ] Show unmapped entities in window
@@ -30,6 +20,13 @@
 [ ] Packaging
 		[ ] Windows/Linux/Mac
 		[ ]	Package with python and dependencies, make stable across platforms
+
+[ ] Human networks
+	- Says collapsed when not
+	- shading reaction nodes with expression values
+	- Pathways in motif view not showing
+	- were complexes being shaded? No protein data
+
 
 
 #### For journal submission
@@ -45,17 +42,12 @@
 [ ] Flux integration
 		[ ] PCA on flux
 [ ] Interactive motif builder
-
-
-
-### Manuscript
-[ ]	Outline caveats in discussion and future directions while in beta test,
-		tell working on more 	validation and improvement in weak areas
-		- Make it clear that this isn't the final version (in progress)
-		- Add authors note on bioRxiv comments section for each manuscript version
-[ ] Explain reasoning for network representation as is
-[ ] Improve background of existing tools
-[ ] Swap in graphical abstract
+[ ] Issues mapping gene values to proteins --> yeast is requiring names,
+		can't use IDs
+[ ] Check collapsing is working correctly. Some seem to leave some plotting of
+		components out
+		[ ] Test collapse with/without modifiers in collapsing accurate
+		[ ] Show reactions that were collapsed
 
 
 ### Notes

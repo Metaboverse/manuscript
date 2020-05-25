@@ -42,3 +42,14 @@ The following command, while running, will trigger both the `build.sh` script an
 ```sh
 bash build/autobuild.sh
 ```
+
+# Table of Contents
+- 01.abstract.md: Abstract
+- 02.introduction.md: Background information, introduction
+- 03.results.md: Software description, validation
+- 04.discussion.md: Summary, innovations, caveats, future directions
+- 05.methods.md: Methods for software dev. and data production, curation, and analysis
+- 06.acknowledgements.md: Acknowledgements and funding information
+- 07.contributions.md: Authorship contributions (refer to https://github.com/akenall/Open-Contributorship-Badges/blob/master/Badge%20Files.md for more information)
+- 08.supplment.md: Supplemental data, methods
+- metadata.yaml: Author metadata (contact, initials, ORCID, affiliations, etc.)
