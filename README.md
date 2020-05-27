@@ -15,6 +15,11 @@ The easiest way to run Manubot is to use [continuous integration](#continuous-in
 If you want to build a Manubot manuscript locally, install the [conda](https://conda.io) environment as described in [`build`](build).
 Then, you can build the manuscript on POSIX systems by running the following commands from this root directory.
 
+Installation:
+```sh
+conda env create --file environment.yml
+```
+
 ```sh
 # Activate the manubot conda environment (assumes conda version >= 4.4)
 conda activate manubot
