@@ -11,7 +11,7 @@
 [ ]	Add preliminary Mct1 data
 [ ] Author draft manuscript
 [ ] Time course multi-condition
-		[ ] UpSet plot of similar/disimilar motifs each sample vs each other
+		[ ] UpSet plot of similar/dissimilar motifs each sample vs each other
 				sample
 		[ ] Interactive line plot
 [ ] Show unmapped entities in window
@@ -22,10 +22,18 @@
 		[ ]	Package with python and dependencies, make stable across platforms
 
 [ ] Human networks
-	- Says collapsed when not
+	- Says collapsed when not, or says a motif is in the pathway when not
 	- shading reaction nodes with expression values
 	- Pathways in motif view not showing
 	- were complexes being shaded? No protein data
+[ ] Can't select new pathway after opening window from motif page
+[ ] Lots of very similar collapsed reactions
+
+[ ] When plotting more than 500 nodes, now warning
+[ ] Toggle complexes
+[ ] Toggle modifiers
+[ ] Option to limit connectivity to just one superpathway
+[ ] kNN not working in connectivity
 
 
 
@@ -56,3 +64,33 @@
 		in the network
 	- Schedule James
 	- MIDAS library is a good reference for LC
+
+
+
+
+
+Lung
+
+Connectivity reactions sewn together by glucose, glycerol, nucleic acids, and related
+
+GLYCTK expressed in liver, lung, and skin
+AMP, 5,6-dihydrouracil up
+Glucose depletion far reaching effects across several reactions -- is this direction correct?
+
+Glycerol shown up and
+Glycerol, which is the backbone of all lipids, is also increased in sera from advanced-stage lung cancer patients, which is indicative of either lipid breakdown or cell membrane rearrangement (Deja et al., 2014).  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6033515/
+
+D-glyceric acid (DGA)
+On the other hand, decreased levels of glyceric acid and L-glutamic acid were seen in advanced stage tumors, suggesting that these metabolites may be transferred from the blood into the lung tissue and then metabolized rapidly within the tissue (Hori et al., 2011).  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6033515/
+
+
+All other TCA are up except citrate
+Supports idea that pyruvate -> lactate and TCA is fed through glutamine upregulation
+
+
+jActiveModules uses p-values
+
+Delta based on timepoint of interest
+M0/Mtotal or other
+Use time point as reference
+Make sure iteration of MPC flux is correct. Others were not, but the one I have looks good

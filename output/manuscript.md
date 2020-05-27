@@ -12,7 +12,7 @@ author-meta:
 - Jared Rutter
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-25'
+date-meta: '2020-05-26'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -31,9 +31,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data" />
 
-  <meta name="dc.date" content="2020-05-25" />
+  <meta name="dc.date" content="2020-05-26" />
 
-  <meta name="citation_publication_date" content="2020-05-25" />
+  <meta name="citation_publication_date" content="2020-05-26" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -161,7 +161,7 @@ title: 'Gazing into the Metaboverse: Automated exploration and contextualization
 <small><em>
 This manuscript
 was automatically generated
-on May 25, 2020.
+on May 26, 2020.
 </em></small>
 
 ## Authors
@@ -260,7 +260,7 @@ Users may be interested a particular metabolites or proteins and the downstream 
 #### Exploring perturbation connectivity within the global network
 Abundance or behavioral changes of a metabolic network component can lead to downstream genotypic and phenotypic modulations in a biological system. One important measure of robustness of a network is "connectivity" [@doi:10.1093/gigascience/giz137; @doi:10.1038/nrg.2016.87]. In a biological context, an example of connectivity, or the loss of network connectivity, is easily grasped when considering a transport reaction from the cytosol into the mitochondria of a critical metabolite [@doi:10.1186/1756-0381-4-10; @doi:10.1093/gigascience/giz137; @doi:10.1007/s41109-019-0129-0; @doi:10.1371/journal.pone.0087075]. When the transport hub is abolished and network connectivity is lost, the critical metabolite cannot participate in the required downstream reactions. For example, our laboratory previously established the consequences of the ablation of the mitochondrial pyruvate carrier on downstream citric acid cycle processes and the corresponding increase in lactate production [@doi:10.1126/science.1218099] and leads to serious cellular remodeling and dysfunction [@doi:10.1038/ncb3593; @doi:10.1016/j.cmet.2019.11.002].
 
-The importance of connectivity could also be considered in a clinical context. For example, a druggable and critical metabolite may be perturbed in a particular disease context. However, if a metabolite participating in a neighboring, downstream reaction is also perturbed in a way not related to the perturbation of the first metabolite, the efficacy of the drug treatment could be severely impaired [@doi:10.1158/0008-5472.CAN-14-3256; @doi:10.1126/science.1132939; @doi:10.1186/s12918-018-0674-7; @doi:10.1038/nrg.2016.87]. To aid in exploration of the connectivity of the biological network, we developed a connectivity module where users can display all reactions that have at least one involved component perturbed based on either an abundance or statistical level. By doing so, when the graph is constructed, proximal reactions that were perturbed will be "sewn" together to reconstruct a perturbation connectivity map. Perturbed, but un-connected reactions would be displayed as single reactions in the network.
+The importance of connectivity could also be considered in a clinical context. For example, a druggable and critical metabolite may be perturbed in a particular disease context. However, if a metabolite participating in a neighboring, downstream reaction is also perturbed in a way not related to the perturbation of the first metabolite, the efficacy of the drug treatment could be severely impaired [@doi:10.1158/0008-5472.CAN-14-3256; @doi:10.1126/science.1132939; @doi:10.1186/s12918-018-0674-7; @doi:10.1038/nrg.2016.87]. To aid in exploration of the connectivity of the biological network, we developed a connectivity module where users can display all global reactions or reactions of a specific super pathway that have at least one involved component perturbed based on either an abundance or statistical level. By doing so, when the graph is constructed, proximal reactions that were perturbed will be "sewn" together to reconstruct a perturbation connectivity map. Perturbed, but un-connected reactions would be displayed as single reactions in the network.
 
 ### Data vignettes
 In order to demonstrate the utility of Metaboverse to the community, we used Metaboverse to analyze public and new datasets. From the vignettes provided below, we show that Metaboverse not only is able to identify points of interest previously described or expected, but can rapidly identify for the user unexpected and systematic regulatory patterns in a reaction network context.
@@ -279,8 +279,17 @@ A second pattern of interest that we expect in this model is the characteristic 
 
 By analyzing this multi-omics dataset using reaction motif analysis and other interactive visualization, interesting questions arise. We see several reaction motifs that are expected based on prior knowledge of this biological model, as well as other interesting behaviors worthy of further follow-up. This demonstrates the potential Metaboverse has to act as a valuable hypothesis-generation tool, as well as a convenient platform for visualization and analysis of a user's dataset in the context of the metabolic or other reaction networks.
 
-#### 2. Human
-In progress...
+#### 2. Metabolic signatures in human lung adenocarcinomas compared to normal lung tissue.
+We next turned to published human lung adenocarcinoma steady state metabolomics data [@doi:10.1158/1940-6207.CAPR-14-0329] to assess the utility of Metaboverse when analyzing this data. Lung cancer remains a leading cause of death worldwide and a more complete understanding of the metabolism of these tumors is essential in understanding how to better treat the condition.
+
+Consistent with the original study [@doi:10.1158/1940-6207.CAPR-14-0329], and in our recent re-study of the data [@doi:10.1093/gigascience/giz137], nucleotide metabolism was broadly up-regulated in adenocarcinoma samples in the motif analysis and perturbation connectivity analysis (Figure @fig:lung_vignette A). We also notice similar perturbations in xanthine (Figure @fig:lung_vignette B), glutamine, and others, which are highlighted to the user quickly in the motif and perturbation connectivity analyses. However, as we previous emphasized [@doi:10.1093/gigascience/giz137], by approaching these perturbations in a reaction-centric approach, we can identify regulatory behavior that further contextualizes the data. For example, we highlighted the up-regulation of glyceric acid coupled with the proximal down-regulation of 3-Phosphoglyceric acid indicates activity of glycerate kinase, which is missed in the original study, and which has connections to serine metabolism which may be fostering an ideal environment for tumorigenesis (Figure @fig:lung_vignette C). Interestingly, we see that across the measured and significant metabolites involved in the TCA cycle, we see up-regulation of malate (log<sub>2</sub> Fold Change: 0.39, adjusted-p: 0.02) and down-regulation of citrate (log<sub>2</sub> Fold Change: -0.64, adjusted-p: 0.01). This is consistent with the hypothesis that the TCA cycle is being starved of carbon via pyruvate, which is probably being shunted to lactate production, thus the lower citrate levels, while part of the TCA cycle can be fed through glutamate (log<sub>2</sub> Fold Change: 0.47, adjusted-p: < 0.01), thus the increased malate levels (Figure @fig:lung_vignette D).
+
+![
+  **Metaboverse identifies nucleotide metabolism signatures in lung adenomcarcinoma metabolomics data.**
+  (A) Upregulation of several nucleotide metabolites. (B) Identification of xanthine regulation by both motif and perturbation connectivity analysis. (C) Regulatory activity between glyceric acid and 3-Phosphoglyceric acid identified by motif analysis. (D) Disruptions of TCA metabolism support canonical disruptions during adenocarcinoma development.
+](./content/figures/fig_lung.png "Square image"){#fig:lung_vignette}
+
+Metaboverse simplifies the analysis process and allows users more flexibility via its interactive platform to identify canonical and interesting, regulatory patterns within their data with ease. While we previously identified the regulatory pattern identified in Figure @fig:lung_vignette C, Metaboverse offers an automated platform for discovery of such events, which were missed in the original study. We hope that by using Metaboverse, users will be able to extract new and exciting hypotheses that can drive their field forward.
 
 
 ## Discussion
@@ -448,6 +457,9 @@ All GC-MS analysis was performed with an Agilent 5977b GC-MS MSD-HES and an Agil
 Data was collected using MassHunter software (Agilent). Metabolites were identified and their peak area was recorded using MassHunter Quant. This data was transferred to an Excel spread sheet (Microsoft, Redmond WA). Metabolite identity was established using a combination of an in-house metabolite library developed using pure purchased standards, the NIST library and the Fiehn library. There are a few reasons a specific metabolite may not be observable through GC-MS. The metabolite may not be amenable to GC-MS due to its size, or a quaternary amine such as carnitine, or simply because it does not ionize well. Metabolites that do not ionize well include oxaloacetate, histidine and arginine. Cysteine can be observed depending on cellular conditions. It often forms disulfide bonds with proteins and is generally at a low concentration. Metabolites may not be quantifiable if they are only present in very low concentrations.
 
 Resulting data from all samples were normalized to the internal standard d4-succinate. Samples highlighted in yellow were swapped with normalized data from the unsaturated run. The identity of each peak was ensured by visualization in Mass Hunter Qual and Quant. The data has also been roughly reordered by metabolic process. False positives were removed. All but the best representative of duplicate metabolites, which were created through variability in the derivatization process, were also removed.
+
+#### 9.2 Human lung adenomcarcinoma metabolomics.
+Data were accessed from Metabolomics Workbench [@doi:10.21228/M8PG66] and processed as in our previous re-study of this data [@doi:10.1093/gigascience/giz137]. 
 
 ### 10. Data availability.
 
