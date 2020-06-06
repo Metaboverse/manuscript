@@ -1,0 +1,128 @@
+Input name	Standardized name	In RefMet	Formula	Exact mass	Super class	Main class	 Sub class
+D-Glucose	Glucose	Yes	C6H12O6	180.0634	Carbohydrates	Monosaccharides	Monosaccharides
+Glucose 6-phosphate	Glucose 6-phosphate	Yes	C6H13O9P	260.0297	Carbohydrates	Monosaccharides	Monosaccharide phosphates
+Fructose-6-phosphate	Fructose 6-phosphate	Yes	C6H13O9P	260.0297	Carbohydrates	Monosaccharides	Monosaccharide phosphates
+fructose-1,6-diphosphate	Fructose 1,6-bisphosphate	Yes	C6H14O12P2	339.9961	Carbohydrates	Monosaccharides	Monosaccharide phosphates
+3-Phosphoglyceric acid	3-Phosphoglyceric acid	Yes	C3H7O7P	185.9929	Organic acids	Short-chain acids and derivatives	Short-chain acids and derivatives
+Phosphoenolpyruvate	Phosphoenolpyruvic acid	Yes	C3H5O6P	167.9824	Organic acids	Short-chain acids and derivatives	Short-chain acids and derivatives
+Pyruvic acid	Pyruvic acid	Yes	C3H4O3	88.0160	Organic acids	Short-chain acids and derivatives	Short-chain acids and derivatives
+L-Lactic acid	Lactic acid	Yes	C3H6O3	90.0317	Organic acids	Short-chain acids and derivatives	Short-chain acids and derivatives
+Citric acid	Citric acid	Yes	C6H8O7	192.0270	Organic acids	TCA acids	TCA acids
+cis-Aconitic acid	cis-Aconitic acid	Yes	C6H6O6	174.0164	Organic acids	TCA acids	TCA acids
+Isocitric acid	Isocitric acid	Yes	C6H8O7	192.0270	Organic acids	TCA acids	TCA acids
+Succinic acid	Succinic acid	Yes	C4H6O4	118.0266	Organic acids	TCA acids	TCA acids
+Fumaric acid	Fumaric acid	Yes	C4H4O4	116.0110	Organic acids	TCA acids	TCA acids
+D-Malic acid	D-Malic acid	Yes	C4H6O5	134.0215	Organic acids	Hydroxy acids	Beta hydroxy acids
+D-Ribose-5-phosphate	Ribose	Yes	C5H10O5	150.0528	Carbohydrates	Monosaccharides	Monosaccharides
+Glycine	Glycine	Yes	C2H5NO2	75.0320	Organic acids	Amino acids and peptides	Amino acids
+L-Alanine	Alanine	Yes	C3H7NO2	89.0477	Organic acids	Amino acids and peptides	Amino acids
+L-Valine	Valine	Yes	C5H11NO2	117.0790	Organic acids	Amino acids and peptides	Amino acids
+L-Leucine	Leucine	Yes	C6H13NO2	131.0946	Organic acids	Amino acids and peptides	Amino acids
+L-Isoleucine	Isoleucine	Yes	C6H13NO2	131.0946	Organic acids	Amino acids and peptides	Amino acids
+L-Proline	Proline	Yes	C5H9NO2	115.0633	Organic acids	Amino acids and peptides	Amino acids
+L-Phenylalanine	Phenylalanine	Yes	C9H11NO2	165.0790	Organic acids	Amino acids and peptides	Amino acids
+L-Tyrosine	Tyrosine	Yes	C9H11NO3	181.0739	Organic acids	Amino acids and peptides	Amino acids
+L-Tyrosine	Tyrosine	Yes	C9H11NO3	181.0739	Organic acids	Amino acids and peptides	Amino acids
+L-Serine	Serine	Yes	C3H7NO3	105.0426	Organic acids	Amino acids and peptides	Amino acids
+L-Threonine	Threonine	Yes	C4H9NO3	119.0582	Organic acids	Amino acids and peptides	Amino acids
+L-Methionine	Methionine	Yes	C5H11NO2S	149.0511	Organic acids	Amino acids and peptides	Amino acids
+L-Asparagine	Asparagine	Yes	C4H8N2O3	132.0535	Organic acids	Amino acids and peptides	Amino acids
+Glutamine	Glutamine	Yes	C5H10N2O3	146.0691	Organic acids	Amino acids and peptides	Amino acids
+L-Aspartic acid	Aspartic acid	Yes	C4H7NO4	133.0375	Organic acids	Amino acids and peptides	Amino acids
+L-Glutamic acid	Glutamic acid	Yes	C5H9NO4	147.0532	Organic acids	Amino acids and peptides	Amino acids
+L-Lysine	Lysine	Yes	C6H14N2O2	146.1055	Organic acids	Amino acids and peptides	Amino acids
+Pyroglutamic acid	Pyroglutamic acid	Yes	C5H7NO3	129.0426	Organoheterocyclic compounds	Pyrroline carboxylic acids	Pyrroline carboxylic acids
+Ornithine	Ornithine	Yes	C5H12N2O2	132.0899	Organic acids	Amino acids and peptides	Amino acids
+Beta-Alanine	beta-Alanine	Yes	C3H7NO2	89.0477	Organic acids	Amino acids and peptides	Amino acids
+L-Threonine	Threonine	Yes	C4H9NO3	119.0582	Organic acids	Amino acids and peptides	Amino acids
+Iminodiacetic acid	Iminodiacetate	Yes	C4H7NO4	133.0375	Organic acids	Amino acids and peptides	Amino acids
+4-Hydroxyproline	cis-4-Hydroxyproline	Yes	C5H9NO3	131.0582	Organic acids	Amino acids and peptides	Amino acids
+D-Fructose	Fructose	Yes	C6H12O6	180.0634	Carbohydrates	Monosaccharides	Monosaccharides
+D-Mannose	Mannose	Yes	C6H12O6	180.0634	Carbohydrates	Monosaccharides	Monosaccharides
+Sorbitol	Sorbitol	Yes	C6H14O6	182.0790	Carbohydrates	Monosaccharides	Sugar alcohols
+Ribitol	Ribitol	Yes	C5H12O5	152.0685	Carbohydrates	Monosaccharides	Sugar alcohols
+Myoinositol	Myo-inositol	Yes	C6H12O6	180.0634	Organic oxygen compounds	Alcohols and polyols	Inositols
+Inositol phosphate	-	No					
+Sedoheptulose 7-phosphate	Sedoheptulose 7-phosphate	Yes	C7H15O10P	290.0403	Carbohydrates	Monosaccharides	Monosaccharide phosphates
+alpha-D-Glucosamine 1-phosphate	Glucosamine 1-phosphate	Yes	C6H14NO8P	259.0457	Organic oxygen compounds	Organooxygen compounds	Organooxygen compounds
+Galactonic acid	Galactonic acid	Yes	C6H12O7	196.0583	Carbohydrates	Monosaccharides	Sugar acids
+Cellobiose	Cellobiose	Yes	C12H22O11	342.1162	Carbohydrates	Disaccharides	Disaccharides
+L-Sorbose	Sorbose	Yes	C6H12O6	180.0634	Carbohydrates	Monosaccharides	Monosaccharides
+D-Threitol	Threitol	Yes	C4H10O4	122.0579	Carbohydrates	Monosaccharides	Sugar alcohols
+Threonic acid	Threonic acid	Yes	C4H8O5	136.0372	Carbohydrates	Monosaccharides	Sugar acids
+Nonanoic acid	Pelargonic acid	Yes	C9H18O2	158.1307	Fatty Acyls	Fatty acids	Saturated FA
+Capric acid	Capric acid	Yes	C10H20O2	172.1463	Fatty Acyls	Fatty acids	Saturated FA
+Myristic acid	Myristic acid	Yes	C14H28O2	228.2089	Fatty Acyls	Fatty acids	Saturated FA
+Palmitoleic acid	Palmitoleic acid	Yes	C16H30O2	254.2246	Fatty Acyls	Fatty acids	Unsaturated FA
+Palmitic acid	Palmitic acid	Yes	C16H32O2	256.2402	Fatty Acyls	Fatty acids	Saturated FA
+Linoleic acid	Linoleic acid	Yes	C18H32O2	280.2402	Fatty Acyls	Fatty acids	Unsaturated FA
+Oleic acid	Oleic acid	Yes	C18H34O2	282.2559	Fatty Acyls	Fatty acids	Unsaturated FA
+Elaidic acid	Elaidic acid	Yes	C18H34O2	282.2559	Fatty Acyls	Fatty acids	Unsaturated FA
+Stearic acid	Stearic acid	Yes	C18H36O2	284.2715	Fatty Acyls	Fatty acids	Saturated FA
+Arachidic acid	Arachidic acid	Yes	C20H40O2	312.3028	Fatty Acyls	Fatty acids	Saturated FA
+Arachidonic Acid	Arachidonic acid	Yes	C20H32O2	304.2402	Fatty Acyls	Fatty acids	Unsaturated FA
+Malonic acid	Malonic acid	Yes	C3H4O4	104.0110	Organic acids	Organic dicarboxylic acids	Organic dicarboxylic acids
+Unknown acid	-	No					
+Heptadecanoic acid	Margaric acid	Yes	C17H34O2	270.2559	Fatty Acyls	Fatty acids	Saturated FA
+1-Monomyristin	MG(14:0)	Yes	C17H34O4	302.2457	Glycerolipids	Monoradylglycerols	MAG
+2-Monopalmitoylglycerol	-	No					
+1-Palmitoylglycerol	MG(16:0/0:0/0:0)	Yes	C19H38O4	330.2770	Glycerolipids	Monoradylglycerols	MAG
+2-Steroylglycerol	-	No					
+1-Steroylglycerol	-	No					
+Glycerol	Glycerol	Yes	C3H8O3	92.0473	Carbohydrates	Monosaccharides	Sugar alcohols
+Glycerol 3-phosphate	sn-Glycero-3-phosphate	Yes	C3H9O6P	172.0137	Organic acids	Organic phosphoric acids	Organic phosphoric acids
+Beta-Glycerophosphoric acid	sn-Glycero-2-phosphate	Yes	C3H9O6P	172.0137	Organic acids	Phosphate esters	Monoalkyl phosphates
+O-Phosphoethanolamine	Phosphoethanolamine	Yes	C2H8NO4P	141.0191	Organic acids	Phosphate esters	Phosphoethanolamines
+Ethanolamine	Ethanolamine	Yes	C2H7NO	61.0528	Organic nitrogen compounds	Alkanolamines	1,2-aminoalcohols
+Phosphate	Phosphoric acid	Yes	PH3O4	97.9769	Homogeneous non-metal compounds	Non-metal phosphates	Non-metal phosphates
+Pyrophosphate	Pyrophosphate	Yes	P2H2Na2O7	221.9071	Mixed metal/non-metal compounds	Alkali metal pyrophosphates	Alkali metal pyrophosphates
+Hypoxanthine	Hypoxanthine	Yes	C5H4N4O	136.0385	Nucleic acids	Purines	Hypoxanthines
+Adenosine	Adenosine	Yes	C10H13N5O4	267.0968	Nucleic acids	Purines	Purine ribonucleosides
+Inosine	Inosine	Yes	C10H12N4O5	268.0808	Nucleic acids	Purines	Purine ribonucleosides
+Adenine	Adenine	Yes	C5H5N5	135.0545	Nucleic acids	Purines	6-aminopurines
+Thymine	Thymine	Yes	C5H6N2O2	126.0429	Nucleic acids	Pyrimidines	Pyrimidines
+Adenosine monophosphate	AMP	Yes	C10H14N5O7P	347.0631	Nucleic acids	Purines	Purine ribonucleoside monophosphates
+Inosine 5'-monophosphate	IMP	Yes	C10H13N4O8P	348.0471	Nucleic acids	Purines	Purine ribonucleoside monophosphates
+Urea	Urea	Yes	CH4N2O	60.0324	Organic acids	Carboximidic acids	Isoureas
+Glutathione	Glutathione	Yes	C10H17N3O6S	307.0838	Organic acids	Amino acids and peptides	Peptides
+L-Ascorbic acid	Vitamin C	Yes	C6H8O6	176.0321	Organoheterocyclic compounds	Furanones	Butenolides
+Allantoin	Allantoin	Yes	C4H6N4O3	158.0440	Organoheterocyclic compounds	Ureas	Ureides
+2-Hydroxyglutaric acid	2-Hydroxyglutaric acid	Yes	C5H8O5	148.0372	Fatty Acyls	Fatty acids	Hydroxy FA
+2-Hydroxybutyric acid	2-Hydroxybutyric acid	Yes	C4H8O3	104.0473	Fatty Acyls	Fatty acids	Hydroxy FA
+Glycolic acid	Glycolic acid	Yes	C2H4O3	76.0160	Fatty Acyls	Fatty acids	Hydroxy FA
+Putrescine	Putrescine	Yes	C4H12N2	88.1000	Fatty Acyls	Fatty amines	Monoalkylamines
+Xanthurenic acid	Xanthurenic acid	Yes	C10H7NO4	205.0375	Organoheterocyclic compounds	Quinolines	Quinoline carboxylic acids
+1,6-anhydro-Glucose	Glucosan	Yes	C6H10O5	162.0528	Organoheterocyclic compounds	Oxepanes	Oxepanes
+1-Octadecene	1-Octadecene	Yes	C18H36	252.2817	Fatty Acyls	Hydrocarbons	Hydrocarbons
+2-Ketoisocaproic acid	Ketoleucine	Yes	C6H10O3	130.0630	Organic acids	Keto acids	Short-chain keto acids
+Adipic acid	Adipic acid	Yes	C6H10O4	146.0579	Fatty Acyls	Fatty acids	Dicarboxylic acids
+Azelaic acid	Azelaic acid	Yes	C9H16O4	188.1049	Organic acids	Organic dicarboxylic acids	Organic dicarboxylic acids
+Benzoic acid	Benzoic acid	Yes	C7H6O2	122.0368	Benzenoids	Benzoic acids	Benzoic acids
+Beta-Hydroxyisovaleric acid	3-Hydroxyisovaleric acid	Yes	C5H10O3	118.0630	Fatty Acyls	Fatty acids	Hydroxy FA
+Cystathionine	Cystathionine	Yes	C7H14N2O4S	222.0674	Organic acids	Amino acids and peptides	Amino acids
+Eicosane	Eicosane	Yes	C20H42	282.3287	Fatty Acyls	Hydrocarbons	Hydrocarbons
+Ergosterol	Ergosterol	Yes	C28H44O	396.3392	Sterol Lipids	Sterols	Ergosterols
+Ethanolamine	Ethanolamine	Yes	C2H7NO	61.0528	Organic nitrogen compounds	Alkanolamines	1,2-aminoalcohols
+Glutamic acid	Glutamic acid	Yes	C5H9NO4	147.0532	Organic acids	Amino acids and peptides	Amino acids
+Glyoxylic acid	Glyoxylic acid	Yes	C2H2O3	74.0004	Organic acids	Carboxylic acids	Carboxylic acids
+Guanine	Guanine	Yes	C5H5N5O	151.0494	Nucleic acids	Purines	Hypoxanthines
+Heptanoic acid	Heptylic acid	Yes	C7H14O2	130.0994	Fatty Acyls	Fatty acids	Saturated FA
+Homoserine	Homoserine	Yes	C4H9NO3	119.0582	Organic acids	Amino acids and peptides	Amino acids
+Lanosterol	Lanosterol	Yes	C30H50O	426.3862	Sterol Lipids	Sterols	Cholesterols
+Lauric Acid	Lauric acid	Yes	C12H24O2	200.1776	Fatty Acyls	Fatty acids	Saturated FA
+L-Gulonic acid gamma-lactone	-	No					
+methyl-beta-D-Galactopyranoside	Methyl beta-D-galactoside	Yes	C7H14O6	194.0790	Carbohydrates	Glycosyl compounds	O-glycosyl compounds
+Methylmalonic acid	Methylmalonic acid	Yes	C4H6O4	118.0266	Organic acids	Organic dicarboxylic acids	Organic dicarboxylic acids
+N-acetyl-L-aspartic acid 1	N-Acetylaspartic acid	Yes	C6H9NO5	175.0481	Organic acids	Amino acids and peptides	Amino acids
+N-acetyl-Lysine	-	No					
+Nicotinamide	Niacinamide	Yes	C6H6N2O	122.0480	Organoheterocyclic compounds	Pyridinecarboxylic acids	Nicotinamides
+Nitrous Oxide	-	No					
+Orotic acid	Orotic acid	Yes	C5H4N2O4	156.0171	Nucleic acids	Pyrimidines	Pyrimidinecarboxylic acids
+Phosphatidyl Glycerol	-	No					
+Pyrrolidonecarboxylic acid	Pyroglutamic acid	Yes	C5H7NO3	129.0426	Organoheterocyclic compounds	Pyrroline carboxylic acids	Pyrroline carboxylic acids
+Ribonic acid-gamma-lactone	-	No					
+Sophorose	Sophorose	Yes	C12H22O11	342.1162	Carbohydrates	Disaccharides	Disaccharides
+Sucrose	Sucrose	Yes	C12H22O11	342.1162	Carbohydrates	Disaccharides	Disaccharides
+Trehalose	Trehalose	Yes	C12H22O11	342.1162	Carbohydrates	Disaccharides	Disaccharides
+Turanose	Turanose	Yes	C12H22O11	342.1162	Fatty Acyls	Fatty acyl glycosides	FA glycosides
+Uracil	Uracil	Yes	C4H4N2O2	112.0273	Nucleic acids	Pyrimidines	Pyrimidines
