@@ -58,3 +58,52 @@ bash build/autobuild.sh
 - 07.contributions.md: Authorship contributions (refer to https://github.com/akenall/Open-Contributorship-Badges/blob/master/Badge%20Files.md for more information)
 - 08.supplment.md: Supplemental data, methods
 - metadata.yaml: Author metadata (contact, initials, ORCID, affiliations, etc.)
+
+# Revisions log:
+## Draft 2 Changes (see commits `#23de281`, `#`):
+#### Abstract
+- Minor spelling/phrasing changes
+
+#### Introduction
+- Added description of MetScape plug-in for Cytoscape in other tools comparison
+- Added information about the size of the metabolic network and GC-MS coverage when discussing network sparsity
+- Removed specification of flux integration and saving for when it is actually incorporated as to not confuse the reader as to what is currently available
+- Minor spelling/phrasing changes
+- Changed `desktop application` to `application`
+- Added citations for network interconnectedness discussion
+
+#### Results
+- Added explanation of data input in `Overview`
+- Added sentence explaining how our approach limits pathway-centric biases in analysis.
+- Added Cohen's d effect size calculations to all values with a fold change
+- Improved description of glutaminolysis in lung tumor analysis vignette
+
+#### Discussion
+- Future features list
+  - Flux balance
+  - Interactive motif designer
+  - Integrate external QC tools
+  - UpSet plots
+
+
+#### Methods
+- Updated mass spec methodology based on James' feedback
+- Minor spelling/phrasing changes
+- Added explanation of time course and multi-condition experiment visualization
+
+#### Other
+- Improved figure legends to be more descriptive
+- Added mct1 transcriptomics GEO ID
+- Metabolomics data currently in submission to Metabolomics Workbench
+- Changed "reactant" to "substrate"
+- Changed "graph" to "visualize" or "network" (depending on context)
+
+## To do:
+- Showcase utility of transcriptomics alone
+- Showcase utility of collapser (in human lung dataset?)
+- Test cases
+- Packaging and release
+- Collapse/expand perturbation networks
+- UpSet plots
+- Interactive motif searcher
+- Flux integration

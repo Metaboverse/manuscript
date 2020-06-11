@@ -14,7 +14,7 @@
       "context"
     ],
     "lang": "en-US",
-    "date-meta": "2020-05-28",
+    "date-meta": "2020-06-11",
     "author-meta": [
       "Jordan A. Berg",
       "Youjia Zhou",
@@ -24,10 +24,10 @@
       "Tyler Van Ry",
       "Ian George",
       "James E. Cox",
-      "Bei Wang",
-      "Jared Rutter"
+      "Bei Wang<sup>†</sup>",
+      "Jared Rutter<sup>†</sup>"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta name=\"citation_title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta property=\"og:title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta property=\"twitter:title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta name=\"dc.date\" content=\"2020-05-28\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-28\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jordan A. Berg\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5096-0558\" />\n<meta name=\"twitter:creator\" content=\"@jordanberg0\" />\n<meta name=\"citation_author\" content=\"Youjia Zhou\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Scientific Computing &amp; Imaging Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"citation_author\" content=\"T. Cameron Waller\" />\n<meta name=\"citation_author_institution\" content=\"Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0313-6646\" />\n<meta name=\"citation_author\" content=\"Yeyun Ouyang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9523-1044\" />\n<meta name=\"citation_author\" content=\"Sara M. Nowinski\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4744-6101\" />\n<meta name=\"citation_author\" content=\"Tyler Van Ry\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Metabolomics Core Facility, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"citation_author\" content=\"Ian George\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1361-694X\" />\n<meta name=\"citation_author\" content=\"James E. Cox\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Diabetes &amp; Metabolism Research Center, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Metabolomics Core Facility, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5977-2350\" />\n<meta name=\"citation_author\" content=\"Bei Wang\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Scientific Computing &amp; Imaging Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"citation_author\" content=\"Jared Rutter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Diabetes &amp; Metabolism Research Center, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2710-9765\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta name=\"citation_title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta property=\"og:title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta property=\"twitter:title\" content=\"Gazing into the Metaboverse: Automated exploration and contextualization of metabolic data\" />\n<meta name=\"dc.date\" content=\"2020-06-11\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-11\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jordan A. Berg\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5096-0558\" />\n<meta name=\"twitter:creator\" content=\"@jordanberg0\" />\n<meta name=\"citation_author\" content=\"Youjia Zhou\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Scientific Computing &amp; Imaging Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4501-8496\" />\n<meta name=\"citation_author\" content=\"T. Cameron Waller\" />\n<meta name=\"citation_author_institution\" content=\"Division of Medical Genetics, Department of Medicine, School of Medicine, University of California San Diego\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0313-6646\" />\n<meta name=\"citation_author\" content=\"Yeyun Ouyang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9523-1044\" />\n<meta name=\"citation_author\" content=\"Sara M. Nowinski\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4744-6101\" />\n<meta name=\"citation_author\" content=\"Tyler Van Ry\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Metabolomics Core Facility, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0000-0000-0000\" />\n<meta name=\"citation_author\" content=\"Ian George\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1361-694X\" />\n<meta name=\"citation_author\" content=\"James E. Cox\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Diabetes &amp; Metabolism Research Center, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Metabolomics Core Facility, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5977-2350\" />\n<meta name=\"citation_author\" content=\"Bei Wang&lt;sup&gt;†&lt;/sup&gt;\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Scientific Computing &amp; Imaging Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9240-0700\" />\n<meta name=\"citation_author\" content=\"Jared Rutter&lt;sup&gt;†&lt;/sup&gt;\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Diabetes &amp; Metabolism Research Center, University of Utah\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, University of Utah\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2710-9765\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -37,7 +37,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "May 28, 2020",
+    "date": "June 11, 2020",
     "authors": [
       {
         "github": "j-berg",
@@ -49,7 +49,6 @@
         "affiliations": [
           "Department of Biochemistry, University of Utah"
         ],
-        "funders": "J.A.B. received support from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Inter-disciplinary Training Grant T32 Program in Computational Approaches to Diabetes and Metabolism Research, 1T32DK11096601 to Wendy W. Chapman and Simon J. Fisher (https://www.niddk.nih.gov/)",
         "affiliation_numbers": [
           1
         ]
@@ -58,7 +57,7 @@
         "github": "zhou325",
         "name": "Youjia Zhou",
         "initials": "YZ",
-        "orcid": null,
+        "orcid": "0000-0002-4501-8496",
         "email": "zhou325@sci.utah.edu",
         "affiliations": [
           "School of Computing, University of Utah",
@@ -109,7 +108,7 @@
       {
         "name": "Tyler Van Ry",
         "initials": "TV",
-        "orcid": null,
+        "orcid": "0000-0000-0000-0000",
         "email": "tylerv@cores.utah.edu",
         "affiliations": [
           "Department of Biochemistry, University of Utah",
@@ -150,9 +149,9 @@
       },
       {
         "github": "beiwphillips",
-        "name": "Bei Wang",
+        "name": "Bei Wang<sup>†</sup>",
         "initials": "BW",
-        "orcid": null,
+        "orcid": "0000-0002-9240-0700",
         "email": "beiwang@sci.utah.edu",
         "affiliations": [
           "School of Computing, University of Utah",
@@ -164,7 +163,7 @@
         ]
       },
       {
-        "name": "Jared Rutter",
+        "name": "Jared Rutter<sup>†</sup>",
         "initials": "JR",
         "orcid": "0000-0002-2710-9765",
         "email": "rutter@biochem.utah.edu",
@@ -213,7 +212,7 @@
     "manubot_version": "0.3.1",
     "rootstock_commit": null,
     "manuscript_stats": {
-      "word_count": 9583
+      "word_count": 10540
     }
   }
 }

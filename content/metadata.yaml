@@ -15,14 +15,13 @@ lang: en-US
 authors:
   -
     github: j-berg
-    name: Jordan A. Berg
+    name: Jordan A. Berg #<sup>*</sup>
     initials: JAB
     orcid: 0000-0002-5096-0558
     twitter: jordanberg0
     email: jordan.berg@biochem.utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
-    funders: J.A.B. received support from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Inter-disciplinary Training Grant T32 Program in Computational Approaches to Diabetes and Metabolism Research, 1T32DK11096601 to Wendy W. Chapman and Simon J. Fisher (https://www.niddk.nih.gov/)
   -
     github: zhou325
     name: Youjia Zhou
@@ -57,7 +56,7 @@ authors:
   -
     name: Tyler Van Ry
     initials: TV
-    orcid:
+    orcid: 0000-0000-0000-0000
     email: tylerv@cores.utah.edu
     affiliations:
       - Department of Biochemistry, University of Utah
@@ -80,7 +79,7 @@ authors:
       - Metabolomics Core Facility, University of Utah
   -
     github: beiwphillips
-    name: Bei Wang
+    name: Bei Wang<sup>†</sup>
     initials: BW
     orcid: 0000-0002-9240-0700
     email: beiwang@sci.utah.edu
@@ -88,7 +87,7 @@ authors:
       - School of Computing, University of Utah
       - Scientific Computing & Imaging Institute, University of Utah
   -
-    name: Jared Rutter
+    name: Jared Rutter<sup>†</sup>
     initials: JR
     orcid: 0000-0002-2710-9765
     email: rutter@biochem.utah.edu
