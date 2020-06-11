@@ -61,7 +61,7 @@ bash build/autobuild.sh
 
 # Revisions log:
 ## Draft 2 Changes
-- see commits 23de281 and 196681b
+- see commits 23de281d80728d6f65838d705c7066e36516f6be and 196681bdb83bd0ebc3640eecb8503b78d17cc418
 
 #### Abstract
 - Minor spelling/phrasing changes
