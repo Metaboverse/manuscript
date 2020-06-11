@@ -60,7 +60,9 @@ bash build/autobuild.sh
 - metadata.yaml: Author metadata (contact, initials, ORCID, affiliations, etc.)
 
 # Revisions log:
-## Draft 2 Changes (see commits `#23de281`, `#`):
+## Draft 2 Changes
+- see commits 23de281 and 196681b
+
 #### Abstract
 - Minor spelling/phrasing changes
 
