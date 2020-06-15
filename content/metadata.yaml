@@ -15,7 +15,7 @@ lang: en-US
 authors:
   -
     github: j-berg
-    name: Jordan A. Berg #<sup>*</sup>
+    name: Jordan A. Berg <sup>\*</sup>
     initials: JAB
     orcid: 0000-0002-5096-0558
     twitter: jordanberg0
