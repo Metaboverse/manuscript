@@ -8,8 +8,6 @@ These works are licensed under a Creative Commons Attribution 4.0 International 
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
-Curated databases used in manuscript analysis: 
-
 ### Local execution
 
 The easiest way to run Manubot is to use [continuous integration](#continuous-integration) to rebuild the manuscript when the content changes.
@@ -62,7 +60,7 @@ bash build/autobuild.sh
 
 # Revisions log:
 ## Draft 2 Changes
-- For detailed changes, see files ending in `.md` at https://github.com/Metaboverse/manuscript/compare/413e2c1..
+- For detailed changes, see files ending in `.md` at https://github.com/Metaboverse/manuscript/compare/413e2c1..b40c7d6
 
 #### Abstract
 - Minor spelling/phrasing changes
