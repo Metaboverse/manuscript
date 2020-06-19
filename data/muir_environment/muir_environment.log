@@ -1,0 +1,24 @@
+======================
+User commands summary:
+======================
+Metaboverse version: 0.0.0-alpha
+cmd: curate
+output: /Users/jordan/Desktop/metaboverse_data/databases/
+species_id: find
+organism_curation: /Users/jordan/Desktop/metaboverse_data/databases/HSA_metaboverse_db.pickle
+model_file: None
+output_file: find
+transcriptomics: None
+proteomics: None
+metabolomics: /Users/jordan/Desktop/metaboverse_data/muir_environment/muir_metabolite_environment_measurements.txt
+metadata: None
+experiment: muir_environment
+session_data: /Users/jordan/Library/Application Support/metaboverse/session_data.json
+progress_log: /Users/jordan/Desktop/Metaboverse/app/data/progress_log.json
+path: /Users/jordan/Desktop/Metaboverse/app/python/
+log:  >> /Users/jordan/Desktop/metaboverse_data/databases/muir_environment.log 2>&1
+log_file: /Users/jordan/Desktop/metaboverse_data/databases/muir_environment.log
+=====================
+End commands summary
+=====================
+

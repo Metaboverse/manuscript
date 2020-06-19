@@ -8,6 +8,7 @@ These works are licensed under a Creative Commons Attribution 4.0 International 
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
+Curated databases used in manuscript analysis: 
 
 ### Local execution
 
@@ -95,15 +96,15 @@ bash build/autobuild.sh
 
 #### Other
 - Improved figure legends to be more descriptive
-- Added mct1 transcriptomics GEO ID
-- Metabolomics data currently in submission to Metabolomics Workbench
+- Added mct1 transcriptomics raw data GEO ID
+- Added metabolomics data Metabolomics Workbench ID
 - Changed "reactant" to "substrate"
 - Changed "graph" to "visualize" or "network" (depending on context)
 - Added supplemental figures
   #### Handling data sparsity within the biological global network.
-  - Added paragraph to showcase utility of reaction collapse (in human lung dataset)
-  ####
-  - Showcase utility of transcriptomics alone
+  - Added paragraph to showcase utility of reaction collapse (in murine tumor microenvironment study)
+
+
 
 
 
@@ -115,6 +116,7 @@ bash build/autobuild.sh
 - beta testing feedback
 
 - Continue to clean up some visualization aspects (e.g., options for display in perturbation networks)
-- Interactive motif searcher
+  - Option to hide NA value/stat labels
 - Flux integration
+- Interactive motif searcher
 - Submission to Cell Systems
