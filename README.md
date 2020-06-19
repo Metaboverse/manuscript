@@ -61,7 +61,7 @@ bash build/autobuild.sh
 
 # Revisions log:
 ## Draft 2 Changes
-- see commits [23de281](https://github.com/Metaboverse/manuscript/commit/23de281d80728d6f65838d705c7066e36516f6be) and [196681b](https://github.com/Metaboverse/manuscript/commit/196681bdb83bd0ebc3640eecb8503b78d17cc418)
+- For detailed changes, see files ending in `.md` at https://github.com/Metaboverse/manuscript/compare/413e2c1..
 
 #### Abstract
 - Minor spelling/phrasing changes
@@ -99,13 +99,22 @@ bash build/autobuild.sh
 - Metabolomics data currently in submission to Metabolomics Workbench
 - Changed "reactant" to "substrate"
 - Changed "graph" to "visualize" or "network" (depending on context)
+- Added supplemental figures
+  #### Handling data sparsity within the biological global network.
+  - Added paragraph to showcase utility of reaction collapse (in human lung dataset)
+  ####
+  - Showcase utility of transcriptomics alone
+
+
 
 ## To do:
-- Showcase utility of transcriptomics alone
-- Showcase utility of collapser (in human lung dataset?)
-- Test cases
-- Packaging and release
-- Collapse/expand perturbation networks
-- UpSet plots
+- Wrap up test cases by this weekend
+- Packaging and beta release
+- Submit to bioRxiv on Monday
+
+- beta testing feedback
+
+- Continue to clean up some visualization aspects (e.g., options for display in perturbation networks)
 - Interactive motif searcher
 - Flux integration
+- Submission to Cell Systems
