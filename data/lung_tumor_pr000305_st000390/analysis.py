@@ -11,15 +11,15 @@ def cohen_d(x,y):
     )
 
 # Metabolomics d values
-raw_metabolomics_url = os.path.abspath("./data/lung_tumor_pr000305_st000390/measurements_values.txt")
+raw_metabolomics_url = os.path.abspath("./data/lung_tumor_pr000305_st000390/measurements_cohensD.txt")
 metabolomics = pd.read_csv(
     raw_metabolomics_url,
     sep='\t',
     index_col=0)
-tumor_cols = row[row == 'tumor'].index.tolist()
-normal_cols = row[row == 'normal'].index.tolist()
-metabolomics_tumor = metabolomics[tumor_cols]
-metabolomics_normal = metabolomics[normal_cols]
+metabolomics.index.name = None
+metabolomics = metabolomics.T
+metabolomics_tumor = metabolomics.loc[metabolomics['group'] == 'tumor'].T
+metabolomics_normal = metabolomics.loc[metabolomics['group'] == 'normal'].T
 
 # malate
 cohen_d(
