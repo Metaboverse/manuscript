@@ -107,14 +107,6 @@ bash build/autobuild.sh
 
 
 ## To do:
-- Wrap up test cases by this weekend
-- Packaging and beta release
-- Submit to bioRxiv on Monday
-
-- beta testing feedback
-
 - Continue to clean up some visualization aspects (e.g., options for display in perturbation networks)
-  - Option to hide NA value/stat labels
 - Flux integration
 - Interactive motif searcher
-- Submission to Cell Systems
