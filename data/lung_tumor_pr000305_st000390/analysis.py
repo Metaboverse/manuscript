@@ -70,3 +70,50 @@ cohen_d(
 cohen_d(
     metabolomics_tumor.loc['fumaric acid'].astype(float).values,
     metabolomics_normal.loc['fumaric acid'].astype(float).values)
+
+
+
+# Volcano plot
+processed_metabolomics_url = "~/Desktop/manuscript/data/lung_tumor_pr000305_st000390/lung_tumor_vs_normal_measurements.txt"
+metabolomics_processed = pd.read_csv(
+    processed_metabolomics_url,
+    sep='\t',
+    index_col=0)
+
+metabolomics_processed.columns
+
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+plt.scatter(
+    metabolomics_processed['log2fc'].values,
+    -1 * (np.log10(metabolomics_processed['p-adj'].values + 0.000001)),
+    c='black',
+    edgecolors='grey')
+plt.hlines(
+    y=1.3,
+    xmin=-2,
+    xmax=2,
+    linestyles='dashed',
+    colors='red')
+plt.vlines(
+    x=0.68,
+    ymin=0,
+    ymax=6.25,
+    linestyles='dashed',
+    colors='red')
+plt.vlines(
+    x=-0.68,
+    ymin=0,
+    ymax=6.25,
+    linestyles='dashed',
+    colors='red')
+plt.xlabel(
+    xlabel='log$_2$(fold change)')
+plt.ylabel(
+    ylabel='-log$_1$$_0$(p-adj)')
+plt.savefig(
+    '/Users/jordan/Desktop/lung_tumor_vs_normal_volcano.png',
+    bbox_inches='tight',
+    dpi=1200)
