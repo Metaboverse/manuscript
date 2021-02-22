@@ -31,10 +31,10 @@ cohen_d(
     metabolomics_tumor.loc['xanthine'].astype(float).values,
     metabolomics_normal.loc['xanthine'].astype(float).values)
 
-# glutamine (fc: -0.198369384, p: 0.320542108)
+# glutamate
 cohen_d(
-    metabolomics_tumor.loc['glutamine'].astype(float).values,
-    metabolomics_normal.loc['glutamine'].astype(float).values)
+    metabolomics_tumor.loc['glutamic acid'].astype(float).values,
+    metabolomics_normal.loc['glutamic acid'].astype(float).values)
 
 # glyceric acid
 cohen_d(
@@ -51,36 +51,42 @@ cohen_d(
     metabolomics_tumor.loc['citric acid'].astype(float).values,
     metabolomics_normal.loc['citric acid'].astype(float).values)
 
-# glutamate
-cohen_d(
-    metabolomics_tumor.loc['glutamic acid'].astype(float).values,
-    metabolomics_normal.loc['glutamic acid'].astype(float).values)
-
-# Alpha-Ketoglutarate (fc: -0.016819815, p: 0.9380325)
-cohen_d(
-    metabolomics_tumor.loc['alpha ketoglutaric acid'].astype(float).values,
-    metabolomics_normal.loc['alpha ketoglutaric acid'].astype(float).values)
-
 # succinate (0.43302502	0.102575479)
 cohen_d(
     metabolomics_tumor.loc['succinic acid'].astype(float).values,
     metabolomics_normal.loc['succinic acid'].astype(float).values)
 
-# fumurate (0.09684086	0.50166131)
+# Hypoxanthine
 cohen_d(
-    metabolomics_tumor.loc['fumaric acid'].astype(float).values,
-    metabolomics_normal.loc['fumaric acid'].astype(float).values)
+    metabolomics_tumor.loc['hypoxanthine'].astype(float).values,
+    metabolomics_normal.loc['hypoxanthine'].astype(float).values)
 
+# Spermidine
+cohen_d(
+    metabolomics_tumor.loc['spermidine'].astype(float).values,
+    metabolomics_normal.loc['spermidine'].astype(float).values)
 
+# 5'-methylthioadenosine
+cohen_d(
+    metabolomics_tumor.loc['5’-deoxy-5’-methylthioadenosine'].astype(float).values,
+    metabolomics_normal.loc['5’-deoxy-5’-methylthioadenosine'].astype(float).values)
+
+# Glutamine
+cohen_d(
+    metabolomics_tumor.loc['glutamine'].astype(float).values,
+    metabolomics_normal.loc['glutamine'].astype(float).values)
+
+# alpha-ketoglutarate
+cohen_d(
+    metabolomics_tumor.loc['alpha ketoglutaric acid'].astype(float).values,
+    metabolomics_normal.loc['alpha ketoglutaric acid'].astype(float).values)
 
 # Volcano plot
-processed_metabolomics_url = "~/Desktop/manuscript/data/lung_tumor_pr000305_st000390/lung_tumor_vs_normal_measurements.txt"
+processed_metabolomics_url = os.path.abspath("./data/lung_tumor_pr000305_st000390/lung_tumor_vs_normal_measurements.txt")
 metabolomics_processed = pd.read_csv(
     processed_metabolomics_url,
     sep='\t',
     index_col=0)
-
-metabolomics_processed.columns
 
 import numpy as np
 import matplotlib
@@ -114,6 +120,6 @@ plt.xlabel(
 plt.ylabel(
     ylabel='-log$_1$$_0$(p-adj)')
 plt.savefig(
-    '/Users/jordan/Desktop/lung_tumor_vs_normal_volcano.png',
+    os.path.abspath("./data/lung_tumor_pr000305_st000390/lung_tumor_vs_normal_volcano.png"),
     bbox_inches='tight',
     dpi=1200)

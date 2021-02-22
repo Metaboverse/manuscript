@@ -1,0 +1,46 @@
+Operating System information:
+5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Metaboverse/0.4.2b Chrome/80.0.3987.165 Electron/8.3.4 Safari/537.36
+Log date: 2021-02-11
+
+C:\Users\jorda\Desktop\projects\Metaboverse\app\python\metaboverse-cli-win.exe curate --output "C:\Users\jorda\Desktop\projects\manuscript\data\sce_mct1_omics\_data" --output_file "C:\Users\jorda\Desktop\projects\manuscript\data\sce_mct1_omics\_data\test.mvrs" --organism_id HSA --model_file "C:\Users\jorda\Desktop\projects\manuscript\data\sce_mct1_omics\_data\HSA.mvdb" --transcriptomics None --proteomics None --metabolomics None --database_source reactome --experiment_type None --experiment_name "mct1\ test" --labels 0 --blocklist H+,H2O,CO2,e-,Mn2+,K+,Na+,Mg2+,O2,H2O2,NAD+,NADH,NADPH,NAAD,ATP,ADP,Pi,PPi,Ca2+ --broadcast_genes --broadcast_metabolites --progress_log "C:\Users\jorda\AppData\Roaming\Metaboverse\progress_log.json" --session_data "C:\Users\jorda\AppData\Roaming\Metaboverse\session_data.json"
+Metaboverse-CLI version: 0.4.2-beta
+======================
+User commands summary:
+======================
+cmd: curate
+output: C:\Users\jorda\Desktop\projects\manuscript\data\sce_mct1_omics\_data\
+organism_id: HSA
+organism_curation: None
+model_file: C:\Users\jorda\Desktop\projects\manuscript\data\sce_mct1_omics\_data\HSA.mvdb
+output_file: C:\Users\jorda\Desktop\projects\manuscript\data\sce_mct1_omics\_data\test.mvrs
+transcriptomics: None
+proteomics: None
+metabolomics: None
+database_source: reactome
+collapse_with_modifiers: False
+broadcast_genes: True
+broadcast_metabolites: True
+experiment_type: None
+experiment_name: mct1\ test
+labels: 0
+blocklist: H+,H2O,CO2,e-,Mn2+,K+,Na+,Mg2+,O2,H2O2,NAD+,NADH,NADPH,NAAD,ATP,ADP,Pi,PPi,Ca2+
+session_data: C:\Users\jorda\AppData\Roaming\Metaboverse\session_data.json
+progress_log: C:\Users\jorda\AppData\Roaming\Metaboverse\progress_log.json
+path: C:\Users\jorda\AppData\Local\Temp\_MEI166042\
+=====================
+End commands summary
+=====================
+
+Back-end parsed arguments:
+{'cmd': 'curate', 'output': 'C:\\Users\\jorda\\Desktop\\projects\\manuscript\\data\\sce_mct1_omics\\_data\\', 'organism_id': 'HSA', 'organism_curation': None, 'model_file': 'C:\\Users\\jorda\\Desktop\\projects\\manuscript\\data\\sce_mct1_omics\\_data\\HSA.mvdb', 'output_file': 'C:\\Users\\jorda\\Desktop\\projects\\manuscript\\data\\sce_mct1_omics\\_data\\test.mvrs', 'transcriptomics': 'None', 'proteomics': 'None', 'metabolomics': 'None', 'database_source': 'reactome', 'collapse_with_modifiers': False, 'broadcast_genes': True, 'broadcast_metabolites': True, 'experiment_type': 'None', 'experiment_name': 'mct1\\ test', 'labels': '0', 'blocklist': 'H+,H2O,CO2,e-,Mn2+,K+,Na+,Mg2+,O2,H2O2,NAD+,NADH,NADPH,NAAD,ATP,ADP,Pi,PPi,Ca2+', 'session_data': 'C:\\Users\\jorda\\AppData\\Roaming\\Metaboverse\\session_data.json', 'progress_log': 'C:\\Users\\jorda\\AppData\\Roaming\\Metaboverse\\progress_log.json', 'path': 'C:\\Users\\jorda\\AppData\\Local\\Temp\\_MEI166042\\'}
+
+
+########
+STDERR:
+########
+Traceback (most recent call last):
+  File "__main__.py", line 185, in <module>
+  File "__main__.py", line 108, in main
+  File "utils.py", line 51, in get_metaboverse_cli_version
+FileNotFoundError: [Errno 2] No such file or directory: 'metaboverse_cli/__init__.py'
+[17404] Failed to execute script __main__

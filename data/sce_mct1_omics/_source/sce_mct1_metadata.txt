@@ -1,4 +1,4 @@
-	Condition	Time	Media	Group
+Sample	Condition	Time	Media	Group
 14251X1	WT	12	Raffinose	1
 14251X2	mct1	12	Raffinose	1
 14251X3	WT	0	Glucose	1
