@@ -104,6 +104,17 @@ fig.savefig(
 
 
 
+results = pd.read_csv(
+    os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "yeast_correlations_all.tsv"),
+    sep='\t',
+    index_col=0,
+    low_memory=False
+)
+
 
 def g_decompress(
         path,
