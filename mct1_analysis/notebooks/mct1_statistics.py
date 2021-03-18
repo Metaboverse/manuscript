@@ -48,6 +48,13 @@ protein_list = [
     'QCR7',
     'QCR8',
     'RIP1',
+    'ACO1',
+    'ACO2',
+    'CIT2',
+    'ICL1',
+    'MDH2',
+    'MDH3',
+    'MLS1'
 ]
 
 for x in protein_list:
