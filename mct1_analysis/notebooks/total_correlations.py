@@ -183,9 +183,14 @@ for x in results.index.tolist():
     g.nodes()[x]['id'] = x
     g.nodes()[x]['name'] = gene_dict[x]
 
+
+"""
+0.025   -0.427949
+0.975    0.483644
+"""
 for x in results.index.tolist():
     for y in results.index.tolist():
-        if results.at[x, y][0] >= 0.483644 or results.at[x, y][0] <= 0.483644 and results.at[x, y][1] < 0.05:
+        if results.at[x, y][0] >= 0.483644 or results.at[x, y][0] <= -0.427949 and results.at[x, y][1] < 0.05:
             g.add_edge(x, y)
             g.edges()[(x, y)]['r'] = results.at[x, y][0]
             g.edges()[(x, y)]['p'] = results.at[x, y][1]
