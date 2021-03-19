@@ -104,17 +104,6 @@ fig.savefig(
 
 
 
-results = pd.read_csv(
-    os.path.join(
-        __path__,
-        "mct1_analysis",
-        "data",
-        "yeast_correlations_all.tsv"),
-    sep='\t',
-    index_col=0,
-    low_memory=False
-)
-
 
 def g_decompress(
         path,
@@ -173,20 +162,47 @@ os.remove(os.path.join(
 import networkx as nx
 g = nx.Graph()
 
+results = pd.read_csv(
+    os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "yeast_correlations_all.tsv"),
+    sep='\t',
+    index_col=0,
+    low_memory=False
+)
+
+import ast
+for c in results.columns.tolist():
+    results[c] = results[c].apply(lambda x: ast.literal_eval(x))
+
+
 for x in results.index.tolist():
-    g.add_node(
-        x,
-        {
-            'id': x,
-            'name': gene_dict[x]
-        }
-    )
+    g.add_node(x)
+    g.nodes()[x]['id'] = x
+    g.nodes()[x]['name'] = gene_dict[x]
 
 for x in results.index.tolist():
     for y in results.index.tolist():
-
         if results.at[x, y][0] >= 0.483644 or results.at[x, y][0] <= 0.483644 and results.at[x, y][1] < 0.05:
-            g.add_edge(x, y, {
-                'r': results.at[x, y][0],
-                'p': results.at[x, y][1]
-            })
+            g.add_edge(x, y)
+            g.edges()[(x, y)]['r'] = results.at[x, y][0]
+            g.edges()[(x, y)]['p'] = results.at[x, y][1]
+
+import json
+from networkx.readwrite import json_graph
+
+data = json_graph.node_link_data(g)
+with open(os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "yeast_correlations_graph.json"),
+    'w') as f:
+    json.dump(data, f, indent=4)  # Parse out as array for javascript
+
+
+
+# Plot clustered heatmap of r values
+# generate graph, maybe more strict, make sure it was selective in the code above.
