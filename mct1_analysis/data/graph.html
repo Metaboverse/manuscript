@@ -1,0 +1,64 @@
+<html>
+
+  <head>
+    <style> body { margin: 0; } </style>
+
+    <script src="//unpkg.com/3d-force-graph"></script>
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+
+    <!--<script src="../../dist/3d-force-graph.js"></script>-->
+  </head>
+
+  <body>
+
+    <div id="3d-graph"></div>
+
+    <script>
+
+      const highlightNodes = [
+        'CTP1',
+        'MCT1'
+      ];
+
+      const rtgNodes = [
+        'ACO2',
+        'LYS1',
+        'LYS9',
+        'LYS21',
+
+      ];
+
+      const elem = document.getElementById('3d-graph');
+      console.log(elem)
+      const Graph = ForceGraph3D({
+          powerPreference: "high-performance"
+        })(elem)
+        .jsonUrl('yeast_correlations_graph.json')
+        .nodeColor(node => highlightNodes.includes(node.id) ? 'rgb(255,0,0,1)' : 'rgba(0,255,255,0.6)')
+        .nodeLabel(node => `${node.id}`)
+        .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+        .nodeThreeObject(node => {
+         const sprite = new SpriteText(node.id);
+         sprite.material.depthWrite = true; // make sprite background transparent
+         console.log(sprite)
+         if (highlightNodes.includes(node.id)) {
+          sprite.color = "red";
+        } else if (rtgNodes.includes(node.id)) {
+          sprite.color = "orange";
+        } else {
+          sprite.color = "white";
+        }
+
+
+         sprite.textHeight = 8;
+         return sprite;
+       });
+
+      Graph.d3Force('charge').strength(-320);
+      console.log(Graph)
+
+
+    </script>
+  </body>
+</html

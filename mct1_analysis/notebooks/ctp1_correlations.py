@@ -286,8 +286,21 @@ for a in agg_data_c.sort_values(by='pearson_r_mct1').head(int(len(agg_data_c.ind
     print(a)
 
 
+for z in []:
+    np.log2(agg_data).T.plot.scatter(z, 'YOR221C', alpha=0.1)
 
-np.log10(agg_data).T.plot.scatter(query_id2, 'YOR230W', alpha=0.1)
+
+
+
+np.log2(agg_data).T.plot.scatter('YNR050C', 'YBR291C', alpha=0.1)
+np.log2(agg_data).T.plot.scatter('YJL200C', 'YBR291C', alpha=0.1)
+np.log2(agg_data).T.plot.scatter('YDL131W', 'YBR291C', alpha=0.1)
+np.log2(agg_data).T.plot.scatter('YIR034C', 'YBR291C', alpha=0.1)
+
+
+
+
+
 
 
 #ACO2
