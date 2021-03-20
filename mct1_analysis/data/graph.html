@@ -16,6 +16,18 @@
 
     <script>
 
+      //const this_file = 'yeast_correlations_graph.json';
+
+      //const this_file = 'yeast_correlations_graphMCT1_ACP1.json';
+      //const this_file = 'yeast_correlations_graphTOR1_TOR2.json';
+      //const this_file = 'yeast_correlations_graphTOR1_TDH1.json';
+      //const highlightNodes = [
+      //  'TOR1',
+      //  'TDH1'
+      //];
+
+
+      const this_file = 'yeast_correlations_graphMCT1_CTP1.json';
       const highlightNodes = [
         'CTP1',
         'MCT1'
@@ -34,7 +46,7 @@
       const Graph = ForceGraph3D({
           powerPreference: "high-performance"
         })(elem)
-        .jsonUrl('yeast_correlations_graph.json')
+        .jsonUrl(this_file)
         .nodeColor(node => highlightNodes.includes(node.id) ? 'rgb(255,0,0,1)' : 'rgba(0,255,255,0.6)')
         .nodeLabel(node => `${node.id}`)
         .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)

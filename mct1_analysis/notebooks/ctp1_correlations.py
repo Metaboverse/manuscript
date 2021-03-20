@@ -114,9 +114,6 @@ yeast_gtf = read_table(
     comment='#'
 )
 
-yeast_gtf[8].loc[1]
-
-
 g_decompress(
     path=os.path.join(
         __path__,
@@ -203,6 +200,66 @@ for x in mct1_proteomics.index.tolist():
 
 
 mct1_proteomics_c['pearson_r'].hist(bins=50)
+
+
+
+
+
+
+
+mct1_rnaseq_norm.head()
+agg_data = mct1_rnaseq_norm.copy()
+
+counter = 0
+total = len(agg_data.index.tolist())
+results_r = pd.DataFrame(index=agg_data.index, columns=agg_data.index)
+results_p = pd.DataFrame(index=agg_data.index, columns=agg_data.index)
+
+
+for x in agg_data.index.tolist():
+    for y in agg_data.index.tolist():
+
+        if sum(agg_data.loc[x].values) != 0 and sum(agg_data.loc[y].values != 0):
+            r, p = scipy.stats.pearsonr(
+                x=agg_data.loc[x].values,
+                y=agg_data.loc[y].values)
+
+            results_r.at[x, y] = r
+            results_p.at[x, y] = p
+        else:
+            results_r.at[x, y] = 0.0
+            results_p.at[x, y] = 1.0
+
+    counter += 1
+    if counter % 10 == 0:
+        print(counter, "/", total)
+
+
+# Output results table
+results_r.to_csv(
+    os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "yeast_correlations_rnaseq_r.tsv"),
+    sep='\t')
+
+# Output results table
+results_p.to_csv(
+    os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "yeast_correlations_rnaseq_p.tsv"),
+    sep='\t')
+
+
+
+
+
+
+
+
 
 
 """Part 2: Correlation analysis for refine.bio dataset

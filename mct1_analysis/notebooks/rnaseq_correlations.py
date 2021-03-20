@@ -18,31 +18,27 @@ jakes_cmap = sns.diverging_palette(212, 61, s=99, l=77, sep=1, n=16, center='dar
 __path__ = os.getcwd()
 
 # Read metadata
-def read_agg_data():
+def read_table(
+        url,
+        sep='\t',
+        index_col=0,
+        header='infer',
+        low_memory=False,
+        compression='infer',
+        comment='#'):
+    """Read tab-delimited table
+    """
 
-    refine_path = os.path.join(
-        __path__,
-        "mct1_analysis",
-        "data",
-        "refine.bio.yeast.all")
-    with open(
-            os.path.join(refine_path, 'aggregated_metadata.json'), 'r') as jsonfile:
-        metadata = json.load(jsonfile)
+    data = pd.read_csv(
+        url,
+        sep=sep,
+        index_col=index_col,
+        header=header,
+        low_memory=low_memory,
+        compression=compression,
+        comment=comment)
 
-    # Read tables
-    tables = []
-    for k in metadata['experiments'].keys():
-        file = os.path.join(refine_path, k, k + ".tsv")
-        data = pd.read_csv(
-            file,
-            sep='\t',
-            index_col=0
-        )
-        data.index.name = None
-        tables.append(data)
-    agg_data = pd.concat(tables, axis=1)
-
-    return agg_data
+    return data
 
 
 def corr_agg_data(agg_data):
@@ -72,7 +68,7 @@ def corr_agg_data(agg_data):
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_all_r.tsv"),
+            "mct1_rnaseq_correlations_r.tsv"),
         sep='\t')
 
     # Output results table
@@ -81,7 +77,7 @@ def corr_agg_data(agg_data):
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_all_p.tsv"),
+            "mct1_rnaseq_correlations_p.tsv"),
         sep='\t')
 
     return results_r, results_p
@@ -94,7 +90,7 @@ def read_tables():
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_all_r.tsv"),
+            "mct1_rnaseq_correlations_r.tsv"),
         sep='\t',
         index_col=0)
 
@@ -104,7 +100,7 @@ def read_tables():
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_all_p.tsv"),
+            "mct1_rnaseq_correlations_p.tsv"),
         sep='\t',
         index_col=0)
 
@@ -120,7 +116,7 @@ def plot_histograms(results_r, results_p):
             __path__,
             "mct1_analysis",
             "plots",
-            "yeast_correlations_all_r_hist.png"
+            "mct1_rnaseq_correlations_r_hist.png"
         )
     )
 
@@ -131,7 +127,7 @@ def plot_histograms(results_r, results_p):
             __path__,
             "mct1_analysis",
             "plots",
-            "yeast_correlations_all_p_hist.png"
+            "mct1_rnaseq_correlations_p_hist.png"
         )
     )
 
@@ -207,7 +203,7 @@ def read_corr_data():
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_all_r.tsv"),
+            "mct1_rnaseq_correlations_r.tsv"),
         sep='\t',
         index_col=0,
         low_memory=False
@@ -218,7 +214,7 @@ def read_corr_data():
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_all_p.tsv"),
+            "mct1_rnaseq_correlations_p.tsv"),
         sep='\t',
         index_col=0,
         low_memory=False
@@ -257,7 +253,7 @@ def output_graph(g):
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_graph.json"),
+            "mct1_rnaseq_correlations_graph.json"),
         'w') as f:
         json.dump(data, f, indent=4)  # Parse out as array for javascript
 
@@ -269,7 +265,7 @@ def read_graph():
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_graph.json")) as f:
+            "mct1_rnaseq_correlations_graph.json")) as f:
         js_graph = json.load(f)
     g = json_graph.node_link_graph(js_graph)
 
@@ -292,7 +288,7 @@ def make_subgraph(g, gene_dict, s, t):
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_graph" + str(gene_dict[s]) + "_" + str(gene_dict[t]) + ".json"),
+            "mct1_rnaseq_correlations_graph" + str(gene_dict[s]) + "_" + str(gene_dict[t]) + ".json"),
         'w') as f:
         json.dump(data, f, indent=4)
 
@@ -306,7 +302,7 @@ def make_hist_gene(results_r, results_p, gene=''):
             __path__,
             "mct1_analysis",
             "plots",
-            "yeast_correlations_" + str(gene) + "_r_hist.png"
+            "mct1_rnaseq_correlations_" + str(gene) + "_r_hist.png"
         )
     )
 
@@ -317,7 +313,7 @@ def make_hist_gene(results_r, results_p, gene=''):
             __path__,
             "mct1_analysis",
             "plots",
-            "yeast_correlations_" + str(gene) + "_p_hist.png"
+            "mct1_rnaseq_correlations_" + str(gene) + "_p_hist.png"
         )
     )
 
@@ -342,16 +338,52 @@ def make_clustermap(results_r):
             __path__,
             "mct1_analysis",
             "data",
-            "yeast_correlations_clustered.pdf"), bbox_inches='tight')
+            "mct1_rnaseq_correlations_clustered.pdf"), bbox_inches='tight')
 
 
 """MAIN"""
 print('Reading agg data')
 sys.stdout.flush()
-agg_data = read_agg_data()
+
+mct1_rnaseq = read_table(
+    url=os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "mct1_rnaseq_data",
+        "sce_mct1_deduped_count_table.tsv")
+)
+
+g_decompress(
+    path=os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "analysis_lists"),
+    file="Saccharomyces_cerevisiae.R64-1-1.103.gtf.gz",
+    output="Saccharomyces_cerevisiae.R64-1-1.103.gtf"
+)
+mct1_rnaseq_norm = xp.tpm(
+    data=mct1_rnaseq,
+    gtf=os.path.join(
+        __path__,
+        "mct1_analysis",
+        "data",
+        "analysis_lists",
+        "Saccharomyces_cerevisiae.R64-1-1.103.gtf"),
+    identifier='gene_id'
+)
+os.remove(os.path.join(
+    __path__,
+    "mct1_analysis",
+    "data",
+    "analysis_lists",
+    "Saccharomyces_cerevisiae.R64-1-1.103.gtf")
+)
+
 print('Performing correlation analysis')
 sys.stdout.flush()
-results_r, results_p = corr_agg_data(agg_data)
+results_r, results_p = corr_agg_data(mct1_rnaseq_norm)
 
 print('Reading corr tables')
 sys.stdout.flush()
