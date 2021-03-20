@@ -17,7 +17,19 @@ jakes_cmap = sns.diverging_palette(212, 61, s=99, l=77, sep=1, n=16, center='dar
 
 __path__ = os.getcwd()
 
-# Read metadata
+
+def g_decompress(
+        path,
+        file,
+        output):
+
+    g_open = open(os.path.join(path, output), "wb")
+    with gzip.open(os.path.join(path, file), "rb") as f:
+        g_data = f.read()
+    g_open.write(g_data)
+    g_open.close()
+
+
 def read_table(
         url,
         sep='\t',
@@ -138,18 +150,6 @@ def get_quantiles(results, _range):
     return r.iloc[0], r.iloc[1]
 
 def make_gene_dict():
-
-
-    def g_decompress(
-            path,
-            file,
-            output):
-
-        g_open = open(os.path.join(path, output), "wb")
-        with gzip.open(os.path.join(path, file), "rb") as f:
-            g_data = f.read()
-        g_open.write(g_data)
-        g_open.close()
 
     g_decompress(
         path=os.path.join(
