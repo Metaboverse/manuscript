@@ -351,8 +351,12 @@ mct1_rnaseq = read_table(
         "mct1_analysis",
         "data",
         "mct1_rnaseq_data",
-        "sce_mct1_deduped_count_table.tsv")
+        "sce_mct1_deduped_tpm_threshold25.tsv")
 )
+
+np.log2(mct1_rnaseq).T.plot.scatter('YOR221C', 'YBR291C', alpha=1)
+
+
 
 g_decompress(
     path=os.path.join(

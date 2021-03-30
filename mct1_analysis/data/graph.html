@@ -27,7 +27,7 @@
       //];
 
 
-      const this_file = 'yeast_correlations_graphMCT1_CTP1.json';
+      const this_file = 'mct1_rnaseq_correlations_spqn_graph.json';
       const highlightNodes = [
         'CTP1',
         'MCT1'
@@ -38,7 +38,17 @@
         'LYS1',
         'LYS9',
         'LYS21',
+      ];
 
+      const lysNodes = [
+        'ILV2',
+        'ACO2',
+        'LYS9',
+        'DUT1',
+        'MET5',
+        'ARG4',
+        'LYS21',
+        'LYS1'
       ];
 
       const elem = document.getElementById('3d-graph');
@@ -51,25 +61,20 @@
         .nodeLabel(node => `${node.id}`)
         .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
         .nodeThreeObject(node => {
-         const sprite = new SpriteText(node.id);
-         sprite.material.depthWrite = true; // make sprite background transparent
-         console.log(sprite)
-         if (highlightNodes.includes(node.id)) {
+          const sprite = new SpriteText(node.id);
+          sprite.material.depthWrite = true; // make sprite background transparent
+        if (highlightNodes.includes(node.id)) {
           sprite.color = "red";
         } else if (rtgNodes.includes(node.id)) {
           sprite.color = "orange";
         } else {
           sprite.color = "white";
         }
-
-
-         sprite.textHeight = 8;
-         return sprite;
+        sprite.textHeight = 8;
+        return sprite;
        });
 
-      Graph.d3Force('charge').strength(-320);
-      console.log(Graph)
-
+      Graph.d3Force('charge').strength(-3020);
 
     </script>
   </body>
