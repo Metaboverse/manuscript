@@ -7,7 +7,6 @@
  L-Proline	amino acid
  L-Phenylalanine	amino acid
  L-Tyrosine	amino acid
- L-Tyrosine	amino acid
  L-Serine	amino acid
  L-Threonine	amino acid
  L-Methionine	amino acid
@@ -17,7 +16,6 @@
  L-Glutamic acid	amino acid
  L-Lysine	amino acid
  Beta-Alanine 	amino acid
- L-Threonine	amino acid
  Adenosine 	nucleotides
  Inosine 	nucleotides
  Adenine 	nucleotides
