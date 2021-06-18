@@ -137,56 +137,9 @@ ggsurvplot(
   title="Kaplan-Meier Curve for Lung Cancer Survival",
   risk.table.height=.25)
 
-
-
-
-this_gene <- "ENSG00000102172"
-data_gene <- rpkm_data[rpkm_data$Gene == this_gene,]
-# Merged mixed data tables
-merged_data_gene <- merge(
-  data_gene,
-  clinical_sample_early,
-  by.x = "Sample",
-  by.y = "case_submitter_id")
-opt_cutoff <- surv_cutpoint(merged_data_gene, time = "days_to_death", event = "status", variables = c("FPKM"))
-opt_categories <- surv_categorize(opt_cutoff)
-opt_fit <- survfit(Surv(days_to_death, status) ~ FPKM, data = opt_categories)
-res.cox <- coxph(Surv(days_to_death, status) ~ FPKM, data=opt_categories)
+print(this_gene)
+res.cox <- coxph(Surv(days_to_death, status) ~ gene_status + ajcc_pathologic_stage, data=merged_data_gene)
 summary(res.cox)
-
-
-this_gene <- "ENSG00000102172"
-data_gene <- rpkm_data[rpkm_data$Gene == this_gene,]
-# Merged mixed data tables
-merged_data_gene <- merge(
-  data_gene,
-  clinical_sample_late,
-  by.x = "Sample",
-  by.y = "case_submitter_id")
-opt_cutoff <- surv_cutpoint(merged_data_gene, time = "days_to_death", event = "status", variables = c("FPKM"))
-opt_categories <- surv_categorize(opt_cutoff)
-opt_fit <- survfit(Surv(days_to_death, status) ~ FPKM, data = opt_categories)
-res.cox <- coxph(Surv(days_to_death, status) ~ FPKM, data=opt_categories)
-summary(res.cox)
-
-
-this_gene <- "ENSG00000102172"
-data_gene <- rpkm_data[rpkm_data$Gene == this_gene,]
-# Merged mixed data tables
-merged_data_gene <- merge(
-  data_gene,
-  clinical_sample,
-  by.x = "Sample",
-  by.y = "case_submitter_id")
-opt_cutoff <- surv_cutpoint(merged_data_gene, time = "days_to_death", event = "status", variables = c("FPKM"))
-opt_categories <- surv_categorize(opt_cutoff)
-opt_fit <- survfit(Surv(days_to_death, status) ~ FPKM, data = opt_categories)
-res.cox <- coxph(Surv(days_to_death, status) ~ FPKM, data=opt_categories)
-summary(res.cox)
-
-
-
-
 
 
 
